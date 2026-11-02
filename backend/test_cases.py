@@ -1544,3 +1544,208 @@ _mm_register(qid, public, [
     )),
 ])
 
+# ============================================================
+# MODELMIND REGRESSION TEST PACK V1
+# Questions:
+# linear-basic-001
+# linear-medium-001
+# poly-medium-001
+# ============================================================
+
+import numpy as _reg_np
+from sklearn.linear_model import LinearRegression as _RegLinear
+from sklearn.preprocessing import PolynomialFeatures as _RegPoly
+from sklearn.utils.validation import check_is_fitted as _reg_is_fitted
+
+
+def _reg_get_model(ns):
+    model = ns.get("model")
+
+    assert isinstance(model, _RegLinear), (
+        "Expected a LinearRegression model."
+    )
+
+    _reg_is_fitted(model)
+    return model
+
+
+def _reg_linear_test(values):
+    values = _reg_np.asarray(values, dtype=float).reshape(-1, 1)
+    expected = 2.0 * values.ravel()
+
+    def check(ns):
+        model = _reg_get_model(ns)
+        actual = model.predict(values)
+
+        assert _reg_np.allclose(
+            actual, expected, rtol=1e-6, atol=1e-6
+        ), "Linear regression predictions are incorrect."
+
+    return check
+
+
+def _reg_prediction_test(ns):
+    model = _reg_get_model(ns)
+
+    assert "prediction" in ns, (
+        "Missing prediction variable."
+    )
+
+    expected = 8.0
+    actual = _reg_np.asarray(ns["prediction"]).reshape(-1)
+
+    assert actual.size == 1, (
+        "prediction must contain exactly one value."
+    )
+
+    assert _reg_np.isclose(
+        float(actual[0]), expected, atol=1e-6
+    ), "Expected prediction approximately 8.0."
+
+
+def _reg_poly_model(ns):
+    poly = ns.get("poly")
+    model = ns.get("model")
+
+    assert isinstance(poly, _RegPoly), (
+        "poly must be a PolynomialFeatures instance."
+    )
+    assert poly.degree == 2, (
+        "PolynomialFeatures degree must equal 2."
+    )
+
+    assert isinstance(model, _RegLinear), (
+        "model must be a LinearRegression instance."
+    )
+
+    _reg_is_fitted(poly)
+    _reg_is_fitted(model)
+
+    return poly, model
+
+
+def _reg_poly_predict(values):
+    values = _reg_np.asarray(
+        values, dtype=float
+    ).reshape(-1, 1)
+
+    def check(ns):
+        poly, model = _reg_poly_model(ns)
+
+        transformed = poly.transform(values)
+        actual = model.predict(transformed)
+        expected = values.ravel() ** 2
+
+        assert _reg_np.allclose(
+            actual,
+            expected,
+            rtol=1e-5,
+            atol=1e-5
+        ), "Polynomial predictions are incorrect."
+
+    return check
+
+
+def _reg_register(qid, public, hidden):
+    existing = TEST_CASES.get(qid, {}).get("tests", {})
+
+    # Preserve existing tests and their order.
+    combined = dict(existing)
+
+    for name, test in public:
+        if name in combined:
+            raise ValueError(
+                f"Duplicate regression test: {qid} / {name}"
+            )
+        combined[name] = test
+
+    public_count = len(combined)
+
+    for name, test in hidden:
+        if name in combined:
+            raise ValueError(
+                f"Duplicate regression test: {qid} / {name}"
+            )
+        combined[name] = test
+
+    TEST_CASES[qid] = {"tests": combined}
+    PUBLIC_TEST_COUNT[qid] = public_count
+
+
+# -----------------------------
+# BASIC: FIT LINEAR REGRESSION
+# -----------------------------
+
+_reg_register(
+    "linear-basic-001",
+    public=[
+        (
+            "New prediction x=4",
+            _reg_linear_test([4])
+        ),
+        (
+            "New prediction x=5",
+            _reg_linear_test([5])
+        ),
+        (
+            "Zero and negative inputs",
+            _reg_linear_test([0, -1, -3])
+        ),
+    ],
+    hidden=[
+        (
+            f"Regression hidden {i + 1}",
+            _reg_linear_test([i + 6, -(i + 2)])
+        )
+        for i in range(12)
+    ]
+)
+
+
+# -----------------------------
+# MEDIUM: PREDICT REGRESSION
+# -----------------------------
+
+_reg_register(
+    "linear-medium-001",
+    public=[
+        ("Prediction variable", _reg_prediction_test),
+        ("Predict x=0", _reg_linear_test([0])),
+        ("Predict x=5", _reg_linear_test([5])),
+        ("Predict negative values", _reg_linear_test([-1, -4])),
+    ],
+    hidden=[
+        (
+            f"Prediction hidden {i + 1}",
+            _reg_linear_test([i + 7, -(i + 1)])
+        )
+        for i in range(12)
+    ]
+)
+
+
+# --------------------------------
+# MEDIUM: DEGREE-2 POLYNOMIAL MODEL
+# --------------------------------
+
+_reg_register(
+    "poly-medium-001",
+    public=[
+        ("Polynomial model configuration",
+         lambda ns: _reg_poly_model(ns)),
+        ("Prediction at x=4", _reg_poly_predict([4])),
+        ("Prediction at x=5", _reg_poly_predict([5])),
+        ("Prediction at x=0", _reg_poly_predict([0])),
+        ("Predictions for negative x",
+         _reg_poly_predict([-2, -3])),
+    ],
+    hidden=[
+        (
+            f"Polynomial hidden {i + 1}",
+            _reg_poly_predict([i + 6, -(i + 1)])
+        )
+        for i in range(12)
+    ]
+)
+
+

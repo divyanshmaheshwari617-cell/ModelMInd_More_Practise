@@ -1,0 +1,263 @@
+[
+  {
+    "id": "linear-basic-001",
+    "title": "Fit Linear Regression",
+    "topic": "Linear Regression",
+    "level": "Basic",
+    "type": "Coding",
+    "question": "Fit LinearRegression on X_train and y_train.",
+    "starterCode": "from sklearn.linear_model import LinearRegression\n\nX_train = [[1], [2], [3]]\ny_train = [2, 4, 6]\n\nmodel = None\n",
+    "existingTests": [
+      "Model type",
+      "Model fitted",
+      "Prediction"
+    ],
+    "setupCode": "\nfrom sklearn.linear_model import LinearRegression\n\nX_train = [\n    [1],\n    [2],\n    [3]\n]\n\ny_train = [\n    2,\n    4,\n    6\n]\n"
+  },
+  {
+    "id": "linear-medium-001",
+    "title": "Predict with regression",
+    "topic": "Linear Regression",
+    "level": "Medium",
+    "type": "Coding",
+    "question": "Train the model and predict the target for x = 4.",
+    "starterCode": "from sklearn.linear_model import LinearRegression\n\nX_train = [[1], [2], [3]]\ny_train = [2, 4, 6]\n\nmodel = LinearRegression()\n# Complete training and prediction\nprediction = None\n",
+    "existingTests": [],
+    "setupCode": ""
+  },
+  {
+    "id": "linear-advanced-001",
+    "title": "Underfitting reasoning",
+    "topic": "Linear Regression",
+    "level": "Advanced",
+    "type": "Model / Algorithm",
+    "question": "A linear model has very poor training performance and poor test performance. What is the most likely issue?",
+    "starterCode": null,
+    "existingTests": [],
+    "setupCode": ""
+  },
+  {
+    "id": "poly-basic-001",
+    "title": "Polynomial features",
+    "topic": "Polynomial Regression",
+    "level": "Basic",
+    "type": "Concept",
+    "question": "What does PolynomialFeatures allow a linear model to do?",
+    "starterCode": null,
+    "existingTests": [],
+    "setupCode": ""
+  },
+  {
+    "id": "poly-medium-001",
+    "title": "Build degree-2 regression",
+    "topic": "Polynomial Regression",
+    "level": "Medium",
+    "type": "Coding",
+    "question": "Use PolynomialFeatures with degree 2 and fit LinearRegression.",
+    "starterCode": "from sklearn.preprocessing import PolynomialFeatures\nfrom sklearn.linear_model import LinearRegression\n\nX = [[1], [2], [3]]\ny = [1, 4, 9]\n\npoly = None\nmodel = None\n",
+    "existingTests": [],
+    "setupCode": ""
+  },
+  {
+    "id": "poly-advanced-001",
+    "title": "Control overfitting",
+    "topic": "Polynomial Regression",
+    "level": "Advanced",
+    "type": "Coding",
+    "question": "Build a degree-5 polynomial model with Ridge regularization.",
+    "starterCode": "from sklearn.preprocessing import PolynomialFeatures\nfrom sklearn.linear_model import Ridge\n\npoly = None\nmodel = None\n",
+    "existingTests": [],
+    "setupCode": ""
+  },
+  {
+    "id": "logistic-basic-001",
+    "title": "Fit Logistic Regression",
+    "topic": "Logistic Regression",
+    "level": "Basic",
+    "type": "Coding",
+    "question": "Fit LogisticRegression on the provided training data.",
+    "starterCode": "from sklearn.linear_model import LogisticRegression\n\nX_train = [[0], [1], [2], [3]]\ny_train = [0, 0, 1, 1]\n\nmodel = None\n",
+    "existingTests": [
+      "Model type",
+      "Model fitted",
+      "Prediction shape"
+    ],
+    "setupCode": "\nfrom sklearn.linear_model import LogisticRegression\n\nX_train = [\n    [0],\n    [1],\n    [2],\n    [3]\n]\n\ny_train = [\n    0,\n    0,\n    1,\n    1\n]\n\nX_test = [\n    [1],\n    [2]\n]\n\ny_test = [0, 1]\n"
+  },
+  {
+    "id": "logistic-medium-001",
+    "title": "Predict probabilities",
+    "topic": "Logistic Regression",
+    "level": "Medium",
+    "type": "Coding",
+    "question": "Train LogisticRegression and generate class probabilities.",
+    "starterCode": "from sklearn.linear_model import LogisticRegression\n\nX_train = [[0], [1], [2], [3]]\ny_train = [0, 0, 1, 1]\nX_test = [[1], [2]]\n\nmodel = LogisticRegression()\nprobabilities = None\n",
+    "existingTests": [],
+    "setupCode": ""
+  },
+  {
+    "id": "logistic-advanced-001",
+    "title": "Threshold reasoning",
+    "topic": "Logistic Regression",
+    "level": "Advanced",
+    "type": "Model / Algorithm",
+    "question": "If false negatives are much more expensive than false positives, what is a reasonable threshold strategy?",
+    "starterCode": null,
+    "existingTests": [],
+    "setupCode": ""
+  },
+  {
+    "id": "feature-medium-002",
+    "title": "Polynomial features",
+    "topic": "Feature Engineering",
+    "level": "Medium",
+    "type": "Coding",
+    "question": "Generate degree-2 polynomial features for two input features.",
+    "starterCode": "import numpy as np\nfrom sklearn.preprocessing import PolynomialFeatures\nX=np.array([[1,2],[3,4]])\n# write your code",
+    "existingTests": [],
+    "setupCode": ""
+  },
+  {
+    "id": "linear-basic-004",
+    "title": "Fit regression",
+    "topic": "Linear Regression",
+    "level": "Basic",
+    "type": "Coding",
+    "question": "Fit LinearRegression on X=[[1],[2],[3]] and y=[2,4,6].",
+    "starterCode": "from sklearn.linear_model import LinearRegression\n# write your code",
+    "existingTests": [],
+    "setupCode": ""
+  },
+  {
+    "id": "linear-medium-002",
+    "title": "Residuals",
+    "topic": "Linear Regression",
+    "level": "Medium",
+    "type": "Coding",
+    "question": "Calculate residuals as y_true - y_pred.",
+    "starterCode": "# y_true and y_pred are provided\n# write your code",
+    "existingTests": [],
+    "setupCode": ""
+  },
+  {
+    "id": "linear-advanced-002",
+    "title": "OLS assumptions",
+    "topic": "Linear Regression",
+    "level": "Advanced",
+    "type": "Concept",
+    "question": "Name important assumptions commonly considered for ordinary least squares regression.",
+    "starterCode": null,
+    "existingTests": [],
+    "setupCode": ""
+  },
+  {
+    "id": "linear-advanced-003",
+    "title": "Multicollinearity",
+    "topic": "Linear Regression",
+    "level": "Advanced",
+    "type": "Real-world ML",
+    "question": "Explain how severe multicollinearity can affect linear regression coefficients.",
+    "starterCode": null,
+    "existingTests": [],
+    "setupCode": ""
+  },
+  {
+    "id": "poly-basic-004",
+    "title": "Degree two features",
+    "topic": "Polynomial Regression",
+    "level": "Basic",
+    "type": "Coding",
+    "question": "Transform one feature into degree-2 polynomial features.",
+    "starterCode": "from sklearn.preprocessing import PolynomialFeatures\nimport numpy as np\nX=np.array([[1],[2],[3]])\n# write your code",
+    "existingTests": [],
+    "setupCode": ""
+  },
+  {
+    "id": "poly-medium-002",
+    "title": "Polynomial pipeline",
+    "topic": "Polynomial Regression",
+    "level": "Medium",
+    "type": "Coding",
+    "question": "Create a pipeline with PolynomialFeatures(degree=2) and LinearRegression.",
+    "starterCode": "from sklearn.pipeline import Pipeline\nfrom sklearn.preprocessing import PolynomialFeatures\nfrom sklearn.linear_model import LinearRegression\n# write your code",
+    "existingTests": [],
+    "setupCode": ""
+  },
+  {
+    "id": "poly-advanced-002",
+    "title": "Degree and overfitting",
+    "topic": "Polynomial Regression",
+    "level": "Advanced",
+    "type": "Concept",
+    "question": "Explain why increasing polynomial degree can reduce training error while worsening test performance.",
+    "starterCode": null,
+    "existingTests": [],
+    "setupCode": ""
+  },
+  {
+    "id": "poly-advanced-003",
+    "title": "Regularization",
+    "topic": "Polynomial Regression",
+    "level": "Advanced",
+    "type": "Model / Algorithm",
+    "question": "Explain how Ridge regularization can help a high-degree polynomial model.",
+    "starterCode": null,
+    "existingTests": [],
+    "setupCode": ""
+  },
+  {
+    "id": "logistic-basic-004",
+    "title": "Predict probabilities",
+    "topic": "Logistic Regression",
+    "level": "Basic",
+    "type": "Coding",
+    "question": "Use predict_proba to obtain positive-class probabilities from a fitted logistic model.",
+    "starterCode": "# model and X_test are provided\n# write your code",
+    "existingTests": [],
+    "setupCode": ""
+  },
+  {
+    "id": "logistic-basic-005",
+    "title": "Sigmoid",
+    "topic": "Logistic Regression",
+    "level": "Basic",
+    "type": "Concept",
+    "question": "Explain what the sigmoid function does in logistic regression.",
+    "starterCode": null,
+    "existingTests": [],
+    "setupCode": ""
+  },
+  {
+    "id": "logistic-medium-002",
+    "title": "Threshold predictions",
+    "topic": "Logistic Regression",
+    "level": "Medium",
+    "type": "Coding",
+    "question": "Convert predicted probabilities into binary predictions using a threshold of 0.7.",
+    "starterCode": "import numpy as np\nproba=np.array([0.2,0.6,0.8,0.9])\n# write your code",
+    "existingTests": [],
+    "setupCode": ""
+  },
+  {
+    "id": "logistic-advanced-002",
+    "title": "Threshold tradeoff",
+    "topic": "Logistic Regression",
+    "level": "Advanced",
+    "type": "Real-world ML",
+    "question": "Explain how increasing a classification threshold can affect precision and recall.",
+    "starterCode": null,
+    "existingTests": [],
+    "setupCode": ""
+  },
+  {
+    "id": "fe-advanced-004",
+    "title": "Polynomial features",
+    "topic": "Advanced Feature Engineering",
+    "level": "Medium",
+    "type": "Coding",
+    "question": "Create PolynomialFeatures with degree=2 and include_bias=False.",
+    "starterCode": "from sklearn.preprocessing import PolynomialFeatures\n\n# Create the transformer here\n",
+    "existingTests": [],
+    "setupCode": ""
+  }
+]

@@ -1535,3 +1535,10 @@ def public_question(question: dict[str, Any]) -> dict[str, Any]:
         result.pop(key, None)
 
     return result
+_MM_NUMERICAL_FIXED = {'statistics-basic-004': {'question': 'Compute the population variance of the eight values [2, 4, 4, 4, 5, 5, 7, 9]. Divide by N, not N-1. Give the exact numerical result.', 'expectedAnswer': 4.0, 'explanation': 'The mean is 5; the squared deviations sum to 32; population variance = 32/8 = 4.'}, 'statistics-medium-002': {'question': 'For sorted data [1, 2, 3, 4, 5, 100], compute IQR = Q3 - Q1 using the median-of-halves convention. Return one number.', 'expectedAnswer': 3.0, 'explanation': 'Lower half [1,2,3] has median 2; upper half [4,5,100] has median 5; IQR = 3.'}, 'statistics-advanced-002': {'question': 'Disease prevalence is 1%; sensitivity is 90%; specificity is 95%. A patient tests positive. Use Bayes theorem to calculate P(disease | positive). Enter a probability between 0 and 1, rounded to six decimals.', 'expectedAnswer': 0.153846, 'explanation': 'P(disease|+) = 0.01*0.90 / (0.01*0.90+0.99*0.05) = 0.153846.'}, 'gradient-basic-004': {'question': 'A gradient-descent update uses w_new = w - learning_rate * gradient. Given w=2, learning_rate=0.1, gradient=4, compute w_new.', 'expectedAnswer': 1.6, 'explanation': '2 - (0.1 * 4) = 1.6.'}, 'stats-advanced-001': {'question': 'Given P(A)=0.4 and P(B|A)=0.5, compute P(A ∩ B). Return one probability.', 'expectedAnswer': 0.2, 'explanation': 'P(A ∩ B) = P(A) * P(B|A) = 0.4 * 0.5 = 0.2.'}, 'stats-advanced-003': {'question': 'A fair six-sided die has outcomes 1, 2, 3, 4, 5, 6. What is the expected value of one roll?', 'expectedAnswer': 3.5, 'explanation': '(1+2+3+4+5+6)/6 = 3.5.'}, 'curated-statistics-001': {'question': 'Compute the population variance of [2, 4, 6, 8] (divide by N=4). Enter one number.', 'expectedAnswer': 5.0, 'explanation': 'Mean 5, squared deviations 9+1+1+9=20; variance = 20/4 = 5.'}}
+
+# MODELMIND_NUMERICAL_QA_BATCH2
+for _mm_q in QUESTIONS:
+    _mm_patch = _MM_NUMERICAL_FIXED.get(_mm_q.get("id"))
+    if _mm_patch is not None:
+        _mm_q.update(_mm_patch)

@@ -1,0 +1,1511 @@
+
+"use client";
+
+import NotebookCell from "@/components/NotebookCell";
+import JudgePanel from "@/components/JudgePanel";
+import {
+  useEffect,
+  useMemo,
+  useState,
+  type CSSProperties,
+  type ReactNode,
+} from "react";
+
+import { runCode, type RunResult } from "@/lib/evaluator";
+
+const API = "http://127.0.0.1:8015";
+
+type Mode = "coding" | "numerical" | "theory";
+type Action = "run" | "submit";
+
+type Example = {
+  input: string;
+  output: string;
+  explanation?: string;
+};
+
+type Question = {
+  id: string;
+  title: string;
+  question: string;
+  topic: string;
+  level: string;
+  type: string;
+  tags?: string[];
+  skills?: string[];
+  starterCode?: string;
+  practiceMode?: Mode;
+  testsAvailable?: boolean;
+  visibleTests?: (string | { name: string; input?: string | null; expected?: string | null })[];
+  publicTestCount?: number;
+  hiddenTestCount?: number;
+  inputFormat?: string;
+  outputFormat?: string;
+  constraints?: string[];
+  examples?: Example[];
+  hints?: string[];
+  specVerified?: boolean;
+};
+
+type NumericalResult = {
+  correct: boolean;
+  explanation?: string;
+};
+
+const examples: Record<string, Example[]> = {
+  "python-basic-001": [
+    {
+      input: "numbers = [10, 20, 30, 40, 50]",
+      output: "30.0",
+      explanation:
+        "The sum is 150 and there are five elements.",
+    },
+    {
+      input: "numbers = [-5, 5]",
+      output: "0.0",
+      explanation: "The sum of both numbers is zero.",
+    },
+    {
+      input: "numbers = [7]",
+      output: "7.0",
+    },
+  ],
+  "python-medium-001": [
+    {
+      input: "numbers = [1, 2, 3, 4, 5, 6]",
+      output: "12",
+      explanation: "2 + 4 + 6 = 12.",
+    },
+    {
+      input: "numbers = [1, 3, 5]",
+      output: "0",
+    },
+  ],
+};
+
+function getMode(q: Question): Mode {
+  const mode = q.practiceMode?.toLowerCase();
+
+  if (
+    mode === "coding" ||
+    mode === "numerical" ||
+    mode === "theory"
+  ) {
+    return mode;
+  }
+
+  const type = q.type.toLowerCase();
+
+  if (type === "coding" || type === "debugging") {
+    return "coding";
+  }
+
+  if (type === "mathematics" || type === "numerical") {
+    return "numerical";
+  }
+
+  return "theory";
+}
+
+function getStarter(q: Question): string {
+  return q.starterCode || "# Write your Python solution here\n";
+}
+
+function getSpec(q: Question) {
+  if (q.inputFormat && q.outputFormat) {
+    return {
+      input: q.inputFormat,
+      output: q.outputFormat,
+      verified: q.specVerified === true,
+    };
+  }
+
+  if (q.id === "python-basic-001") {
+    return {
+      input:
+        "numbers: list[int | float]\nA nonempty Python list of finite numbers.",
+      output:
+        "Return one float representing the arithmetic mean.\nDo not print the answer.",
+      verified: true,
+    };
+  }
+
+  if (q.id === "python-medium-001") {
+    return {
+      input:
+        "numbers: list[int]\nA Python list of integers, possibly empty.",
+      output:
+        "Return an integer representing the sum of all even elements.",
+      verified: true,
+    };
+  }
+
+  return {
+    input: "Input types have not been verified.",
+    output: "The return-value contract requires review.",
+    verified: false,
+  };
+}
+
+function getExamples(q: Question): Example[] {
+  if (q.examples?.length) return q.examples;
+  return examples[q.id] || [];
+}
+
+function getConstraints(q: Question): string[] {
+  if (q.constraints?.length) return q.constraints;
+
+  if (q.id === "python-basic-001") {
+    return [
+      "The list contains at least one element.",
+      "Every element must be a finite number.",
+      "Return the result instead of printing it.",
+      "Floating-point results are compared with a tolerance.",
+    ];
+  }
+
+  if (q.id === "python-medium-001") {
+    return [
+      "The list may be empty.",
+      "Negative and positive integers are allowed.",
+      "Return 0 if no even elements exist.",
+    ];
+  }
+
+  return [];
+}
+
+const card: CSSProperties = {
+  background: "#ffffff",
+  border: "1px solid #e4e8f1",
+  borderRadius: 16,
+  padding: 22,
+  minWidth: 0,
+};
+
+const button: CSSProperties = {
+  background: "#6047ee",
+  color: "white",
+  border: "none",
+  borderRadius: 9,
+  padding: "11px 18px",
+  fontSize: 14,
+  fontWeight: 600,
+  cursor: "pointer",
+};
+
+const inputStyle: CSSProperties = {
+  width: "100%",
+  padding: 12,
+  border: "1px solid #dce1eb",
+  borderRadius: 9,
+  background: "#ffffff",
+  color: "#172033",
+  fontSize: 14,
+};
+
+function Panel({
+  title,
+  children,
+}: {
+  title: string;
+  children: ReactNode;
+}) {
+  return (
+    <section className="mm-section">
+      <h3>{title}</h3>
+      {children}
+    </section>
+  );
+}
+
+function CodeBox({ children }: { children: ReactNode }) {
+  return <pre className="mm-codebox">{children}</pre>;
+}
+
+function Tag({
+  children,
+  color = "purple",
+}: {
+  children: ReactNode;
+  color?: "purple" | "gray" | "green" | "orange";
+}) {
+  return (
+    <span className={`mm-tag mm-tag-${color}`}>
+      {children}
+    </span>
+  );
+}
+
+export default function Home() {
+  const [questions, setQuestions] = useState<Question[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [loadError, setLoadError] = useState("");
+
+  const [topic, setTopic] = useState("All");
+  const [concept, setConcept] = useState("All");
+  const [browseAll, setBrowseAll] = useState(false);
+  const [level, setLevel] = useState("All");
+  const [modeFilter, setModeFilter] = useState("All");
+  const [selectedId, setSelectedId] = useState("");
+
+  const [codeById, setCodeById] = useState<
+    Record<string, string>
+  >({});
+
+  const [numericAnswer, setNumericAnswer] = useState("");
+  const [running, setRunning] = useState(false);
+  const [activeAction, setActiveAction] = useState<Action | null>(
+    null
+  );
+
+  const [runResult, setRunResult] = useState<RunResult | null>(
+    null
+  );
+  const [lastRunAction, setLastRunAction] = useState<Action | null>(null);
+  const [numericResult, setNumericResult] =
+    useState<NumericalResult | null>(null);
+  const [actionError, setActionError] = useState("");
+
+  const [tab, setTab] = useState<
+    "description" | "submissions"
+  >("description");
+
+  const [solved, setSolved] = useState<string[]>([]);
+  const [lastSubmission, setLastSubmission] = useState<
+    Record<string, RunResult>
+  >({});
+
+  const [progressLoaded, setProgressLoaded] = useState(false);
+
+  // Restore progress across browser reloads (local device only).
+  useEffect(() => {
+    try {
+      const raw = window.localStorage.getItem("modelmind.practice.progress.v1");
+      if (!raw) return;
+      const saved = JSON.parse(raw) as {
+        solved?: string[];
+        codeById?: Record<string, string>;
+        lastSubmission?: Record<string, RunResult>;
+      };
+      if (Array.isArray(saved.solved)) setSolved(saved.solved.filter((x): x is string => typeof x === "string"));
+      if (saved.codeById && typeof saved.codeById === "object") setCodeById(saved.codeById);
+      if (saved.lastSubmission && typeof saved.lastSubmission === "object") setLastSubmission(saved.lastSubmission);
+    } catch { /* Invalid or unavailable browser storage */ }
+    finally { setProgressLoaded(true); }
+  }, []);
+
+  useEffect(() => {
+    if (!progressLoaded) return;
+    try {
+      window.localStorage.setItem("modelmind.practice.progress.v1", JSON.stringify({ solved, codeById, lastSubmission }));
+    } catch { /* Storage may be unavailable or full */ }
+  }, [progressLoaded, solved, codeById, lastSubmission]);
+
+  useEffect(() => {
+    const controller = new AbortController();
+
+    async function loadQuestions() {
+      try {
+        const response = await fetch(`${API}/api/questions`, {
+          signal: controller.signal,
+        });
+
+        if (!response.ok) {
+          throw new Error(
+            `Question API returned ${response.status}`
+          );
+        }
+
+        const data: unknown = await response.json();
+
+        if (!Array.isArray(data)) {
+          throw new Error("Invalid question-bank response.");
+        }
+
+        setQuestions(data as Question[]);
+      } catch (error) {
+        if (!controller.signal.aborted) {
+          setLoadError(
+            error instanceof Error
+              ? error.message
+              : "Unable to load questions."
+          );
+        }
+      } finally {
+        if (!controller.signal.aborted) {
+          setLoading(false);
+        }
+      }
+    }
+
+    loadQuestions();
+
+    return () => controller.abort();
+  }, []);
+
+  const topics = useMemo(
+    () =>
+      Array.from(
+        new Set(questions.map((q) => q.topic))
+      ).sort(),
+    [questions]
+  );
+
+  // Choose a topic before listing exercises.
+  // The concept list is derived from actual question metadata, not hardcoded labels.
+  const concepts = useMemo(() => {
+    const matchingTopic = questions.filter(
+      (q) => topic === "All" || q.topic === topic
+    );
+    const labels = new Set<string>();
+    matchingTopic.forEach((q) => {
+      [...(q.skills || []), ...(q.tags || []), q.title]
+        .filter((item) => typeof item === "string" && item.trim().length > 0)
+        .forEach((item) => labels.add(item.trim()));
+    });
+    return [...labels].sort((a, b) => a.localeCompare(b));
+  }, [questions, topic]);
+
+  const hasSelection =
+    browseAll || topic !== "All" || concept !== "All";
+
+  const filtered = useMemo(() => {
+    if (!hasSelection) return [];
+    return questions.filter((q) => {
+      const conceptMatch =
+        concept === "All" ||
+        [q.title, q.question, ...(q.skills || []), ...(q.tags || [])]
+          .join(" ").toLowerCase().includes(concept.toLowerCase());
+      return (
+        (topic === "All" || q.topic === topic) &&
+        conceptMatch &&
+        (level === "All" || q.level === level) &&
+        (modeFilter === "All" || getMode(q) === modeFilter)
+      );
+    });
+  }, [questions, topic, concept, level, modeFilter, hasSelection]);
+
+  const question =
+    filtered.find((q) => q.id === selectedId) ||
+    filtered[0] ||
+    null;
+
+  const mode = question ? getMode(question) : "theory";
+
+  const code = question
+    ? codeById[question.id] ?? getStarter(question)
+    : "";
+
+  const spec = question ? getSpec(question) : null;
+  const questionExamples = question
+    ? getExamples(question)
+    : [];
+
+  const constraints = question
+    ? getConstraints(question)
+    : [];
+
+  const questionIndex = question
+    ? filtered.findIndex((q) => q.id === question.id)
+    : -1;
+
+  function clearFeedback() {
+    setRunResult(null);
+    setLastRunAction(null);
+    setNumericResult(null);
+    setActionError("");
+    setActiveAction(null);
+  }
+
+  function selectQuestion(id: string) {
+    setSelectedId(id);
+    setNumericAnswer("");
+    clearFeedback();
+    setTab("description");
+  }
+
+  function updateCode(value: string) {
+    if (!question) return;
+
+    setCodeById((prev) => ({
+      ...prev,
+      [question.id]: value,
+    }));
+
+    clearFeedback();
+  }
+
+  function resetCode() {
+    if (!question) return;
+    updateCode(getStarter(question));
+  }
+
+  async function execute(action: Action) {
+    if (!question || running || !question.testsAvailable) {
+      return;
+    }
+
+    const currentId = question.id;
+    setRunning(true);
+    setActiveAction(action);
+    setRunResult(null);
+    setLastRunAction(null);
+    setActionError("");
+
+    try {
+      const result = await runCode(
+        currentId,
+        code,
+        action
+      );
+
+      setRunResult(result);
+      setLastRunAction(action);
+
+      if (action === "submit") {
+        setLastSubmission((prev) => ({
+          ...prev,
+          [currentId]: result,
+        }));
+
+        if (result.status === "passed" && result.total > 0) {
+          setSolved((prev) =>
+            prev.includes(currentId)
+              ? prev
+              : [...prev, currentId]
+          );
+        }
+      }
+    } catch (error) {
+      setActionError(
+        error instanceof Error
+          ? error.message
+          : "Code execution failed."
+      );
+    } finally {
+      setRunning(false);
+      setActiveAction(null);
+    }
+  }
+
+  async function checkNumerical() {
+    if (!question || running) return;
+
+    const answer = numericAnswer.trim();
+
+    if (
+      !answer ||
+      !Number.isFinite(Number(answer))
+    ) {
+      setActionError("Please enter a valid number.");
+      return;
+    }
+
+    setRunning(true);
+    setActionError("");
+    setNumericResult(null);
+
+    try {
+      const response = await fetch(
+        `${API}/api/check-answer`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            question_id: question.id,
+            answer,
+          }),
+        }
+      );
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(
+          data.detail || "Answer checking failed."
+        );
+      }
+
+      setNumericResult(data);
+
+      if (data.correct) {
+        setSolved((prev) =>
+          prev.includes(question.id)
+            ? prev
+            : [...prev, question.id]
+        );
+      }
+    } catch (error) {
+      setActionError(
+        error instanceof Error
+          ? error.message
+          : "Unable to check the answer."
+      );
+    } finally {
+      setRunning(false);
+    }
+  }
+
+  function navigate(direction: -1 | 1) {
+    const next = questionIndex + direction;
+
+    if (next >= 0 && next < filtered.length) {
+      selectQuestion(filtered[next].id);
+    }
+  }
+
+  const lastResult = question
+    ? lastSubmission[question.id]
+    : undefined;
+
+  return (
+    <main className="mm-page">
+      <style>{`
+        * { box-sizing: border-box; }
+
+        .mm-page {
+          min-height: 100vh;
+          background: #f5f7fc;
+          color: #172033;
+          font-family: Arial, Helvetica, sans-serif;
+          padding: 24px;
+        }
+
+        .mm-container {
+          max-width: 1500px;
+          margin: 0 auto;
+        }
+
+        .mm-header {
+          margin-bottom: 24px;
+        }
+
+        .mm-header h1 {
+          font-size: 30px;
+          margin: 0 0 9px;
+          letter-spacing: -.6px;
+        }
+
+        .mm-muted {
+          color: #68758c;
+          font-size: 14px;
+          line-height: 1.7;
+        }
+
+        .mm-layout {
+          display: grid;
+          grid-template-columns: 290px minmax(0, 1fr);
+          gap: 18px;
+          align-items: start;
+        }
+
+        .mm-workspace {
+          display: grid;
+          grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+          gap: 18px;
+          align-items: start;
+        }
+
+        .mm-section {
+          margin-top: 24px;
+        }
+
+        .mm-section h3 {
+          margin: 0 0 12px;
+          font-size: 17px;
+        }
+
+        .mm-section p {
+          line-height: 1.75;
+        }
+
+        .mm-codebox {
+          padding: 15px;
+          background: #f1f4fa;
+          border: 1px solid #e6eaf2;
+          border-radius: 10px;
+          white-space: pre-wrap;
+          overflow-wrap: anywhere;
+          font-size: 13px;
+          line-height: 1.7;
+          font-family: Consolas, monospace;
+        }
+
+        .mm-tag {
+          display: inline-block;
+          padding: 6px 11px;
+          font-size: 12px;
+          font-weight: 600;
+          border-radius: 20px;
+        }
+
+        .mm-tag-purple {
+          background: #efebff;
+          color: #6047ee;
+        }
+
+        .mm-tag-gray {
+          background: #f1f3f7;
+          color: #536076;
+        }
+
+        .mm-tag-green {
+          background: #e8f7ee;
+          color: #187b45;
+        }
+
+        .mm-tag-orange {
+          background: #fff3df;
+          color: #985b0c;
+        }
+
+        .mm-question-button {
+          display: block;
+          width: 100%;
+          border: 1px solid #e5e9f2;
+          background: white;
+          padding: 12px;
+          border-radius: 10px;
+          text-align: left;
+          cursor: pointer;
+          margin-bottom: 8px;
+          color: #172033;
+        }
+
+        .mm-question-button:hover {
+          background: #f8f7ff;
+        }
+
+        .mm-question-button.active {
+          background: #efecff;
+          border-color: #6047ee;
+        }
+
+        .mm-editor {
+          display: block;
+          width: 100%;
+          height: 380px;
+          background: #171c27;
+          color: #e7edf9;
+          border: 1px solid #323d52;
+          border-radius: 0 0 12px 12px;
+          padding: 18px;
+          font-family: Consolas, monospace;
+          font-size: 14px;
+          line-height: 1.7;
+          resize: vertical;
+          tab-size: 4;
+          outline: none;
+        }
+
+        .mm-editor-header {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          background: #222938;
+          color: #dce3f1;
+          border-radius: 12px 12px 0 0;
+          padding: 13px 17px;
+          font-size: 13px;
+        }
+
+        .mm-actions {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 10px;
+          margin-top: 16px;
+        }
+
+        .mm-actions button:disabled,
+        .mm-nav button:disabled {
+          cursor: not-allowed !important;
+          opacity: .45;
+        }
+
+        .mm-example {
+          padding: 16px;
+          background: #f8f9fd;
+          border: 1px solid #e8ebf2;
+          border-radius: 11px;
+          margin-bottom: 12px;
+        }
+
+        .mm-warning {
+          padding: 13px 15px;
+          background: #fff7e9;
+          border: 1px solid #f2ddb8;
+          border-radius: 10px;
+          color: #915c19;
+          font-size: 13px;
+          line-height: 1.6;
+        }
+
+        .mm-tabs {
+          display: flex;
+          gap: 15px;
+          border-bottom: 1px solid #e5e9f1;
+          padding-bottom: 13px;
+        }
+
+        .mm-tabs button {
+          border: none;
+          background: none;
+          font-size: 14px;
+          cursor: pointer;
+          color: #6b7487;
+        }
+
+        .mm-tabs button.active {
+          color: #6047ee;
+          font-weight: 700;
+        }
+
+        .mm-result {
+          margin-top: 15px;
+          border-radius: 12px;
+          padding: 17px;
+        }
+
+        .mm-result.passed {
+          background: #eaf8ef;
+          border: 1px solid #cae9d5;
+        }
+
+        .mm-result.failed {
+          background: #fff2ee;
+          border: 1px solid #f0d6cd;
+        }
+
+        .mm-progress {
+          height: 8px;
+          background: #e8eaf3;
+          border-radius: 10px;
+          overflow: hidden;
+          margin-top: 10px;
+        }
+
+        .mm-progress > div {
+          height: 100%;
+          background: #6047ee;
+          border-radius: 10px;
+        }
+
+        .mm-nav {
+          display: flex;
+          justify-content: space-between;
+          gap: 12px;
+          margin-top: 25px;
+        }
+
+        @media (max-width: 1150px) {
+          .mm-layout {
+            grid-template-columns: 245px minmax(0,1fr);
+          }
+
+          .mm-workspace {
+            grid-template-columns: minmax(0,1fr);
+          }
+        }
+
+        @media (max-width: 760px) {
+          .mm-page { padding: 12px; }
+
+          .mm-layout {
+            grid-template-columns: minmax(0,1fr);
+          }
+
+          .mm-header h1 { font-size: 24px; }
+
+          .mm-editor { height: 310px; }
+        }
+
+        /* ModelMind wide workspace: horizontal problem navigator */
+        .mm-page { background:#f5f7fc; padding:18px; font-family:Inter,Arial,Helvetica,sans-serif; }
+        .mm-container { max-width:1900px; }
+        .mm-header { margin-bottom:16px; }
+        .mm-header h1 { font-size:26px; }
+        .mm-layout { display:flex; flex-direction:column; gap:18px; }
+        .mm-topbar { padding:18px !important; }
+        .mm-topbar h2 { font-size:20px; margin-bottom:4px; }
+        .mm-topbar > .mm-muted { margin:6px 0; }
+        .mm-topbar .mm-progress { max-width:480px; }
+        .mm-filters { display:grid; grid-template-columns:minmax(240px,1.5fr) repeat(3,minmax(150px,1fr)); gap:12px; margin-top:18px; }
+        .mm-filters > div { margin-top:0 !important; min-width:0; }
+        .mm-question-strip { display:flex; flex-direction:row; gap:12px; overflow-x:auto; overflow-y:hidden; margin-top:16px; padding:3px 2px 12px; scrollbar-width:thin; scroll-snap-type:x proximity; }
+        .mm-question-button { flex:0 0 228px; width:228px; min-height:118px; border-radius:13px; margin:0; scroll-snap-align:start; padding:14px; transition:background .18s,border-color .18s,box-shadow .18s; }
+        .mm-question-button:hover { background:#faf9ff; border-color:#c7bdff; }
+        .mm-question-button.active { background:#efecff; border-color:#6047ee; box-shadow:0 5px 16px rgba(96,71,238,.12); }
+        .mm-question-button strong { font-size:14px; }
+        .mm-workspace { display:grid; grid-template-columns:minmax(350px,0.85fr) minmax(0,1.35fr); gap:18px; align-items:start; }
+        .mm-description-column, .mm-editor-column { min-width:0; }
+        .mm-description-column { padding:19px !important; }
+        .mm-editor-column > div:first-child { padding:13px !important; }
+        .mm-tab-blocks { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; }
+        .mm-tab-blocks button { display:flex; flex-direction:column; gap:5px; text-align:left; padding:14px; border:1px solid #e3e8f2; border-radius:13px; background:#f8fafc; cursor:pointer; color:#344054; }
+        .mm-tab-blocks button strong { font-size:14px; }
+        .mm-tab-blocks button span { font-size:12px; color:#69758b; line-height:1.35; }
+        .mm-tab-blocks button:hover { border-color:#c7bdff; }
+        .mm-tab-blocks button.active { background:#efecff; border-color:#6047ee; box-shadow:0 5px 16px rgba(96,71,238,.10); color:#5038ce; }
+        .mm-section { margin-top:20px; }
+        .mm-actions { justify-content:flex-end; }
+        .mm-editor-column textarea[aria-label="Jupyter Python code editor"] { min-height:500px !important; font-size:15px !important; line-height:1.8 !important; }
+        @media (max-width:1150px) {
+          .mm-workspace { grid-template-columns:minmax(0,1fr); }
+          .mm-filters { grid-template-columns:repeat(2,minmax(0,1fr)); }
+        }
+        @media (max-width:760px) {
+          .mm-page { padding:10px; }
+          .mm-header h1 { font-size:21px; }
+          .mm-topbar { padding:14px !important; }
+          .mm-filters { grid-template-columns:1fr; }
+          .mm-question-button { flex-basis:210px; width:210px; }
+          .mm-tab-blocks { grid-template-columns:1fr; }
+          .mm-editor-column textarea[aria-label="Jupyter Python code editor"] { min-height:390px !important; }
+        }
+        .mm-filters { grid-template-columns:repeat(4,minmax(135px,1fr)); }
+        .mm-browse-toggle { display:inline-flex; align-items:center; gap:8px; font-size:13px; color:#536076; cursor:pointer; margin-top:10px; }
+        .mm-browse-toggle input { accent-color:#6047ee; width:15px; height:15px; }
+        .mm-empty-prompt { display:flex; flex-direction:column; gap:6px; padding:18px; margin-top:14px; border:1px dashed #c9c4ef; border-radius:12px; background:#faf9ff; }
+        .mm-empty-prompt strong { font-size:15px; }
+        .mm-empty-prompt span { font-size:13px; line-height:1.6; color:#68758c; }
+        @media(max-width:1250px){.mm-filters{grid-template-columns:repeat(2,minmax(0,1fr))}}
+        @media(max-width:760px){.mm-filters{grid-template-columns:1fr}}
+      `}</style>
+
+      <div className="mm-container">
+        <header className="mm-header">
+          <h1>ModelMind Advanced Practice</h1>
+          <div data-modelmind-benchmark-bridge="v1" style={{display:"flex",flexWrap:"wrap",gap:10,margin:"12px 0"}}>
+            <a href="/ml-benchmarks" style={{display:"inline-block",padding:"10px 16px",borderRadius:9,background:"#6047ee",color:"white",fontWeight:600,textDecoration:"none"}}>
+              ML Dataset Benchmarks Â· Upload prediction CSV
+            </a>
+            <span style={{alignSelf:"center",fontSize:13,color:"#64748b"}}>
+              Train models on synthetic datasets and compare predictions row by row.
+            </span>
+          </div>
+          <p className="mm-muted">
+            Master Python, NumPy, Pandas, visualization,
+            preprocessing, and machine learning through
+            practical challenges.
+          </p>
+        </header>
+
+        {loading && <div style={card}>Loading questions...</div>}
+
+        {loadError && (
+          <div style={card}>
+            <h3>Unable to load questions</h3>
+            <p>{loadError}</p>
+            <p className="mm-muted">
+              Make sure FastAPI is running on port 8015.
+            </p>
+          </div>
+        )}
+
+        {!loading && !loadError && (
+          <div className="mm-layout">
+            <aside style={card} className="mm-topbar">
+              <h2 style={{ marginTop: 0 }}>
+                Problems ({filtered.length})
+              </h2>
+
+              <p className="mm-muted">
+                Solved: {solved.length}
+              </p>
+
+              <div className="mm-progress">
+                <div
+                  style={{
+                    width: `${
+                      questions.length
+                        ? (solved.length / questions.length) * 100
+                        : 0
+                    }%`,
+                  }}
+                />
+              </div>
+
+              <div className="mm-filters">
+              <div style={{ marginTop: 12 }}>
+                <select
+                  style={inputStyle}
+                  value={topic}
+                  onChange={(e) => { setTopic(e.target.value); setConcept("All"); }}
+                >
+                  <option value="All">Choose topic</option>
+                  {topics.map((t) => (
+                    <option key={t} value={t}>
+                      {t}
+                    </option>
+                  ))}
+                </select>
+              </div>
+
+              <div style={{ marginTop: 12 }}>
+                <select
+                  aria-label="Select concept"
+                  style={inputStyle}
+                  value={concept}
+                  onChange={(e) => setConcept(e.target.value)}
+                >
+                  <option value="All">All concepts</option>
+                  {concepts.map((c) => (
+                    <option key={c} value={c}>{c}</option>
+                  ))}
+                </select>
+              </div>
+
+              <div style={{ marginTop: 12 }}>
+                <select
+                  style={inputStyle}
+                  value={level}
+                  onChange={(e) => setLevel(e.target.value)}
+                >
+                  <option value="All">All levels</option>
+                  <option value="Basic">Basic</option>
+                  <option value="Medium">Medium</option>
+                  <option value="Advanced">Advanced</option>
+                </select>
+              </div>
+
+              <div style={{ marginTop: 12 }}>
+                <select
+                  style={inputStyle}
+                  value={modeFilter}
+                  onChange={(e) =>
+                    setModeFilter(e.target.value)
+                  }
+                >
+                  <option value="All">All types</option>
+                  <option value="coding">Coding</option>
+                  <option value="numerical">Numerical</option>
+                  <option value="theory">Theory</option>
+                </select>
+              </div>
+
+              </div>
+
+              <label className="mm-browse-toggle">
+                <input type="checkbox" checked={browseAll}
+                  onChange={(e) => setBrowseAll(e.target.checked)} />
+                Browse entire question bank
+              </label>
+
+              {!hasSelection && (
+                <div className="mm-empty-prompt">
+                  <strong>Choose what you want to practice</strong>
+                  <span>Select a topic, then narrow by concept, level or type.
+                    Use the concept selector to focus on Linear Regression or another skill.</span>
+                </div>
+              )}
+
+              <div className="mm-question-strip" aria-label="Scrollable problem list">
+                {filtered.map((q) => (
+                  <button
+                    key={q.id}
+                    className={`mm-question-button ${
+                      question?.id === q.id ? "active" : ""
+                    }`}
+                    onClick={() => selectQuestion(q.id)}
+                  >
+                    <div
+                      style={{
+                        display: "flex",
+                        justifyContent: "space-between",
+                        gap: 8,
+                      }}
+                    >
+                      <strong>{q.title}</strong>
+                      {solved.includes(q.id) && (
+                        <span style={{ color: "#16844b" }}>
+                          ✓
+                        </span>
+                      )}
+                    </div>
+
+                    <div
+                      className="mm-muted"
+                      style={{ fontSize: 12, marginTop: 5 }}
+                    >
+                      {q.topic} · {q.level}
+                    </div>
+
+                    <div style={{ marginTop: 8 }}>
+                      <Tag color="gray">{getMode(q)}</Tag>
+                    </div>
+
+                    {getMode(q) === "coding" &&
+                      !q.testsAvailable && (
+                        <p
+                          style={{
+                            color: "#986014",
+                            fontSize: 12,
+                            marginBottom: 0,
+                          }}
+                        >
+                          Tests unavailable
+                        </p>
+                      )}
+                  </button>
+                ))}
+
+                {filtered.length === 0 && (
+                  <p className="mm-muted">
+                    {hasSelection ? "No questions match these filters." : "Select a topic to start."}
+                  </p>
+                )}
+              </div>
+            </aside>
+
+            <div>
+              {question ? (
+                <div className="mm-workspace">
+                  <div style={card} className="mm-description-column">
+                    <div className="mm-tab-blocks">
+                      <button
+                        className={
+                          tab === "description" ? "active" : ""
+                        }
+                        onClick={() => setTab("description")}
+                      >
+                        <strong>Description</strong>
+                        <span>Statement, examples and hints</span>
+                      </button>
+
+                      <button
+                        className={
+                          tab === "submissions" ? "active" : ""
+                        }
+                        onClick={() => setTab("submissions")}
+                      >
+                        <strong>Last Submission</strong>
+                        <span>Latest code evaluation</span>
+                      </button>
+                    </div>
+
+                    {tab === "description" ? (
+                      <>
+                        <div
+                          style={{
+                            display: "flex",
+                            flexWrap: "wrap",
+                            gap: 8,
+                            marginTop: 20,
+                          }}
+                        >
+                          <Tag>{question.level}</Tag>
+                          <Tag color="gray">
+                            {question.topic}
+                          </Tag>
+                          <Tag color="gray">{mode}</Tag>
+                        </div>
+
+                        <h2
+                          style={{
+                            fontSize: 27,
+                            marginTop: 19,
+                          }}
+                        >
+                          {question.title}
+                        </h2>
+
+                        <Panel title="Problem Statement">
+                          <p
+                            style={{
+                              whiteSpace: "pre-wrap",
+                            }}
+                          >
+                            {question.question}
+                          </p>
+                        </Panel>
+
+                        {mode === "coding" && (
+                          <>
+                            <Panel title="Input Format">
+                              <CodeBox>
+                                {spec?.input}
+                              </CodeBox>
+                            </Panel>
+
+                            <Panel title="Expected Output">
+                              <CodeBox>
+                                {spec?.output}
+                              </CodeBox>
+                            </Panel>
+
+                            {!spec?.verified && (
+                              <div className="mm-warning">
+                                This question does not yet
+                                have a fully verified
+                                input/output specification.
+                                Its requirements need review
+                                before it is treated as a
+                                complete coding challenge.
+                              </div>
+                            )}
+
+                            <Panel title="Examples">
+                              {questionExamples.length ? (
+                                questionExamples.map(
+                                  (item, index) => (
+                                    <div
+                                      className="mm-example"
+                                      key={index}
+                                    >
+                                      <strong>
+                                        Example {index + 1}
+                                      </strong>
+
+                                      <p>Input</p>
+                                      <CodeBox>
+                                        {item.input}
+                                      </CodeBox>
+
+                                      <p>Expected Output</p>
+                                      <CodeBox>
+                                        {item.output}
+                                      </CodeBox>
+
+                                      {item.explanation && (
+                                        <p className="mm-muted">
+                                          {item.explanation}
+                                        </p>
+                                      )}
+                                    </div>
+                                  )
+                                )
+                              ) : (
+                                <div className="mm-warning">
+                                  Verified examples have not
+                                  been added for this question.
+                                </div>
+                              )}
+                            </Panel>
+
+                            <Panel title="Constraints">
+                              {constraints.length ? (
+                                <ul>
+                                  {constraints.map(
+                                    (item, index) => (
+                                      <li key={index}>
+                                        {item}
+                                      </li>
+                                    )
+                                  )}
+                                </ul>
+                              ) : (
+                                <p className="mm-muted">
+                                  Constraints have not been
+                                  verified for this question.
+                                </p>
+                              )}
+                            </Panel>
+
+                            <Panel title="Hints">
+                              {question.hints?.length ? (
+                                question.hints.map(
+                                  (hint, index) => (
+                                    <details
+                                      key={index}
+                                      style={{
+                                        padding: 12,
+                                        border:
+                                          "1px solid #e4e8f1",
+                                        borderRadius: 9,
+                                        marginBottom: 8,
+                                      }}
+                                    >
+                                      <summary
+                                        style={{
+                                          cursor: "pointer",
+                                          fontWeight: 600,
+                                        }}
+                                      >
+                                        Hint {index + 1}
+                                      </summary>
+                                      <p>{hint}</p>
+                                    </details>
+                                  )
+                                )
+                              ) : (
+                                <p className="mm-muted">
+                                  No hints available yet.
+                                </p>
+                              )}
+                            </Panel>
+                          </>
+                        )}
+
+                        {mode === "theory" && (
+                          <Panel title="Concept Practice">
+                            <div
+                              style={{
+                                background: "#f1efff",
+                                padding: 18,
+                                borderRadius: 11,
+                              }}
+                            >
+                              <strong>
+                                Think and understand
+                              </strong>
+                              <p>
+                                Try to explain this concept
+                                in your own words.
+                              </p>
+                              <p className="mm-muted">
+                                Theory questions do not
+                                require written submissions
+                                or AI answer checking.
+                              </p>
+                            </div>
+                          </Panel>
+                        )}
+
+                        {mode === "numerical" && (
+                          <Panel title="Numerical Practice">
+                            <p className="mm-muted">
+                              Enter the final number. You can
+                              use negative or decimal values.
+                            </p>
+
+                            <input
+                              type="number"
+                              step="any"
+                              style={inputStyle}
+                              value={numericAnswer}
+                              placeholder="Enter numeric answer"
+                              onChange={(e) => {
+                                setNumericAnswer(e.target.value);
+                                setNumericResult(null);
+                              }}
+                            />
+
+                            <div style={{ marginTop: 14 }}>
+                              <button
+                                style={button}
+                                disabled={
+                                  running ||
+                                  !numericAnswer.trim()
+                                }
+                                onClick={checkNumerical}
+                              >
+                                {running
+                                  ? "Checking..."
+                                  : "Check Answer"}
+                              </button>
+                            </div>
+
+                            {numericResult && (
+                              <div
+                                className={`mm-result ${
+                                  numericResult.correct
+                                    ? "passed"
+                                    : "failed"
+                                }`}
+                              >
+                                <strong>
+                                  {numericResult.correct
+                                    ? "✓ Correct Answer"
+                                    : "✕ Incorrect Answer"}
+                                </strong>
+
+                                {numericResult.explanation && (
+                                  <p>
+                                    {
+                                      numericResult.explanation
+                                    }
+                                  </p>
+                                )}
+                              </div>
+                            )}
+                          </Panel>
+                        )}
+                      </>
+                    ) : (
+                      <Panel title="Last Submission">
+                        {lastResult ? (
+                          <div
+                            className={`mm-result ${
+                              lastResult.status === "passed"
+                                ? "passed"
+                                : "failed"
+                            }`}
+                          >
+                            <strong>
+                              {lastResult.status === "passed"
+                                ? "Accepted"
+                                : lastResult.status}
+                            </strong>
+                            <p>
+                              Passed: {lastResult.passed} /
+                              {lastResult.total}
+                            </p>
+                            <p>
+                              Score: {lastResult.score}%
+                            </p>
+                          </div>
+                        ) : (
+                          <p className="mm-muted">
+                            No coding submission has been
+                            made for this question in
+                            this session.
+                          </p>
+                        )}
+                      </Panel>
+                    )}
+                  </div>
+
+                  <div className="mm-editor-column">
+                    {mode === "coding" && (
+                      <>
+                        <div style={card}>
+                          <NotebookCell
+                            key={question.id}
+                            questionId={question.id}
+                            value={code}
+                            onChange={updateCode}
+                          />
+
+                          <div className="mm-actions">
+                            <button
+                              style={{
+                                ...button,
+                                background: "#edf0f7",
+                                color: "#172033",
+                              }}
+                              onClick={resetCode}
+                            >
+                              Reset
+                            </button>
+
+                            <button
+                              style={{
+                                ...button,
+                                background: "#243047",
+                              }}
+                              disabled={
+                                running ||
+                                !question.testsAvailable
+                              }
+                              onClick={() => execute("run")}
+                            >
+                              {running &&
+                              activeAction === "run"
+                                ? "Running..."
+                                : "▶ Run Code"}
+                            </button>
+
+                            <button
+                              style={button}
+                              disabled={
+                                running ||
+                                !question.testsAvailable
+                              }
+                              onClick={() =>
+                                execute("submit")
+                              }
+                            >
+                              {running &&
+                              activeAction === "submit"
+                                ? "Submitting..."
+                                : "Submit Code"}
+                            </button>
+                          </div>
+
+                          {!question.testsAvailable && (
+                            <div
+                              className="mm-warning"
+                              style={{ marginTop: 15 }}
+                            >
+                              This problem is awaiting
+                              automated test cases. Run and
+                              Submit are unavailable until
+                              its tests are configured.
+                            </div>
+                          )}
+                        </div>
+
+                        <JudgePanel
+                          key={question.id}
+                          questionId={question.id}
+                          visibleTests={question.visibleTests ?? []}
+                          examples={questionExamples}
+                          result={runResult}
+                          action={lastRunAction}
+                          running={running}
+                          error={actionError}
+                          publicTestCount={question.publicTestCount ?? 2}
+                        />
+                      </>
+                    )}
+
+                    {mode === "theory" && (
+                      <div style={card}>
+                        <h3 style={{ marginTop: 0 }}>
+                          Theory Learning Mode
+                        </h3>
+                        <p className="mm-muted">
+                          This question is for conceptual
+                          understanding. No code or written
+                          answer is required.
+                        </p>
+                      </div>
+                    )}
+
+                    {mode === "numerical" && (
+                      <div style={card}>
+                        <h3 style={{ marginTop: 0 }}>
+                          Numerical Learning Mode
+                        </h3>
+                        <p className="mm-muted">
+                          Solve the problem and submit a
+                          number using the answer field in
+                          the description panel.
+                        </p>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              ) : (
+                <div style={card}>
+                  {hasSelection
+                    ? "No questions match these filters. Try another concept or level."
+                    : "Choose a topic above to begin practicing."}
+                </div>
+              )}
+
+              {question && (
+                <div className="mm-nav">
+                  <button
+                    style={{
+                      ...button,
+                      background: "#e9edf5",
+                      color: "#172033",
+                    }}
+                    disabled={questionIndex <= 0}
+                    onClick={() => navigate(-1)}
+                  >
+                    ← Previous
+                  </button>
+
+                  <button
+                    style={button}
+                    disabled={
+                      questionIndex >= filtered.length - 1
+                    }
+                    onClick={() => navigate(1)}
+                  >
+                    Next Question →
+                  </button>
+                </div>
+              )}
+            </div>
+          </div>
+        )}
+      </div>
+    </main>
+  );
+}

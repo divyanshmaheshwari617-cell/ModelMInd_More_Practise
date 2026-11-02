@@ -1,0 +1,1554 @@
+[
+  {
+    "id": "mm-v5-adaboost-gradient-boosting-medium-theory",
+    "topic": "AdaBoost / Gradient Boosting",
+    "title": "AdaBoost / Gradient Boosting — Medium applied case",
+    "level": "Medium",
+    "type": "theory",
+    "practiceMode": "theory",
+    "question": "Case study: a loan-default dataset with 4% positive examples. Design a reproducible investigation to compare boosting with a depth-1 decision tree; diagnose whether sequential reweighting overfits mislabeled borrowers. State the input columns, split strategy, the comparison baseline, and a justified model or method configuration. Use stratified PR-AUC and a learning curve to decide whether your approach actually helps. Explain how you would detect data leakage and one possible adverse outcome.\n\nDeliverable: experiment protocol, expected evaluation artifacts, and a go/no-go criterion; do not claim a numeric result without running data.",
+    "skills": [
+      "Experimental reasoning"
+    ],
+    "tags": [
+      "AdaBoost / Gradient Boosting",
+      "Model assumptions"
+    ]
+  },
+  {
+    "id": "mm-v5-advanced-feature-engineering-basic-theory",
+    "topic": "Advanced Feature Engineering",
+    "title": "Advanced Feature Engineering — Basic applied case",
+    "level": "Basic",
+    "type": "theory",
+    "practiceMode": "theory",
+    "question": "Consider a retail-demand table with product, store, timestamp, and units sold. Explain the core idea of Advanced Feature Engineering in this exact setting, then specify the first practical step you would take to create lag and rolling features without using future sales; handle unseen stores and early missing windows. State what information belongs in training versus held-out evaluation. Finish with one failure mode that could make the result misleading.\n\nDeliverable: a brief numbered analysis, a concrete baseline, and one falsifiable sanity check.",
+    "skills": [
+      "Experimental reasoning"
+    ],
+    "tags": [
+      "Advanced Feature Engineering",
+      "Model assumptions"
+    ]
+  },
+  {
+    "id": "mm-v5-advanced-feature-engineering-medium-theory",
+    "topic": "Advanced Feature Engineering",
+    "title": "Advanced Feature Engineering — Medium applied case",
+    "level": "Medium",
+    "type": "theory",
+    "practiceMode": "theory",
+    "question": "Case study: a retail-demand table with product, store, timestamp, and units sold. Design a reproducible investigation to create lag and rolling features without using future sales; handle unseen stores and early missing windows. State the input columns, split strategy, the comparison baseline, and a justified model or method configuration. Use time-based validation and leakage checks to decide whether your approach actually helps. Explain how you would detect data leakage and one possible adverse outcome.\n\nDeliverable: experiment protocol, expected evaluation artifacts, and a go/no-go criterion; do not claim a numeric result without running data.",
+    "skills": [
+      "Experimental reasoning"
+    ],
+    "tags": [
+      "Advanced Feature Engineering",
+      "Model assumptions"
+    ]
+  },
+  {
+    "id": "mm-v5-advanced-feature-engineering-advanced-coding",
+    "topic": "Advanced Feature Engineering",
+    "title": "Advanced Feature Engineering — Advanced reusable implementation",
+    "level": "Advanced",
+    "type": "coding",
+    "practiceMode": "coding",
+    "question": "Write a reusable `advanced_feature_engineering_workflow(X_train, y_train, X_test)` function demonstrating Advanced Feature Engineering. Avoid hardcoded row counts; fit learned transformations only on training data; return predictions or transformed data in original test-row order. Provide tests for regular, missing-value, and altered-feature input cases as relevant to the topic.",
+    "skills": [
+      "Reusable implementation"
+    ],
+    "tags": [
+      "Advanced Feature Engineering",
+      "Software correctness"
+    ]
+  },
+  {
+    "id": "mm-v5-advanced-statistics-probability-basic-theory",
+    "topic": "Advanced Statistics / Probability",
+    "title": "Advanced Statistics / Probability — Basic applied case",
+    "level": "Basic",
+    "type": "theory",
+    "practiceMode": "theory",
+    "question": "Consider an A/B experiment with 500 users per arm and unequal outcome variances. Explain the core idea of Advanced Statistics / Probability in this exact setting, then specify the first practical step you would take to choose and justify a confidence interval for the mean difference; check assumptions and practical significance. State what information belongs in training versus held-out evaluation. Finish with one failure mode that could make the result misleading.\n\nDeliverable: a brief numbered analysis, a concrete baseline, and one falsifiable sanity check.",
+    "skills": [
+      "Experimental reasoning"
+    ],
+    "tags": [
+      "Advanced Statistics / Probability",
+      "Model assumptions"
+    ]
+  },
+  {
+    "id": "mm-v5-advanced-statistics-probability-medium-theory",
+    "topic": "Advanced Statistics / Probability",
+    "title": "Advanced Statistics / Probability — Medium applied case",
+    "level": "Medium",
+    "type": "theory",
+    "practiceMode": "theory",
+    "question": "Case study: an A/B experiment with 500 users per arm and unequal outcome variances. Design a reproducible investigation to choose and justify a confidence interval for the mean difference; check assumptions and practical significance. State the input columns, split strategy, the comparison baseline, and a justified model or method configuration. Use a confidence interval, test statistic, and effect-size interpretation to decide whether your approach actually helps. Explain how you would detect data leakage and one possible adverse outcome.\n\nDeliverable: experiment protocol, expected evaluation artifacts, and a go/no-go criterion; do not claim a numeric result without running data.",
+    "skills": [
+      "Experimental reasoning"
+    ],
+    "tags": [
+      "Advanced Statistics / Probability",
+      "Model assumptions"
+    ]
+  },
+  {
+    "id": "mm-v5-advanced-statistics-probability-advanced-coding",
+    "topic": "Advanced Statistics / Probability",
+    "title": "Advanced Statistics / Probability — Advanced reusable implementation",
+    "level": "Advanced",
+    "type": "coding",
+    "practiceMode": "coding",
+    "question": "Write a reusable `advanced_statistics_probability_workflow(X_train, y_train, X_test)` function demonstrating Advanced Statistics / Probability. Avoid hardcoded row counts; fit learned transformations only on training data; return predictions or transformed data in original test-row order. Provide tests for regular, missing-value, and altered-feature input cases as relevant to the topic.",
+    "skills": [
+      "Reusable implementation"
+    ],
+    "tags": [
+      "Advanced Statistics / Probability",
+      "Software correctness"
+    ]
+  },
+  {
+    "id": "mm-v5-advanced-xgboost-basic-theory",
+    "topic": "Advanced XGBoost",
+    "title": "Advanced XGBoost — Basic applied case",
+    "level": "Basic",
+    "type": "theory",
+    "practiceMode": "theory",
+    "question": "Consider a churn dataset with high-cardinality features and missing values. Explain the core idea of Advanced XGBoost in this exact setting, then specify the first practical step you would take to compare tree-depth and subsampling settings under early stopping without touching the test set. State what information belongs in training versus held-out evaluation. Finish with one failure mode that could make the result misleading.\n\nDeliverable: a brief numbered analysis, a concrete baseline, and one falsifiable sanity check.",
+    "skills": [
+      "Experimental reasoning"
+    ],
+    "tags": [
+      "Advanced XGBoost",
+      "Model assumptions"
+    ]
+  },
+  {
+    "id": "mm-v5-advanced-xgboost-medium-theory",
+    "topic": "Advanced XGBoost",
+    "title": "Advanced XGBoost — Medium applied case",
+    "level": "Medium",
+    "type": "theory",
+    "practiceMode": "theory",
+    "question": "Case study: a churn dataset with high-cardinality features and missing values. Design a reproducible investigation to compare tree-depth and subsampling settings under early stopping without touching the test set. State the input columns, split strategy, the comparison baseline, and a justified model or method configuration. Use validation log loss and training-versus-validation learning curves to decide whether your approach actually helps. Explain how you would detect data leakage and one possible adverse outcome.\n\nDeliverable: experiment protocol, expected evaluation artifacts, and a go/no-go criterion; do not claim a numeric result without running data.",
+    "skills": [
+      "Experimental reasoning"
+    ],
+    "tags": [
+      "Advanced XGBoost",
+      "Model assumptions"
+    ]
+  },
+  {
+    "id": "mm-v5-advanced-xgboost-advanced-coding",
+    "topic": "Advanced XGBoost",
+    "title": "Advanced XGBoost — Advanced reusable implementation",
+    "level": "Advanced",
+    "type": "coding",
+    "practiceMode": "coding",
+    "question": "Write a reusable `advanced_xgboost_workflow(X_train, y_train, X_test)` function demonstrating Advanced XGBoost. Avoid hardcoded row counts; fit learned transformations only on training data; return predictions or transformed data in original test-row order. Provide tests for regular, missing-value, and altered-feature input cases as relevant to the topic.",
+    "skills": [
+      "Reusable implementation"
+    ],
+    "tags": [
+      "Advanced XGBoost",
+      "Software correctness"
+    ]
+  },
+  {
+    "id": "mm-v5-anomaly-detection-basic-theory",
+    "topic": "Anomaly Detection",
+    "title": "Anomaly Detection — Basic applied case",
+    "level": "Basic",
+    "type": "theory",
+    "practiceMode": "theory",
+    "question": "Consider payment transactions with a 0.5% known fraud rate and substantial class imbalance. Explain the core idea of Anomaly Detection in this exact setting, then specify the first practical step you would take to choose a score threshold under a review-team capacity limit and discuss contamination effects. State what information belongs in training versus held-out evaluation. Finish with one failure mode that could make the result misleading.\n\nDeliverable: a brief numbered analysis, a concrete baseline, and one falsifiable sanity check.",
+    "skills": [
+      "Experimental reasoning"
+    ],
+    "tags": [
+      "Anomaly Detection",
+      "Model assumptions"
+    ]
+  },
+  {
+    "id": "mm-v5-anomaly-detection-medium-theory",
+    "topic": "Anomaly Detection",
+    "title": "Anomaly Detection — Medium applied case",
+    "level": "Medium",
+    "type": "theory",
+    "practiceMode": "theory",
+    "question": "Case study: payment transactions with a 0.5% known fraud rate and substantial class imbalance. Design a reproducible investigation to choose a score threshold under a review-team capacity limit and discuss contamination effects. State the input columns, split strategy, the comparison baseline, and a justified model or method configuration. Use precision at the chosen review budget and false-positive analysis to decide whether your approach actually helps. Explain how you would detect data leakage and one possible adverse outcome.\n\nDeliverable: experiment protocol, expected evaluation artifacts, and a go/no-go criterion; do not claim a numeric result without running data.",
+    "skills": [
+      "Experimental reasoning"
+    ],
+    "tags": [
+      "Anomaly Detection",
+      "Model assumptions"
+    ]
+  },
+  {
+    "id": "mm-v5-anomaly-detection-advanced-coding",
+    "topic": "Anomaly Detection",
+    "title": "Anomaly Detection — Advanced reusable implementation",
+    "level": "Advanced",
+    "type": "coding",
+    "practiceMode": "coding",
+    "question": "Write a reusable `anomaly_detection_workflow(X_train, y_train, X_test)` function demonstrating Anomaly Detection. Avoid hardcoded row counts; fit learned transformations only on training data; return predictions or transformed data in original test-row order. Provide tests for regular, missing-value, and altered-feature input cases as relevant to the topic.",
+    "skills": [
+      "Reusable implementation"
+    ],
+    "tags": [
+      "Anomaly Detection",
+      "Software correctness"
+    ]
+  },
+  {
+    "id": "mm-v5-cnn-basic-theory",
+    "topic": "CNN",
+    "title": "CNN — Basic applied case",
+    "level": "Basic",
+    "type": "theory",
+    "practiceMode": "theory",
+    "question": "Consider 32×32 RGB defect images where one camera location dominates the training data. Explain the core idea of CNN in this exact setting, then specify the first practical step you would take to design a small convolutional classifier and test whether performance transfers to a held-out camera. State what information belongs in training versus held-out evaluation. Finish with one failure mode that could make the result misleading.\n\nDeliverable: a brief numbered analysis, a concrete baseline, and one falsifiable sanity check.",
+    "skills": [
+      "Experimental reasoning"
+    ],
+    "tags": [
+      "CNN",
+      "Model assumptions"
+    ]
+  },
+  {
+    "id": "mm-v5-cnn-medium-theory",
+    "topic": "CNN",
+    "title": "CNN — Medium applied case",
+    "level": "Medium",
+    "type": "theory",
+    "practiceMode": "theory",
+    "question": "Case study: 32×32 RGB defect images where one camera location dominates the training data. Design a reproducible investigation to design a small convolutional classifier and test whether performance transfers to a held-out camera. State the input columns, split strategy, the comparison baseline, and a justified model or method configuration. Use camera-wise confusion matrices and augmentation ablation to decide whether your approach actually helps. Explain how you would detect data leakage and one possible adverse outcome.\n\nDeliverable: experiment protocol, expected evaluation artifacts, and a go/no-go criterion; do not claim a numeric result without running data.",
+    "skills": [
+      "Experimental reasoning"
+    ],
+    "tags": [
+      "CNN",
+      "Model assumptions"
+    ]
+  },
+  {
+    "id": "mm-v5-cnn-advanced-coding",
+    "topic": "CNN",
+    "title": "CNN — Advanced reusable implementation",
+    "level": "Advanced",
+    "type": "coding",
+    "practiceMode": "coding",
+    "question": "Write a reusable `cnn_workflow(X_train, y_train, X_test)` function demonstrating CNN. Avoid hardcoded row counts; fit learned transformations only on training data; return predictions or transformed data in original test-row order. Provide tests for regular, missing-value, and altered-feature input cases as relevant to the topic.",
+    "skills": [
+      "Reusable implementation"
+    ],
+    "tags": [
+      "CNN",
+      "Software correctness"
+    ]
+  },
+  {
+    "id": "mm-v5-clustering-beyond-k-means-basic-theory",
+    "topic": "Clustering Beyond K-Means",
+    "title": "Clustering Beyond K-Means — Basic applied case",
+    "level": "Basic",
+    "type": "theory",
+    "practiceMode": "theory",
+    "question": "Consider two crescent-shaped clusters plus 40 uniform outliers. Explain the core idea of Clustering Beyond K-Means in this exact setting, then specify the first practical step you would take to compare density-based and centroid-based grouping without using class labels for fitting. State what information belongs in training versus held-out evaluation. Finish with one failure mode that could make the result misleading.\n\nDeliverable: a brief numbered analysis, a concrete baseline, and one falsifiable sanity check.",
+    "skills": [
+      "Experimental reasoning"
+    ],
+    "tags": [
+      "Clustering Beyond K-Means",
+      "Model assumptions"
+    ]
+  },
+  {
+    "id": "mm-v5-clustering-beyond-k-means-medium-theory",
+    "topic": "Clustering Beyond K-Means",
+    "title": "Clustering Beyond K-Means — Medium applied case",
+    "level": "Medium",
+    "type": "theory",
+    "practiceMode": "theory",
+    "question": "Case study: two crescent-shaped clusters plus 40 uniform outliers. Design a reproducible investigation to compare density-based and centroid-based grouping without using class labels for fitting. State the input columns, split strategy, the comparison baseline, and a justified model or method configuration. Use silhouette limitations and neighborhood sensitivity to decide whether your approach actually helps. Explain how you would detect data leakage and one possible adverse outcome.\n\nDeliverable: experiment protocol, expected evaluation artifacts, and a go/no-go criterion; do not claim a numeric result without running data.",
+    "skills": [
+      "Experimental reasoning"
+    ],
+    "tags": [
+      "Clustering Beyond K-Means",
+      "Model assumptions"
+    ]
+  },
+  {
+    "id": "mm-v5-clustering-beyond-k-means-advanced-coding",
+    "topic": "Clustering Beyond K-Means",
+    "title": "Clustering Beyond K-Means — Advanced reusable implementation",
+    "level": "Advanced",
+    "type": "coding",
+    "practiceMode": "coding",
+    "question": "Build a reproducible Clustering Beyond K-Means analysis function that accepts a numeric feature matrix `X` and returns a result object with fitted output and diagnostic information. Validate empty inputs, document any stochastic seeds, and test on two datasets with differing scales and sample counts. Explain why the output is not a supervised accuracy score.",
+    "skills": [
+      "Reusable implementation"
+    ],
+    "tags": [
+      "Clustering Beyond K-Means",
+      "Software correctness"
+    ]
+  },
+  {
+    "id": "mm-v5-data-splitting-leakage-basic-theory",
+    "topic": "Data Splitting / Leakage",
+    "title": "Data Splitting / Leakage — Basic applied case",
+    "level": "Basic",
+    "type": "theory",
+    "practiceMode": "theory",
+    "question": "Consider hospital readmission records with repeated patients and visit timestamps. Explain the core idea of Data Splitting / Leakage in this exact setting, then specify the first practical step you would take to split by patient and time, and identify leakage from post-discharge columns. State what information belongs in training versus held-out evaluation. Finish with one failure mode that could make the result misleading.\n\nDeliverable: a brief numbered analysis, a concrete baseline, and one falsifiable sanity check.",
+    "skills": [
+      "Experimental reasoning"
+    ],
+    "tags": [
+      "Data Splitting / Leakage",
+      "Model assumptions"
+    ]
+  },
+  {
+    "id": "mm-v5-data-splitting-leakage-medium-theory",
+    "topic": "Data Splitting / Leakage",
+    "title": "Data Splitting / Leakage — Medium applied case",
+    "level": "Medium",
+    "type": "theory",
+    "practiceMode": "theory",
+    "question": "Case study: hospital readmission records with repeated patients and visit timestamps. Design a reproducible investigation to split by patient and time, and identify leakage from post-discharge columns. State the input columns, split strategy, the comparison baseline, and a justified model or method configuration. Use group-aware validation and train/test feature audit to decide whether your approach actually helps. Explain how you would detect data leakage and one possible adverse outcome.\n\nDeliverable: experiment protocol, expected evaluation artifacts, and a go/no-go criterion; do not claim a numeric result without running data.",
+    "skills": [
+      "Experimental reasoning"
+    ],
+    "tags": [
+      "Data Splitting / Leakage",
+      "Model assumptions"
+    ]
+  },
+  {
+    "id": "mm-v5-data-splitting-leakage-advanced-coding",
+    "topic": "Data Splitting / Leakage",
+    "title": "Data Splitting / Leakage — Advanced reusable implementation",
+    "level": "Advanced",
+    "type": "coding",
+    "practiceMode": "coding",
+    "question": "Write a reusable `data_splitting_leakage_workflow(X_train, y_train, X_test)` function demonstrating Data Splitting / Leakage. Avoid hardcoded row counts; fit learned transformations only on training data; return predictions or transformed data in original test-row order. Provide tests for regular, missing-value, and altered-feature input cases as relevant to the topic.",
+    "skills": [
+      "Reusable implementation"
+    ],
+    "tags": [
+      "Data Splitting / Leakage",
+      "Software correctness"
+    ]
+  },
+  {
+    "id": "mm-v5-decision-tree-basic-theory",
+    "topic": "Decision Tree",
+    "title": "Decision Tree — Basic applied case",
+    "level": "Basic",
+    "type": "theory",
+    "practiceMode": "theory",
+    "question": "Consider a 2,000-row credit approval dataset with two strong predictors and 30 noisy columns. Explain the core idea of Decision Tree in this exact setting, then specify the first practical step you would take to compare maximum depths and minimum leaf sizes; explain why an unpruned tree memorizes noise. State what information belongs in training versus held-out evaluation. Finish with one failure mode that could make the result misleading.\n\nDeliverable: a brief numbered analysis, a concrete baseline, and one falsifiable sanity check.",
+    "skills": [
+      "Experimental reasoning"
+    ],
+    "tags": [
+      "Decision Tree",
+      "Model assumptions"
+    ]
+  },
+  {
+    "id": "mm-v5-decision-tree-medium-theory",
+    "topic": "Decision Tree",
+    "title": "Decision Tree — Medium applied case",
+    "level": "Medium",
+    "type": "theory",
+    "practiceMode": "theory",
+    "question": "Case study: a 2,000-row credit approval dataset with two strong predictors and 30 noisy columns. Design a reproducible investigation to compare maximum depths and minimum leaf sizes; explain why an unpruned tree memorizes noise. State the input columns, split strategy, the comparison baseline, and a justified model or method configuration. Use train/validation accuracy gap and tree complexity to decide whether your approach actually helps. Explain how you would detect data leakage and one possible adverse outcome.\n\nDeliverable: experiment protocol, expected evaluation artifacts, and a go/no-go criterion; do not claim a numeric result without running data.",
+    "skills": [
+      "Experimental reasoning"
+    ],
+    "tags": [
+      "Decision Tree",
+      "Model assumptions"
+    ]
+  },
+  {
+    "id": "mm-v5-deep-learning-basic-theory",
+    "topic": "Deep Learning",
+    "title": "Deep Learning — Basic applied case",
+    "level": "Basic",
+    "type": "theory",
+    "practiceMode": "theory",
+    "question": "Consider a tabular classification dataset with 3,000 observations and 50 numerical predictors. Explain the core idea of Deep Learning in this exact setting, then specify the first practical step you would take to compare an MLP with logistic regression and guard against overfitting using early stopping. State what information belongs in training versus held-out evaluation. Finish with one failure mode that could make the result misleading.\n\nDeliverable: a brief numbered analysis, a concrete baseline, and one falsifiable sanity check.",
+    "skills": [
+      "Experimental reasoning"
+    ],
+    "tags": [
+      "Deep Learning",
+      "Model assumptions"
+    ]
+  },
+  {
+    "id": "mm-v5-deep-learning-medium-theory",
+    "topic": "Deep Learning",
+    "title": "Deep Learning — Medium applied case",
+    "level": "Medium",
+    "type": "theory",
+    "practiceMode": "theory",
+    "question": "Case study: a tabular classification dataset with 3,000 observations and 50 numerical predictors. Design a reproducible investigation to compare an MLP with logistic regression and guard against overfitting using early stopping. State the input columns, split strategy, the comparison baseline, and a justified model or method configuration. Use validation loss curves and held-out macro F1 to decide whether your approach actually helps. Explain how you would detect data leakage and one possible adverse outcome.\n\nDeliverable: experiment protocol, expected evaluation artifacts, and a go/no-go criterion; do not claim a numeric result without running data.",
+    "skills": [
+      "Experimental reasoning"
+    ],
+    "tags": [
+      "Deep Learning",
+      "Model assumptions"
+    ]
+  },
+  {
+    "id": "mm-v5-deep-learning-advanced-coding",
+    "topic": "Deep Learning",
+    "title": "Deep Learning — Advanced reusable implementation",
+    "level": "Advanced",
+    "type": "coding",
+    "practiceMode": "coding",
+    "question": "Write a reusable `deep_learning_workflow(X_train, y_train, X_test)` function demonstrating Deep Learning. Avoid hardcoded row counts; fit learned transformations only on training data; return predictions or transformed data in original test-row order. Provide tests for regular, missing-value, and altered-feature input cases as relevant to the topic.",
+    "skills": [
+      "Reusable implementation"
+    ],
+    "tags": [
+      "Deep Learning",
+      "Software correctness"
+    ]
+  },
+  {
+    "id": "mm-v5-dimensionality-reduction-basic-theory",
+    "topic": "Dimensionality Reduction",
+    "title": "Dimensionality Reduction — Basic applied case",
+    "level": "Basic",
+    "type": "theory",
+    "practiceMode": "theory",
+    "question": "Consider 50-dimensional correlated sensor measurements from three machine regimes. Explain the core idea of Dimensionality Reduction in this exact setting, then specify the first practical step you would take to fit PCA only on training data; compare 2 and 10 components for reconstruction. State what information belongs in training versus held-out evaluation. Finish with one failure mode that could make the result misleading.\n\nDeliverable: a brief numbered analysis, a concrete baseline, and one falsifiable sanity check.",
+    "skills": [
+      "Experimental reasoning"
+    ],
+    "tags": [
+      "Dimensionality Reduction",
+      "Model assumptions"
+    ]
+  },
+  {
+    "id": "mm-v5-dimensionality-reduction-medium-theory",
+    "topic": "Dimensionality Reduction",
+    "title": "Dimensionality Reduction — Medium applied case",
+    "level": "Medium",
+    "type": "theory",
+    "practiceMode": "theory",
+    "question": "Case study: 50-dimensional correlated sensor measurements from three machine regimes. Design a reproducible investigation to fit PCA only on training data; compare 2 and 10 components for reconstruction. State the input columns, split strategy, the comparison baseline, and a justified model or method configuration. Use explained-variance ratio and held-out reconstruction error to decide whether your approach actually helps. Explain how you would detect data leakage and one possible adverse outcome.\n\nDeliverable: experiment protocol, expected evaluation artifacts, and a go/no-go criterion; do not claim a numeric result without running data.",
+    "skills": [
+      "Experimental reasoning"
+    ],
+    "tags": [
+      "Dimensionality Reduction",
+      "Model assumptions"
+    ]
+  },
+  {
+    "id": "mm-v5-dimensionality-reduction-advanced-coding",
+    "topic": "Dimensionality Reduction",
+    "title": "Dimensionality Reduction — Advanced reusable implementation",
+    "level": "Advanced",
+    "type": "coding",
+    "practiceMode": "coding",
+    "question": "Write a reusable `dimensionality_reduction_workflow(X_train, y_train, X_test)` function demonstrating Dimensionality Reduction. Avoid hardcoded row counts; fit learned transformations only on training data; return predictions or transformed data in original test-row order. Provide tests for regular, missing-value, and altered-feature input cases as relevant to the topic.",
+    "skills": [
+      "Reusable implementation"
+    ],
+    "tags": [
+      "Dimensionality Reduction",
+      "Software correctness"
+    ]
+  },
+  {
+    "id": "mm-v5-eda-basic-theory",
+    "topic": "EDA",
+    "title": "EDA — Basic applied case",
+    "level": "Basic",
+    "type": "theory",
+    "practiceMode": "theory",
+    "question": "Consider an online-order table with missing prices, returns, and inconsistent date formats. Explain the core idea of EDA in this exact setting, then specify the first practical step you would take to audit missingness and price distributions before choosing an analysis population. State what information belongs in training versus held-out evaluation. Finish with one failure mode that could make the result misleading.\n\nDeliverable: a brief numbered analysis, a concrete baseline, and one falsifiable sanity check.",
+    "skills": [
+      "Experimental reasoning"
+    ],
+    "tags": [
+      "EDA",
+      "Model assumptions"
+    ]
+  },
+  {
+    "id": "mm-v5-eda-medium-theory",
+    "topic": "EDA",
+    "title": "EDA — Medium applied case",
+    "level": "Medium",
+    "type": "theory",
+    "practiceMode": "theory",
+    "question": "Case study: an online-order table with missing prices, returns, and inconsistent date formats. Design a reproducible investigation to audit missingness and price distributions before choosing an analysis population. State the input columns, split strategy, the comparison baseline, and a justified model or method configuration. Use missing-value report and charts separating returns from sales to decide whether your approach actually helps. Explain how you would detect data leakage and one possible adverse outcome.\n\nDeliverable: experiment protocol, expected evaluation artifacts, and a go/no-go criterion; do not claim a numeric result without running data.",
+    "skills": [
+      "Experimental reasoning"
+    ],
+    "tags": [
+      "EDA",
+      "Model assumptions"
+    ]
+  },
+  {
+    "id": "mm-v5-eda-advanced-coding",
+    "topic": "EDA",
+    "title": "EDA — Advanced reusable implementation",
+    "level": "Advanced",
+    "type": "coding",
+    "practiceMode": "coding",
+    "question": "Write a reusable `eda_workflow(X_train, y_train, X_test)` function demonstrating EDA. Avoid hardcoded row counts; fit learned transformations only on training data; return predictions or transformed data in original test-row order. Provide tests for regular, missing-value, and altered-feature input cases as relevant to the topic.",
+    "skills": [
+      "Reusable implementation"
+    ],
+    "tags": [
+      "EDA",
+      "Software correctness"
+    ]
+  },
+  {
+    "id": "mm-v5-ensemble-learning-basic-theory",
+    "topic": "Ensemble Learning",
+    "title": "Ensemble Learning — Basic applied case",
+    "level": "Basic",
+    "type": "theory",
+    "practiceMode": "theory",
+    "question": "Consider a noisy binary credit-risk dataset where individual trees vary by random seed. Explain the core idea of Ensemble Learning in this exact setting, then specify the first practical step you would take to compare bagging, boosting and stacking with leakage-safe out-of-fold predictions. State what information belongs in training versus held-out evaluation. Finish with one failure mode that could make the result misleading.\n\nDeliverable: a brief numbered analysis, a concrete baseline, and one falsifiable sanity check.",
+    "skills": [
+      "Experimental reasoning"
+    ],
+    "tags": [
+      "Ensemble Learning",
+      "Model assumptions"
+    ]
+  },
+  {
+    "id": "mm-v5-ensemble-learning-medium-theory",
+    "topic": "Ensemble Learning",
+    "title": "Ensemble Learning — Medium applied case",
+    "level": "Medium",
+    "type": "theory",
+    "practiceMode": "theory",
+    "question": "Case study: a noisy binary credit-risk dataset where individual trees vary by random seed. Design a reproducible investigation to compare bagging, boosting and stacking with leakage-safe out-of-fold predictions. State the input columns, split strategy, the comparison baseline, and a justified model or method configuration. Use paired cross-validation and calibration comparison to decide whether your approach actually helps. Explain how you would detect data leakage and one possible adverse outcome.\n\nDeliverable: experiment protocol, expected evaluation artifacts, and a go/no-go criterion; do not claim a numeric result without running data.",
+    "skills": [
+      "Experimental reasoning"
+    ],
+    "tags": [
+      "Ensemble Learning",
+      "Model assumptions"
+    ]
+  },
+  {
+    "id": "mm-v5-ensemble-learning-advanced-coding",
+    "topic": "Ensemble Learning",
+    "title": "Ensemble Learning — Advanced reusable implementation",
+    "level": "Advanced",
+    "type": "coding",
+    "practiceMode": "coding",
+    "question": "Write a reusable `ensemble_learning_workflow(X_train, y_train, X_test)` function demonstrating Ensemble Learning. Avoid hardcoded row counts; fit learned transformations only on training data; return predictions or transformed data in original test-row order. Provide tests for regular, missing-value, and altered-feature input cases as relevant to the topic.",
+    "skills": [
+      "Reusable implementation"
+    ],
+    "tags": [
+      "Ensemble Learning",
+      "Software correctness"
+    ]
+  },
+  {
+    "id": "mm-v5-gradient-descent-basic-theory",
+    "topic": "Gradient Descent",
+    "title": "Gradient Descent — Basic applied case",
+    "level": "Basic",
+    "type": "theory",
+    "practiceMode": "theory",
+    "question": "Consider the quadratic objective f(w)=(w-3)^2 starting at w=0. Explain the core idea of Gradient Descent in this exact setting, then specify the first practical step you would take to trace updates for two learning rates and explain convergence versus oscillation. State what information belongs in training versus held-out evaluation. Finish with one failure mode that could make the result misleading.\n\nDeliverable: a brief numbered analysis, a concrete baseline, and one falsifiable sanity check.",
+    "skills": [
+      "Experimental reasoning"
+    ],
+    "tags": [
+      "Gradient Descent",
+      "Model assumptions"
+    ]
+  },
+  {
+    "id": "mm-v5-gradient-descent-medium-theory",
+    "topic": "Gradient Descent",
+    "title": "Gradient Descent — Medium applied case",
+    "level": "Medium",
+    "type": "theory",
+    "practiceMode": "theory",
+    "question": "Case study: the quadratic objective f(w)=(w-3)^2 starting at w=0. Design a reproducible investigation to trace updates for two learning rates and explain convergence versus oscillation. State the input columns, split strategy, the comparison baseline, and a justified model or method configuration. Use five explicit iterates and objective values to decide whether your approach actually helps. Explain how you would detect data leakage and one possible adverse outcome.\n\nDeliverable: experiment protocol, expected evaluation artifacts, and a go/no-go criterion; do not claim a numeric result without running data.",
+    "skills": [
+      "Experimental reasoning"
+    ],
+    "tags": [
+      "Gradient Descent",
+      "Model assumptions"
+    ]
+  },
+  {
+    "id": "mm-v5-hyperparameter-tuning-medium-theory",
+    "topic": "Hyperparameter Tuning",
+    "title": "Hyperparameter Tuning — Medium applied case",
+    "level": "Medium",
+    "type": "theory",
+    "practiceMode": "theory",
+    "question": "Case study: a stratified, imbalanced customer-retention dataset. Design a reproducible investigation to design nested cross-validation to tune regularization without optimistic test reporting. State the input columns, split strategy, the comparison baseline, and a justified model or method configuration. Use outer-fold score distribution and selected parameters to decide whether your approach actually helps. Explain how you would detect data leakage and one possible adverse outcome.\n\nDeliverable: experiment protocol, expected evaluation artifacts, and a go/no-go criterion; do not claim a numeric result without running data.",
+    "skills": [
+      "Experimental reasoning"
+    ],
+    "tags": [
+      "Hyperparameter Tuning",
+      "Model assumptions"
+    ]
+  },
+  {
+    "id": "mm-v5-hyperparameter-tuning-advanced-coding",
+    "topic": "Hyperparameter Tuning",
+    "title": "Hyperparameter Tuning — Advanced reusable implementation",
+    "level": "Advanced",
+    "type": "coding",
+    "practiceMode": "coding",
+    "question": "Write a reusable `hyperparameter_tuning_workflow(X_train, y_train, X_test)` function demonstrating Hyperparameter Tuning. Avoid hardcoded row counts; fit learned transformations only on training data; return predictions or transformed data in original test-row order. Provide tests for regular, missing-value, and altered-feature input cases as relevant to the topic.",
+    "skills": [
+      "Reusable implementation"
+    ],
+    "tags": [
+      "Hyperparameter Tuning",
+      "Software correctness"
+    ]
+  },
+  {
+    "id": "mm-v5-knn-basic-theory",
+    "topic": "KNN",
+    "title": "KNN — Basic applied case",
+    "level": "Basic",
+    "type": "theory",
+    "practiceMode": "theory",
+    "question": "Consider a housing-location dataset with distance in kilometers and area in square meters. Explain the core idea of KNN in this exact setting, then specify the first practical step you would take to compare KNN predictions before and after train-only scaling; test multiple k values. State what information belongs in training versus held-out evaluation. Finish with one failure mode that could make the result misleading.\n\nDeliverable: a brief numbered analysis, a concrete baseline, and one falsifiable sanity check.",
+    "skills": [
+      "Experimental reasoning"
+    ],
+    "tags": [
+      "KNN",
+      "Model assumptions"
+    ]
+  },
+  {
+    "id": "mm-v5-knn-medium-theory",
+    "topic": "KNN",
+    "title": "KNN — Medium applied case",
+    "level": "Medium",
+    "type": "theory",
+    "practiceMode": "theory",
+    "question": "Case study: a housing-location dataset with distance in kilometers and area in square meters. Design a reproducible investigation to compare KNN predictions before and after train-only scaling; test multiple k values. State the input columns, split strategy, the comparison baseline, and a justified model or method configuration. Use validation MAE by k and neighbor-distance diagnostics to decide whether your approach actually helps. Explain how you would detect data leakage and one possible adverse outcome.\n\nDeliverable: experiment protocol, expected evaluation artifacts, and a go/no-go criterion; do not claim a numeric result without running data.",
+    "skills": [
+      "Experimental reasoning"
+    ],
+    "tags": [
+      "KNN",
+      "Model assumptions"
+    ]
+  },
+  {
+    "id": "mm-v5-knn-advanced-coding",
+    "topic": "KNN",
+    "title": "KNN — Advanced reusable implementation",
+    "level": "Advanced",
+    "type": "coding",
+    "practiceMode": "coding",
+    "question": "Write a reusable `knn_workflow(X_train, y_train, X_test)` function demonstrating KNN. Avoid hardcoded row counts; fit learned transformations only on training data; return predictions or transformed data in original test-row order. Provide tests for regular, missing-value, and altered-feature input cases as relevant to the topic.",
+    "skills": [
+      "Reusable implementation"
+    ],
+    "tags": [
+      "KNN",
+      "Software correctness"
+    ]
+  },
+  {
+    "id": "mm-v5-ml-engineering-deployment-basic-theory",
+    "topic": "ML Engineering / Deployment",
+    "title": "ML Engineering / Deployment — Basic applied case",
+    "level": "Basic",
+    "type": "theory",
+    "practiceMode": "theory",
+    "question": "Consider a trained scikit-learn fraud model exposed by a REST API. Explain the core idea of ML Engineering / Deployment in this exact setting, then specify the first practical step you would take to define request validation, model-version pinning, and a safe fallback for invalid inputs. State what information belongs in training versus held-out evaluation. Finish with one failure mode that could make the result misleading.\n\nDeliverable: a brief numbered analysis, a concrete baseline, and one falsifiable sanity check.",
+    "skills": [
+      "Experimental reasoning"
+    ],
+    "tags": [
+      "ML Engineering / Deployment",
+      "Model assumptions"
+    ]
+  },
+  {
+    "id": "mm-v5-ml-engineering-deployment-medium-theory",
+    "topic": "ML Engineering / Deployment",
+    "title": "ML Engineering / Deployment — Medium applied case",
+    "level": "Medium",
+    "type": "theory",
+    "practiceMode": "theory",
+    "question": "Case study: a trained scikit-learn fraud model exposed by a REST API. Design a reproducible investigation to define request validation, model-version pinning, and a safe fallback for invalid inputs. State the input columns, split strategy, the comparison baseline, and a justified model or method configuration. Use contract tests, latency percentiles, and reproducible model metadata to decide whether your approach actually helps. Explain how you would detect data leakage and one possible adverse outcome.\n\nDeliverable: experiment protocol, expected evaluation artifacts, and a go/no-go criterion; do not claim a numeric result without running data.",
+    "skills": [
+      "Experimental reasoning"
+    ],
+    "tags": [
+      "ML Engineering / Deployment",
+      "Model assumptions"
+    ]
+  },
+  {
+    "id": "mm-v5-ml-engineering-deployment-advanced-coding",
+    "topic": "ML Engineering / Deployment",
+    "title": "ML Engineering / Deployment — Advanced reusable implementation",
+    "level": "Advanced",
+    "type": "coding",
+    "practiceMode": "coding",
+    "question": "Write a reusable `ml_engineering_deployment_workflow(X_train, y_train, X_test)` function demonstrating ML Engineering / Deployment. Avoid hardcoded row counts; fit learned transformations only on training data; return predictions or transformed data in original test-row order. Provide tests for regular, missing-value, and altered-feature input cases as relevant to the topic.",
+    "skills": [
+      "Reusable implementation"
+    ],
+    "tags": [
+      "ML Engineering / Deployment",
+      "Software correctness"
+    ]
+  },
+  {
+    "id": "mm-v5-ml-experimentation-basic-theory",
+    "topic": "ML Experimentation",
+    "title": "ML Experimentation — Basic applied case",
+    "level": "Basic",
+    "type": "theory",
+    "practiceMode": "theory",
+    "question": "Consider a recommendation ranking experiment with repeated users and session effects. Explain the core idea of ML Experimentation in this exact setting, then specify the first practical step you would take to define a primary metric, unit of randomization, sample ratio check, and guardrail metric. State what information belongs in training versus held-out evaluation. Finish with one failure mode that could make the result misleading.\n\nDeliverable: a brief numbered analysis, a concrete baseline, and one falsifiable sanity check.",
+    "skills": [
+      "Experimental reasoning"
+    ],
+    "tags": [
+      "ML Experimentation",
+      "Model assumptions"
+    ]
+  },
+  {
+    "id": "mm-v5-ml-experimentation-medium-theory",
+    "topic": "ML Experimentation",
+    "title": "ML Experimentation — Medium applied case",
+    "level": "Medium",
+    "type": "theory",
+    "practiceMode": "theory",
+    "question": "Case study: a recommendation ranking experiment with repeated users and session effects. Design a reproducible investigation to define a primary metric, unit of randomization, sample ratio check, and guardrail metric. State the input columns, split strategy, the comparison baseline, and a justified model or method configuration. Use an experiment readout distinguishing statistical and practical impact to decide whether your approach actually helps. Explain how you would detect data leakage and one possible adverse outcome.\n\nDeliverable: experiment protocol, expected evaluation artifacts, and a go/no-go criterion; do not claim a numeric result without running data.",
+    "skills": [
+      "Experimental reasoning"
+    ],
+    "tags": [
+      "ML Experimentation",
+      "Model assumptions"
+    ]
+  },
+  {
+    "id": "mm-v5-ml-experimentation-advanced-coding",
+    "topic": "ML Experimentation",
+    "title": "ML Experimentation — Advanced reusable implementation",
+    "level": "Advanced",
+    "type": "coding",
+    "practiceMode": "coding",
+    "question": "Write a reusable `ml_experimentation_workflow(X_train, y_train, X_test)` function demonstrating ML Experimentation. Avoid hardcoded row counts; fit learned transformations only on training data; return predictions or transformed data in original test-row order. Provide tests for regular, missing-value, and altered-feature input cases as relevant to the topic.",
+    "skills": [
+      "Reusable implementation"
+    ],
+    "tags": [
+      "ML Experimentation",
+      "Software correctness"
+    ]
+  },
+  {
+    "id": "mm-v5-matplotlib-seaborn-basic-theory",
+    "topic": "Matplotlib / Seaborn",
+    "title": "Matplotlib / Seaborn — Basic applied case",
+    "level": "Basic",
+    "type": "theory",
+    "practiceMode": "theory",
+    "question": "Consider monthly revenue by region with different sample counts. Explain the core idea of Matplotlib / Seaborn in this exact setting, then specify the first practical step you would take to design a clear grouped visualization and expose uncertainty instead of hiding unequal samples. State what information belongs in training versus held-out evaluation. Finish with one failure mode that could make the result misleading.\n\nDeliverable: a brief numbered analysis, a concrete baseline, and one falsifiable sanity check.",
+    "skills": [
+      "Experimental reasoning"
+    ],
+    "tags": [
+      "Matplotlib / Seaborn",
+      "Model assumptions"
+    ]
+  },
+  {
+    "id": "mm-v5-matplotlib-seaborn-medium-theory",
+    "topic": "Matplotlib / Seaborn",
+    "title": "Matplotlib / Seaborn — Medium applied case",
+    "level": "Medium",
+    "type": "theory",
+    "practiceMode": "theory",
+    "question": "Case study: monthly revenue by region with different sample counts. Design a reproducible investigation to design a clear grouped visualization and expose uncertainty instead of hiding unequal samples. State the input columns, split strategy, the comparison baseline, and a justified model or method configuration. Use readable axes, uncertainty intervals, and an accessibility check to decide whether your approach actually helps. Explain how you would detect data leakage and one possible adverse outcome.\n\nDeliverable: experiment protocol, expected evaluation artifacts, and a go/no-go criterion; do not claim a numeric result without running data.",
+    "skills": [
+      "Experimental reasoning"
+    ],
+    "tags": [
+      "Matplotlib / Seaborn",
+      "Model assumptions"
+    ]
+  },
+  {
+    "id": "mm-v5-matplotlib-seaborn-advanced-coding",
+    "topic": "Matplotlib / Seaborn",
+    "title": "Matplotlib / Seaborn — Advanced reusable implementation",
+    "level": "Advanced",
+    "type": "coding",
+    "practiceMode": "coding",
+    "question": "Write a reusable `matplotlib_seaborn_workflow(X_train, y_train, X_test)` function demonstrating Matplotlib / Seaborn. Avoid hardcoded row counts; fit learned transformations only on training data; return predictions or transformed data in original test-row order. Provide tests for regular, missing-value, and altered-feature input cases as relevant to the topic.",
+    "skills": [
+      "Reusable implementation"
+    ],
+    "tags": [
+      "Matplotlib / Seaborn",
+      "Software correctness"
+    ]
+  },
+  {
+    "id": "mm-v5-metrics-basic-theory",
+    "topic": "Metrics",
+    "title": "Metrics — Basic applied case",
+    "level": "Basic",
+    "type": "theory",
+    "practiceMode": "theory",
+    "question": "Consider an imbalanced medical screening model with 2% positives. Explain the core idea of Metrics in this exact setting, then specify the first practical step you would take to calculate a confusion matrix at a stated threshold and explain why accuracy can mislead. State what information belongs in training versus held-out evaluation. Finish with one failure mode that could make the result misleading.\n\nDeliverable: a brief numbered analysis, a concrete baseline, and one falsifiable sanity check.",
+    "skills": [
+      "Experimental reasoning"
+    ],
+    "tags": [
+      "Metrics",
+      "Model assumptions"
+    ]
+  },
+  {
+    "id": "mm-v5-metrics-medium-theory",
+    "topic": "Metrics",
+    "title": "Metrics — Medium applied case",
+    "level": "Medium",
+    "type": "theory",
+    "practiceMode": "theory",
+    "question": "Case study: an imbalanced medical screening model with 2% positives. Design a reproducible investigation to calculate a confusion matrix at a stated threshold and explain why accuracy can mislead. State the input columns, split strategy, the comparison baseline, and a justified model or method configuration. Use precision, recall, specificity and threshold trade-off to decide whether your approach actually helps. Explain how you would detect data leakage and one possible adverse outcome.\n\nDeliverable: experiment protocol, expected evaluation artifacts, and a go/no-go criterion; do not claim a numeric result without running data.",
+    "skills": [
+      "Experimental reasoning"
+    ],
+    "tags": [
+      "Metrics",
+      "Model assumptions"
+    ]
+  },
+  {
+    "id": "mm-v5-metrics-advanced-coding",
+    "topic": "Metrics",
+    "title": "Metrics — Advanced reusable implementation",
+    "level": "Advanced",
+    "type": "coding",
+    "practiceMode": "coding",
+    "question": "Write a reusable `metrics_workflow(X_train, y_train, X_test)` function demonstrating Metrics. Avoid hardcoded row counts; fit learned transformations only on training data; return predictions or transformed data in original test-row order. Provide tests for regular, missing-value, and altered-feature input cases as relevant to the topic.",
+    "skills": [
+      "Reusable implementation"
+    ],
+    "tags": [
+      "Metrics",
+      "Software correctness"
+    ]
+  },
+  {
+    "id": "mm-v5-model-calibration-error-analysis-basic-theory",
+    "topic": "Model Calibration / Error Analysis",
+    "title": "Model Calibration / Error Analysis — Basic applied case",
+    "level": "Basic",
+    "type": "theory",
+    "practiceMode": "theory",
+    "question": "Consider a classifier whose predicted probabilities are systematically overconfident. Explain the core idea of Model Calibration / Error Analysis in this exact setting, then specify the first practical step you would take to fit calibration on a dedicated validation fold rather than the test set. State what information belongs in training versus held-out evaluation. Finish with one failure mode that could make the result misleading.\n\nDeliverable: a brief numbered analysis, a concrete baseline, and one falsifiable sanity check.",
+    "skills": [
+      "Experimental reasoning"
+    ],
+    "tags": [
+      "Model Calibration / Error Analysis",
+      "Model assumptions"
+    ]
+  },
+  {
+    "id": "mm-v5-model-calibration-error-analysis-medium-theory",
+    "topic": "Model Calibration / Error Analysis",
+    "title": "Model Calibration / Error Analysis — Medium applied case",
+    "level": "Medium",
+    "type": "theory",
+    "practiceMode": "theory",
+    "question": "Case study: a classifier whose predicted probabilities are systematically overconfident. Design a reproducible investigation to fit calibration on a dedicated validation fold rather than the test set. State the input columns, split strategy, the comparison baseline, and a justified model or method configuration. Use reliability curve, log loss, and Brier score to decide whether your approach actually helps. Explain how you would detect data leakage and one possible adverse outcome.\n\nDeliverable: experiment protocol, expected evaluation artifacts, and a go/no-go criterion; do not claim a numeric result without running data.",
+    "skills": [
+      "Experimental reasoning"
+    ],
+    "tags": [
+      "Model Calibration / Error Analysis",
+      "Model assumptions"
+    ]
+  },
+  {
+    "id": "mm-v5-model-calibration-error-analysis-advanced-coding",
+    "topic": "Model Calibration / Error Analysis",
+    "title": "Model Calibration / Error Analysis — Advanced reusable implementation",
+    "level": "Advanced",
+    "type": "coding",
+    "practiceMode": "coding",
+    "question": "Write a reusable `model_calibration_error_analysis_workflow(X_train, y_train, X_test)` function demonstrating Model Calibration / Error Analysis. Avoid hardcoded row counts; fit learned transformations only on training data; return predictions or transformed data in original test-row order. Provide tests for regular, missing-value, and altered-feature input cases as relevant to the topic.",
+    "skills": [
+      "Reusable implementation"
+    ],
+    "tags": [
+      "Model Calibration / Error Analysis",
+      "Software correctness"
+    ]
+  },
+  {
+    "id": "mm-v5-model-interpretation-basic-theory",
+    "topic": "Model Interpretation",
+    "title": "Model Interpretation — Basic applied case",
+    "level": "Basic",
+    "type": "theory",
+    "practiceMode": "theory",
+    "question": "Consider a gradient-boosted loan model with correlated income and debt features. Explain the core idea of Model Interpretation in this exact setting, then specify the first practical step you would take to contrast global permutation importance with a single local explanation and flag instability. State what information belongs in training versus held-out evaluation. Finish with one failure mode that could make the result misleading.\n\nDeliverable: a brief numbered analysis, a concrete baseline, and one falsifiable sanity check.",
+    "skills": [
+      "Experimental reasoning"
+    ],
+    "tags": [
+      "Model Interpretation",
+      "Model assumptions"
+    ]
+  },
+  {
+    "id": "mm-v5-model-interpretation-medium-theory",
+    "topic": "Model Interpretation",
+    "title": "Model Interpretation — Medium applied case",
+    "level": "Medium",
+    "type": "theory",
+    "practiceMode": "theory",
+    "question": "Case study: a gradient-boosted loan model with correlated income and debt features. Design a reproducible investigation to contrast global permutation importance with a single local explanation and flag instability. State the input columns, split strategy, the comparison baseline, and a justified model or method configuration. Use repeated permutation uncertainty and a counterexample to causal interpretation to decide whether your approach actually helps. Explain how you would detect data leakage and one possible adverse outcome.\n\nDeliverable: experiment protocol, expected evaluation artifacts, and a go/no-go criterion; do not claim a numeric result without running data.",
+    "skills": [
+      "Experimental reasoning"
+    ],
+    "tags": [
+      "Model Interpretation",
+      "Model assumptions"
+    ]
+  },
+  {
+    "id": "mm-v5-model-interpretation-advanced-coding",
+    "topic": "Model Interpretation",
+    "title": "Model Interpretation — Advanced reusable implementation",
+    "level": "Advanced",
+    "type": "coding",
+    "practiceMode": "coding",
+    "question": "Write a reusable `model_interpretation_workflow(X_train, y_train, X_test)` function demonstrating Model Interpretation. Avoid hardcoded row counts; fit learned transformations only on training data; return predictions or transformed data in original test-row order. Provide tests for regular, missing-value, and altered-feature input cases as relevant to the topic.",
+    "skills": [
+      "Reusable implementation"
+    ],
+    "tags": [
+      "Model Interpretation",
+      "Software correctness"
+    ]
+  },
+  {
+    "id": "mm-v5-model-monitoring-drift-basic-theory",
+    "topic": "Model Monitoring / Drift",
+    "title": "Model Monitoring / Drift — Basic applied case",
+    "level": "Basic",
+    "type": "theory",
+    "practiceMode": "theory",
+    "question": "Consider a production churn model whose incoming customer-age distribution shifts. Explain the core idea of Model Monitoring / Drift in this exact setting, then specify the first practical step you would take to distinguish feature drift, label delay, and concept drift; define an alerting plan. State what information belongs in training versus held-out evaluation. Finish with one failure mode that could make the result misleading.\n\nDeliverable: a brief numbered analysis, a concrete baseline, and one falsifiable sanity check.",
+    "skills": [
+      "Experimental reasoning"
+    ],
+    "tags": [
+      "Model Monitoring / Drift",
+      "Model assumptions"
+    ]
+  },
+  {
+    "id": "mm-v5-model-monitoring-drift-medium-theory",
+    "topic": "Model Monitoring / Drift",
+    "title": "Model Monitoring / Drift — Medium applied case",
+    "level": "Medium",
+    "type": "theory",
+    "practiceMode": "theory",
+    "question": "Case study: a production churn model whose incoming customer-age distribution shifts. Design a reproducible investigation to distinguish feature drift, label delay, and concept drift; define an alerting plan. State the input columns, split strategy, the comparison baseline, and a justified model or method configuration. Use population shift statistic and delayed-label performance monitoring to decide whether your approach actually helps. Explain how you would detect data leakage and one possible adverse outcome.\n\nDeliverable: experiment protocol, expected evaluation artifacts, and a go/no-go criterion; do not claim a numeric result without running data.",
+    "skills": [
+      "Experimental reasoning"
+    ],
+    "tags": [
+      "Model Monitoring / Drift",
+      "Model assumptions"
+    ]
+  },
+  {
+    "id": "mm-v5-model-monitoring-drift-advanced-coding",
+    "topic": "Model Monitoring / Drift",
+    "title": "Model Monitoring / Drift — Advanced reusable implementation",
+    "level": "Advanced",
+    "type": "coding",
+    "practiceMode": "coding",
+    "question": "Write a reusable `model_monitoring_drift_workflow(X_train, y_train, X_test)` function demonstrating Model Monitoring / Drift. Avoid hardcoded row counts; fit learned transformations only on training data; return predictions or transformed data in original test-row order. Provide tests for regular, missing-value, and altered-feature input cases as relevant to the topic.",
+    "skills": [
+      "Reusable implementation"
+    ],
+    "tags": [
+      "Model Monitoring / Drift",
+      "Software correctness"
+    ]
+  },
+  {
+    "id": "mm-v5-model-selection-basic-theory",
+    "topic": "Model Selection",
+    "title": "Model Selection — Basic applied case",
+    "level": "Basic",
+    "type": "theory",
+    "practiceMode": "theory",
+    "question": "Consider a small medical dataset where complex models seem better on training data. Explain the core idea of Model Selection in this exact setting, then specify the first practical step you would take to compare simple baseline, logistic regression, and boosting under repeated stratified CV. State what information belongs in training versus held-out evaluation. Finish with one failure mode that could make the result misleading.\n\nDeliverable: a brief numbered analysis, a concrete baseline, and one falsifiable sanity check.",
+    "skills": [
+      "Experimental reasoning"
+    ],
+    "tags": [
+      "Model Selection",
+      "Model assumptions"
+    ]
+  },
+  {
+    "id": "mm-v5-model-selection-medium-theory",
+    "topic": "Model Selection",
+    "title": "Model Selection — Medium applied case",
+    "level": "Medium",
+    "type": "theory",
+    "practiceMode": "theory",
+    "question": "Case study: a small medical dataset where complex models seem better on training data. Design a reproducible investigation to compare simple baseline, logistic regression, and boosting under repeated stratified CV. State the input columns, split strategy, the comparison baseline, and a justified model or method configuration. Use mean and variance of validation scores plus resource cost to decide whether your approach actually helps. Explain how you would detect data leakage and one possible adverse outcome.\n\nDeliverable: experiment protocol, expected evaluation artifacts, and a go/no-go criterion; do not claim a numeric result without running data.",
+    "skills": [
+      "Experimental reasoning"
+    ],
+    "tags": [
+      "Model Selection",
+      "Model assumptions"
+    ]
+  },
+  {
+    "id": "mm-v5-model-selection-advanced-coding",
+    "topic": "Model Selection",
+    "title": "Model Selection — Advanced reusable implementation",
+    "level": "Advanced",
+    "type": "coding",
+    "practiceMode": "coding",
+    "question": "Write a reusable `model_selection_workflow(X_train, y_train, X_test)` function demonstrating Model Selection. Avoid hardcoded row counts; fit learned transformations only on training data; return predictions or transformed data in original test-row order. Provide tests for regular, missing-value, and altered-feature input cases as relevant to the topic.",
+    "skills": [
+      "Reusable implementation"
+    ],
+    "tags": [
+      "Model Selection",
+      "Software correctness"
+    ]
+  },
+  {
+    "id": "mm-v5-nlp-basic-theory",
+    "topic": "NLP",
+    "title": "NLP — Basic applied case",
+    "level": "Basic",
+    "type": "theory",
+    "practiceMode": "theory",
+    "question": "Consider short multilingual customer-support messages with rare labels. Explain the core idea of NLP in this exact setting, then specify the first practical step you would take to compare TF-IDF plus linear classifier with an embedding baseline; avoid text leakage. State what information belongs in training versus held-out evaluation. Finish with one failure mode that could make the result misleading.\n\nDeliverable: a brief numbered analysis, a concrete baseline, and one falsifiable sanity check.",
+    "skills": [
+      "Experimental reasoning"
+    ],
+    "tags": [
+      "NLP",
+      "Model assumptions"
+    ]
+  },
+  {
+    "id": "mm-v5-nlp-medium-theory",
+    "topic": "NLP",
+    "title": "NLP — Medium applied case",
+    "level": "Medium",
+    "type": "theory",
+    "practiceMode": "theory",
+    "question": "Case study: short multilingual customer-support messages with rare labels. Design a reproducible investigation to compare TF-IDF plus linear classifier with an embedding baseline; avoid text leakage. State the input columns, split strategy, the comparison baseline, and a justified model or method configuration. Use macro F1 and per-language error inspection to decide whether your approach actually helps. Explain how you would detect data leakage and one possible adverse outcome.\n\nDeliverable: experiment protocol, expected evaluation artifacts, and a go/no-go criterion; do not claim a numeric result without running data.",
+    "skills": [
+      "Experimental reasoning"
+    ],
+    "tags": [
+      "NLP",
+      "Model assumptions"
+    ]
+  },
+  {
+    "id": "mm-v5-nlp-advanced-coding",
+    "topic": "NLP",
+    "title": "NLP — Advanced reusable implementation",
+    "level": "Advanced",
+    "type": "coding",
+    "practiceMode": "coding",
+    "question": "Write a reusable `nlp_workflow(X_train, y_train, X_test)` function demonstrating NLP. Avoid hardcoded row counts; fit learned transformations only on training data; return predictions or transformed data in original test-row order. Provide tests for regular, missing-value, and altered-feature input cases as relevant to the topic.",
+    "skills": [
+      "Reusable implementation"
+    ],
+    "tags": [
+      "NLP",
+      "Software correctness"
+    ]
+  },
+  {
+    "id": "mm-v5-naive-bayes-medium-theory",
+    "topic": "Naive Bayes",
+    "title": "Naive Bayes — Medium applied case",
+    "level": "Medium",
+    "type": "theory",
+    "practiceMode": "theory",
+    "question": "Case study: email spam detection using word counts with rarely seen vocabulary. Design a reproducible investigation to compare Bernoulli versus Multinomial likelihood assumptions and smoothing. State the input columns, split strategy, the comparison baseline, and a justified model or method configuration. Use per-class precision/recall and unseen-token behavior to decide whether your approach actually helps. Explain how you would detect data leakage and one possible adverse outcome.\n\nDeliverable: experiment protocol, expected evaluation artifacts, and a go/no-go criterion; do not claim a numeric result without running data.",
+    "skills": [
+      "Experimental reasoning"
+    ],
+    "tags": [
+      "Naive Bayes",
+      "Model assumptions"
+    ]
+  },
+  {
+    "id": "mm-v5-naive-bayes-advanced-coding",
+    "topic": "Naive Bayes",
+    "title": "Naive Bayes — Advanced reusable implementation",
+    "level": "Advanced",
+    "type": "coding",
+    "practiceMode": "coding",
+    "question": "Write a reusable `naive_bayes_workflow(X_train, y_train, X_test)` function demonstrating Naive Bayes. Avoid hardcoded row counts; fit learned transformations only on training data; return predictions or transformed data in original test-row order. Provide tests for regular, missing-value, and altered-feature input cases as relevant to the topic.",
+    "skills": [
+      "Reusable implementation"
+    ],
+    "tags": [
+      "Naive Bayes",
+      "Software correctness"
+    ]
+  },
+  {
+    "id": "mm-v5-preprocessing-basic-theory",
+    "topic": "Preprocessing",
+    "title": "Preprocessing — Basic applied case",
+    "level": "Basic",
+    "type": "theory",
+    "practiceMode": "theory",
+    "question": "Consider a mixed-type customer dataset with missing age and unseen categorical levels. Explain the core idea of Preprocessing in this exact setting, then specify the first practical step you would take to build ColumnTransformer with imputation and one-hot encoding fit on training data only. State what information belongs in training versus held-out evaluation. Finish with one failure mode that could make the result misleading.\n\nDeliverable: a brief numbered analysis, a concrete baseline, and one falsifiable sanity check.",
+    "skills": [
+      "Experimental reasoning"
+    ],
+    "tags": [
+      "Preprocessing",
+      "Model assumptions"
+    ]
+  },
+  {
+    "id": "mm-v5-preprocessing-medium-theory",
+    "topic": "Preprocessing",
+    "title": "Preprocessing — Medium applied case",
+    "level": "Medium",
+    "type": "theory",
+    "practiceMode": "theory",
+    "question": "Case study: a mixed-type customer dataset with missing age and unseen categorical levels. Design a reproducible investigation to build ColumnTransformer with imputation and one-hot encoding fit on training data only. State the input columns, split strategy, the comparison baseline, and a justified model or method configuration. Use transformed feature names and unseen-category behavior to decide whether your approach actually helps. Explain how you would detect data leakage and one possible adverse outcome.\n\nDeliverable: experiment protocol, expected evaluation artifacts, and a go/no-go criterion; do not claim a numeric result without running data.",
+    "skills": [
+      "Experimental reasoning"
+    ],
+    "tags": [
+      "Preprocessing",
+      "Model assumptions"
+    ]
+  },
+  {
+    "id": "mm-v5-python-basic-theory",
+    "topic": "Python",
+    "title": "Python — Basic applied case",
+    "level": "Basic",
+    "type": "theory",
+    "practiceMode": "theory",
+    "question": "Consider a CSV log parser ingesting timestamps, user IDs, and response codes. Explain the core idea of Python in this exact setting, then specify the first practical step you would take to write robust parsing with typed outputs; handle malformed lines without silently losing counts. State what information belongs in training versus held-out evaluation. Finish with one failure mode that could make the result misleading.\n\nDeliverable: a brief numbered analysis, a concrete baseline, and one falsifiable sanity check.",
+    "skills": [
+      "Experimental reasoning"
+    ],
+    "tags": [
+      "Python",
+      "Model assumptions"
+    ]
+  },
+  {
+    "id": "mm-v5-python-medium-theory",
+    "topic": "Python",
+    "title": "Python — Medium applied case",
+    "level": "Medium",
+    "type": "theory",
+    "practiceMode": "theory",
+    "question": "Case study: a CSV log parser ingesting timestamps, user IDs, and response codes. Design a reproducible investigation to write robust parsing with typed outputs; handle malformed lines without silently losing counts. State the input columns, split strategy, the comparison baseline, and a justified model or method configuration. Use unit tests for missing columns, invalid timestamps, and ordering to decide whether your approach actually helps. Explain how you would detect data leakage and one possible adverse outcome.\n\nDeliverable: experiment protocol, expected evaluation artifacts, and a go/no-go criterion; do not claim a numeric result without running data.",
+    "skills": [
+      "Experimental reasoning"
+    ],
+    "tags": [
+      "Python",
+      "Model assumptions"
+    ]
+  },
+  {
+    "id": "mm-v5-random-forest-basic-theory",
+    "topic": "Random Forest",
+    "title": "Random Forest — Basic applied case",
+    "level": "Basic",
+    "type": "theory",
+    "practiceMode": "theory",
+    "question": "Consider a tabular churn dataset with 10 strong variables and 100 distractors. Explain the core idea of Random Forest in this exact setting, then specify the first practical step you would take to compare OOB estimates with held-out validation and examine forest depth/leaf size. State what information belongs in training versus held-out evaluation. Finish with one failure mode that could make the result misleading.\n\nDeliverable: a brief numbered analysis, a concrete baseline, and one falsifiable sanity check.",
+    "skills": [
+      "Experimental reasoning"
+    ],
+    "tags": [
+      "Random Forest",
+      "Model assumptions"
+    ]
+  },
+  {
+    "id": "mm-v5-random-forest-medium-theory",
+    "topic": "Random Forest",
+    "title": "Random Forest — Medium applied case",
+    "level": "Medium",
+    "type": "theory",
+    "practiceMode": "theory",
+    "question": "Case study: a tabular churn dataset with 10 strong variables and 100 distractors. Design a reproducible investigation to compare OOB estimates with held-out validation and examine forest depth/leaf size. State the input columns, split strategy, the comparison baseline, and a justified model or method configuration. Use out-of-bag score, validation macro F1 and stability across seeds to decide whether your approach actually helps. Explain how you would detect data leakage and one possible adverse outcome.\n\nDeliverable: experiment protocol, expected evaluation artifacts, and a go/no-go criterion; do not claim a numeric result without running data.",
+    "skills": [
+      "Experimental reasoning"
+    ],
+    "tags": [
+      "Random Forest",
+      "Model assumptions"
+    ]
+  },
+  {
+    "id": "mm-v5-random-forest-advanced-coding",
+    "topic": "Random Forest",
+    "title": "Random Forest — Advanced reusable implementation",
+    "level": "Advanced",
+    "type": "coding",
+    "practiceMode": "coding",
+    "question": "Write a reusable `random_forest_workflow(X_train, y_train, X_test)` function demonstrating Random Forest. Avoid hardcoded row counts; fit learned transformations only on training data; return predictions or transformed data in original test-row order. Provide tests for regular, missing-value, and altered-feature input cases as relevant to the topic.",
+    "skills": [
+      "Reusable implementation"
+    ],
+    "tags": [
+      "Random Forest",
+      "Software correctness"
+    ]
+  },
+  {
+    "id": "mm-v5-svm-basic-theory",
+    "topic": "SVM",
+    "title": "SVM — Basic applied case",
+    "level": "Basic",
+    "type": "theory",
+    "practiceMode": "theory",
+    "question": "Consider a two-feature nonlinear binary classification dataset with unequal scales. Explain the core idea of SVM in this exact setting, then specify the first practical step you would take to compare linear versus RBF SVM after training-only standardization; tune C and gamma. State what information belongs in training versus held-out evaluation. Finish with one failure mode that could make the result misleading.\n\nDeliverable: a brief numbered analysis, a concrete baseline, and one falsifiable sanity check.",
+    "skills": [
+      "Experimental reasoning"
+    ],
+    "tags": [
+      "SVM",
+      "Model assumptions"
+    ]
+  },
+  {
+    "id": "mm-v5-svm-medium-theory",
+    "topic": "SVM",
+    "title": "SVM — Medium applied case",
+    "level": "Medium",
+    "type": "theory",
+    "practiceMode": "theory",
+    "question": "Case study: a two-feature nonlinear binary classification dataset with unequal scales. Design a reproducible investigation to compare linear versus RBF SVM after training-only standardization; tune C and gamma. State the input columns, split strategy, the comparison baseline, and a justified model or method configuration. Use margin diagnostics and validation macro F1 to decide whether your approach actually helps. Explain how you would detect data leakage and one possible adverse outcome.\n\nDeliverable: experiment protocol, expected evaluation artifacts, and a go/no-go criterion; do not claim a numeric result without running data.",
+    "skills": [
+      "Experimental reasoning"
+    ],
+    "tags": [
+      "SVM",
+      "Model assumptions"
+    ]
+  },
+  {
+    "id": "mm-v5-scikit-learn-basic-theory",
+    "topic": "Scikit-learn",
+    "title": "Scikit-learn — Basic applied case",
+    "level": "Basic",
+    "type": "theory",
+    "practiceMode": "theory",
+    "question": "Consider a mixed categorical/numeric housing-price dataset. Explain the core idea of Scikit-learn in this exact setting, then specify the first practical step you would take to implement a Pipeline with ColumnTransformer and cross_validate; prevent fit-on-test preprocessing. State what information belongs in training versus held-out evaluation. Finish with one failure mode that could make the result misleading.\n\nDeliverable: a brief numbered analysis, a concrete baseline, and one falsifiable sanity check.",
+    "skills": [
+      "Experimental reasoning"
+    ],
+    "tags": [
+      "Scikit-learn",
+      "Model assumptions"
+    ]
+  },
+  {
+    "id": "mm-v5-scikit-learn-medium-theory",
+    "topic": "Scikit-learn",
+    "title": "Scikit-learn — Medium applied case",
+    "level": "Medium",
+    "type": "theory",
+    "practiceMode": "theory",
+    "question": "Case study: a mixed categorical/numeric housing-price dataset. Design a reproducible investigation to implement a Pipeline with ColumnTransformer and cross_validate; prevent fit-on-test preprocessing. State the input columns, split strategy, the comparison baseline, and a justified model or method configuration. Use fold MAE, fitted feature names, and artifact reproducibility to decide whether your approach actually helps. Explain how you would detect data leakage and one possible adverse outcome.\n\nDeliverable: experiment protocol, expected evaluation artifacts, and a go/no-go criterion; do not claim a numeric result without running data.",
+    "skills": [
+      "Experimental reasoning"
+    ],
+    "tags": [
+      "Scikit-learn",
+      "Model assumptions"
+    ]
+  },
+  {
+    "id": "mm-v5-scikit-learn-advanced-coding",
+    "topic": "Scikit-learn",
+    "title": "Scikit-learn — Advanced reusable implementation",
+    "level": "Advanced",
+    "type": "coding",
+    "practiceMode": "coding",
+    "question": "Write a reusable `scikit_learn_workflow(X_train, y_train, X_test)` function demonstrating Scikit-learn. Avoid hardcoded row counts; fit learned transformations only on training data; return predictions or transformed data in original test-row order. Provide tests for regular, missing-value, and altered-feature input cases as relevant to the topic.",
+    "skills": [
+      "Reusable implementation"
+    ],
+    "tags": [
+      "Scikit-learn",
+      "Software correctness"
+    ]
+  },
+  {
+    "id": "mm-v5-semi-supervised-learning-basic-theory",
+    "topic": "Semi-Supervised Learning",
+    "title": "Semi-Supervised Learning — Basic applied case",
+    "level": "Basic",
+    "type": "theory",
+    "practiceMode": "theory",
+    "question": "Consider a binary-image dataset with 80 labeled and 2,000 unlabeled observations. Explain the core idea of Semi-Supervised Learning in this exact setting, then specify the first practical step you would take to test pseudo-labeling with confidence filtering against a supervised-only baseline. State what information belongs in training versus held-out evaluation. Finish with one failure mode that could make the result misleading.\n\nDeliverable: a brief numbered analysis, a concrete baseline, and one falsifiable sanity check.",
+    "skills": [
+      "Experimental reasoning"
+    ],
+    "tags": [
+      "Semi-Supervised Learning",
+      "Model assumptions"
+    ]
+  },
+  {
+    "id": "mm-v5-semi-supervised-learning-medium-theory",
+    "topic": "Semi-Supervised Learning",
+    "title": "Semi-Supervised Learning — Medium applied case",
+    "level": "Medium",
+    "type": "theory",
+    "practiceMode": "theory",
+    "question": "Case study: a binary-image dataset with 80 labeled and 2,000 unlabeled observations. Design a reproducible investigation to test pseudo-labeling with confidence filtering against a supervised-only baseline. State the input columns, split strategy, the comparison baseline, and a justified model or method configuration. Use performance across confidence thresholds and label-error inspection to decide whether your approach actually helps. Explain how you would detect data leakage and one possible adverse outcome.\n\nDeliverable: experiment protocol, expected evaluation artifacts, and a go/no-go criterion; do not claim a numeric result without running data.",
+    "skills": [
+      "Experimental reasoning"
+    ],
+    "tags": [
+      "Semi-Supervised Learning",
+      "Model assumptions"
+    ]
+  },
+  {
+    "id": "mm-v5-semi-supervised-learning-advanced-coding",
+    "topic": "Semi-Supervised Learning",
+    "title": "Semi-Supervised Learning — Advanced reusable implementation",
+    "level": "Advanced",
+    "type": "coding",
+    "practiceMode": "coding",
+    "question": "Write a reusable `semi_supervised_learning_workflow(X_train, y_train, X_test)` function demonstrating Semi-Supervised Learning. Avoid hardcoded row counts; fit learned transformations only on training data; return predictions or transformed data in original test-row order. Provide tests for regular, missing-value, and altered-feature input cases as relevant to the topic.",
+    "skills": [
+      "Reusable implementation"
+    ],
+    "tags": [
+      "Semi-Supervised Learning",
+      "Software correctness"
+    ]
+  },
+  {
+    "id": "mm-v5-statistics-basic-theory",
+    "topic": "Statistics",
+    "title": "Statistics — Basic applied case",
+    "level": "Basic",
+    "type": "theory",
+    "practiceMode": "theory",
+    "question": "Consider delivery times [8, 10, 10, 12, 60] minutes with one major outlier. Explain the core idea of Statistics in this exact setting, then specify the first practical step you would take to compare mean, median, sample standard deviation, and IQR. State what information belongs in training versus held-out evaluation. Finish with one failure mode that could make the result misleading.\n\nDeliverable: a brief numbered analysis, a concrete baseline, and one falsifiable sanity check.",
+    "skills": [
+      "Experimental reasoning"
+    ],
+    "tags": [
+      "Statistics",
+      "Model assumptions"
+    ]
+  },
+  {
+    "id": "mm-v5-statistics-medium-theory",
+    "topic": "Statistics",
+    "title": "Statistics — Medium applied case",
+    "level": "Medium",
+    "type": "theory",
+    "practiceMode": "theory",
+    "question": "Case study: delivery times [8, 10, 10, 12, 60] minutes with one major outlier. Design a reproducible investigation to compare mean, median, sample standard deviation, and IQR. State the input columns, split strategy, the comparison baseline, and a justified model or method configuration. Use numeric summaries and an explanation of robustness to decide whether your approach actually helps. Explain how you would detect data leakage and one possible adverse outcome.\n\nDeliverable: experiment protocol, expected evaluation artifacts, and a go/no-go criterion; do not claim a numeric result without running data.",
+    "skills": [
+      "Experimental reasoning"
+    ],
+    "tags": [
+      "Statistics",
+      "Model assumptions"
+    ]
+  },
+  {
+    "id": "mm-v5-statistics-advanced-coding",
+    "topic": "Statistics",
+    "title": "Statistics — Advanced reusable implementation",
+    "level": "Advanced",
+    "type": "coding",
+    "practiceMode": "coding",
+    "question": "Write a reusable `statistics_workflow(X_train, y_train, X_test)` function demonstrating Statistics. Avoid hardcoded row counts; fit learned transformations only on training data; return predictions or transformed data in original test-row order. Provide tests for regular, missing-value, and altered-feature input cases as relevant to the topic.",
+    "skills": [
+      "Reusable implementation"
+    ],
+    "tags": [
+      "Statistics",
+      "Software correctness"
+    ]
+  },
+  {
+    "id": "mm-v5-time-series-basic-theory",
+    "topic": "Time Series",
+    "title": "Time Series — Basic applied case",
+    "level": "Basic",
+    "type": "theory",
+    "practiceMode": "theory",
+    "question": "Consider daily sales with weekly seasonality and a promotion starting on day 120. Explain the core idea of Time Series in this exact setting, then specify the first practical step you would take to use rolling-origin validation and compare seasonal naive against a trained regressor. State what information belongs in training versus held-out evaluation. Finish with one failure mode that could make the result misleading.\n\nDeliverable: a brief numbered analysis, a concrete baseline, and one falsifiable sanity check.",
+    "skills": [
+      "Experimental reasoning"
+    ],
+    "tags": [
+      "Time Series",
+      "Model assumptions"
+    ]
+  },
+  {
+    "id": "mm-v5-time-series-medium-theory",
+    "topic": "Time Series",
+    "title": "Time Series — Medium applied case",
+    "level": "Medium",
+    "type": "theory",
+    "practiceMode": "theory",
+    "question": "Case study: daily sales with weekly seasonality and a promotion starting on day 120. Design a reproducible investigation to use rolling-origin validation and compare seasonal naive against a trained regressor. State the input columns, split strategy, the comparison baseline, and a justified model or method configuration. Use MAE by forecast horizon and leakage audit to decide whether your approach actually helps. Explain how you would detect data leakage and one possible adverse outcome.\n\nDeliverable: experiment protocol, expected evaluation artifacts, and a go/no-go criterion; do not claim a numeric result without running data.",
+    "skills": [
+      "Experimental reasoning"
+    ],
+    "tags": [
+      "Time Series",
+      "Model assumptions"
+    ]
+  },
+  {
+    "id": "mm-v5-time-series-advanced-coding",
+    "topic": "Time Series",
+    "title": "Time Series — Advanced reusable implementation",
+    "level": "Advanced",
+    "type": "coding",
+    "practiceMode": "coding",
+    "question": "Write a reusable `time_series_workflow(X_train, y_train, X_test)` function demonstrating Time Series. Avoid hardcoded row counts; fit learned transformations only on training data; return predictions or transformed data in original test-row order. Provide tests for regular, missing-value, and altered-feature input cases as relevant to the topic.",
+    "skills": [
+      "Reusable implementation"
+    ],
+    "tags": [
+      "Time Series",
+      "Software correctness"
+    ]
+  },
+  {
+    "id": "mm-v5-transfer-learning-basic-theory",
+    "topic": "Transfer Learning",
+    "title": "Transfer Learning — Basic applied case",
+    "level": "Basic",
+    "type": "theory",
+    "practiceMode": "theory",
+    "question": "Consider a small 4-class image dataset with only 25 labeled images per class. Explain the core idea of Transfer Learning in this exact setting, then specify the first practical step you would take to compare frozen features, partial fine-tuning, and training from scratch. State what information belongs in training versus held-out evaluation. Finish with one failure mode that could make the result misleading.\n\nDeliverable: a brief numbered analysis, a concrete baseline, and one falsifiable sanity check.",
+    "skills": [
+      "Experimental reasoning"
+    ],
+    "tags": [
+      "Transfer Learning",
+      "Model assumptions"
+    ]
+  },
+  {
+    "id": "mm-v5-transfer-learning-medium-theory",
+    "topic": "Transfer Learning",
+    "title": "Transfer Learning — Medium applied case",
+    "level": "Medium",
+    "type": "theory",
+    "practiceMode": "theory",
+    "question": "Case study: a small 4-class image dataset with only 25 labeled images per class. Design a reproducible investigation to compare frozen features, partial fine-tuning, and training from scratch. State the input columns, split strategy, the comparison baseline, and a justified model or method configuration. Use per-class F1, seed sensitivity, and validation learning curves to decide whether your approach actually helps. Explain how you would detect data leakage and one possible adverse outcome.\n\nDeliverable: experiment protocol, expected evaluation artifacts, and a go/no-go criterion; do not claim a numeric result without running data.",
+    "skills": [
+      "Experimental reasoning"
+    ],
+    "tags": [
+      "Transfer Learning",
+      "Model assumptions"
+    ]
+  },
+  {
+    "id": "mm-v5-transfer-learning-advanced-coding",
+    "topic": "Transfer Learning",
+    "title": "Transfer Learning — Advanced reusable implementation",
+    "level": "Advanced",
+    "type": "coding",
+    "practiceMode": "coding",
+    "question": "Write a reusable `transfer_learning_workflow(X_train, y_train, X_test)` function demonstrating Transfer Learning. Avoid hardcoded row counts; fit learned transformations only on training data; return predictions or transformed data in original test-row order. Provide tests for regular, missing-value, and altered-feature input cases as relevant to the topic.",
+    "skills": [
+      "Reusable implementation"
+    ],
+    "tags": [
+      "Transfer Learning",
+      "Software correctness"
+    ]
+  },
+  {
+    "id": "mm-v5-xgboost-advanced-coding",
+    "topic": "XGBoost",
+    "title": "XGBoost — Advanced reusable implementation",
+    "level": "Advanced",
+    "type": "coding",
+    "practiceMode": "coding",
+    "question": "Write a reusable `xgboost_workflow(X_train, y_train, X_test)` function demonstrating XGBoost. Avoid hardcoded row counts; fit learned transformations only on training data; return predictions or transformed data in original test-row order. Provide tests for regular, missing-value, and altered-feature input cases as relevant to the topic.",
+    "skills": [
+      "Reusable implementation"
+    ],
+    "tags": [
+      "XGBoost",
+      "Software correctness"
+    ]
+  }
+]

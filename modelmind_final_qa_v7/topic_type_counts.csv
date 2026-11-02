@@ -1,0 +1,1237 @@
+﻿topic,total,level,type,count
+AdaBoost / Gradient Boosting,17,basic,coding,2
+AdaBoost / Gradient Boosting,17,basic,theory,2
+AdaBoost / Gradient Boosting,17,basic,numerical,1
+AdaBoost / Gradient Boosting,17,basic,mcq,1
+AdaBoost / Gradient Boosting,17,medium,coding,3
+AdaBoost / Gradient Boosting,17,medium,theory,1
+AdaBoost / Gradient Boosting,17,medium,numerical,1
+AdaBoost / Gradient Boosting,17,medium,mcq,1
+AdaBoost / Gradient Boosting,17,advanced,coding,1
+AdaBoost / Gradient Boosting,17,advanced,theory,2
+AdaBoost / Gradient Boosting,17,advanced,numerical,1
+AdaBoost / Gradient Boosting,17,advanced,mcq,1
+AdaBoost Classifier,21,basic,coding,3
+AdaBoost Classifier,21,basic,theory,1
+AdaBoost Classifier,21,basic,numerical,2
+AdaBoost Classifier,21,basic,mcq,1
+AdaBoost Classifier,21,medium,coding,3
+AdaBoost Classifier,21,medium,theory,1
+AdaBoost Classifier,21,medium,numerical,2
+AdaBoost Classifier,21,medium,mcq,1
+AdaBoost Classifier,21,advanced,coding,2
+AdaBoost Classifier,21,advanced,theory,2
+AdaBoost Classifier,21,advanced,numerical,2
+AdaBoost Classifier,21,advanced,mcq,1
+AdaBoost Regressor,21,basic,coding,3
+AdaBoost Regressor,21,basic,theory,1
+AdaBoost Regressor,21,basic,numerical,2
+AdaBoost Regressor,21,basic,mcq,1
+AdaBoost Regressor,21,medium,coding,3
+AdaBoost Regressor,21,medium,theory,1
+AdaBoost Regressor,21,medium,numerical,2
+AdaBoost Regressor,21,medium,mcq,1
+AdaBoost Regressor,21,advanced,coding,2
+AdaBoost Regressor,21,advanced,theory,2
+AdaBoost Regressor,21,advanced,numerical,2
+AdaBoost Regressor,21,advanced,mcq,1
+Advanced Feature Engineering,22,basic,coding,3
+Advanced Feature Engineering,22,basic,theory,2
+Advanced Feature Engineering,22,basic,numerical,1
+Advanced Feature Engineering,22,basic,mcq,1
+Advanced Feature Engineering,22,medium,coding,2
+Advanced Feature Engineering,22,medium,theory,3
+Advanced Feature Engineering,22,medium,numerical,1
+Advanced Feature Engineering,22,medium,mcq,1
+Advanced Feature Engineering,22,advanced,coding,2
+Advanced Feature Engineering,22,advanced,theory,4
+Advanced Feature Engineering,22,advanced,numerical,1
+Advanced Feature Engineering,22,advanced,mcq,1
+Advanced Statistics / Probability,22,basic,coding,1
+Advanced Statistics / Probability,22,basic,theory,2
+Advanced Statistics / Probability,22,basic,numerical,3
+Advanced Statistics / Probability,22,basic,mcq,1
+Advanced Statistics / Probability,22,medium,coding,2
+Advanced Statistics / Probability,22,medium,theory,4
+Advanced Statistics / Probability,22,medium,numerical,1
+Advanced Statistics / Probability,22,medium,mcq,1
+Advanced Statistics / Probability,22,advanced,coding,1
+Advanced Statistics / Probability,22,advanced,theory,4
+Advanced Statistics / Probability,22,advanced,numerical,1
+Advanced Statistics / Probability,22,advanced,mcq,1
+Advanced XGBoost,21,basic,coding,2
+Advanced XGBoost,21,basic,theory,1
+Advanced XGBoost,21,basic,numerical,1
+Advanced XGBoost,21,basic,mcq,1
+Advanced XGBoost,21,medium,coding,1
+Advanced XGBoost,21,medium,theory,5
+Advanced XGBoost,21,medium,numerical,1
+Advanced XGBoost,21,medium,mcq,1
+Advanced XGBoost,21,advanced,coding,1
+Advanced XGBoost,21,advanced,theory,5
+Advanced XGBoost,21,advanced,numerical,1
+Advanced XGBoost,21,advanced,mcq,1
+Agglomerative Clustering,21,basic,coding,3
+Agglomerative Clustering,21,basic,theory,1
+Agglomerative Clustering,21,basic,numerical,2
+Agglomerative Clustering,21,basic,mcq,1
+Agglomerative Clustering,21,medium,coding,3
+Agglomerative Clustering,21,medium,theory,1
+Agglomerative Clustering,21,medium,numerical,2
+Agglomerative Clustering,21,medium,mcq,1
+Agglomerative Clustering,21,advanced,coding,2
+Agglomerative Clustering,21,advanced,theory,2
+Agglomerative Clustering,21,advanced,numerical,2
+Agglomerative Clustering,21,advanced,mcq,1
+Anomaly Detection,22,basic,coding,2
+Anomaly Detection,22,basic,theory,3
+Anomaly Detection,22,basic,numerical,1
+Anomaly Detection,22,basic,mcq,1
+Anomaly Detection,22,medium,coding,2
+Anomaly Detection,22,medium,theory,3
+Anomaly Detection,22,medium,numerical,1
+Anomaly Detection,22,medium,mcq,1
+Anomaly Detection,22,advanced,coding,1
+Anomaly Detection,22,advanced,theory,5
+Anomaly Detection,22,advanced,numerical,1
+Anomaly Detection,22,advanced,mcq,1
+Bernoulli Naive Bayes,21,basic,coding,3
+Bernoulli Naive Bayes,21,basic,theory,1
+Bernoulli Naive Bayes,21,basic,numerical,2
+Bernoulli Naive Bayes,21,basic,mcq,1
+Bernoulli Naive Bayes,21,medium,coding,3
+Bernoulli Naive Bayes,21,medium,theory,1
+Bernoulli Naive Bayes,21,medium,numerical,2
+Bernoulli Naive Bayes,21,medium,mcq,1
+Bernoulli Naive Bayes,21,advanced,coding,2
+Bernoulli Naive Bayes,21,advanced,theory,2
+Bernoulli Naive Bayes,21,advanced,numerical,2
+Bernoulli Naive Bayes,21,advanced,mcq,1
+CNN,22,basic,coding,2
+CNN,22,basic,theory,3
+CNN,22,basic,numerical,1
+CNN,22,basic,mcq,1
+CNN,22,medium,coding,2
+CNN,22,medium,theory,3
+CNN,22,medium,numerical,1
+CNN,22,medium,mcq,1
+CNN,22,advanced,coding,1
+CNN,22,advanced,theory,5
+CNN,22,advanced,numerical,1
+CNN,22,advanced,mcq,1
+Calculus & Optimization,21,basic,coding,3
+Calculus & Optimization,21,basic,theory,1
+Calculus & Optimization,21,basic,numerical,2
+Calculus & Optimization,21,basic,mcq,1
+Calculus & Optimization,21,medium,coding,3
+Calculus & Optimization,21,medium,theory,1
+Calculus & Optimization,21,medium,numerical,2
+Calculus & Optimization,21,medium,mcq,1
+Calculus & Optimization,21,advanced,coding,2
+Calculus & Optimization,21,advanced,theory,2
+Calculus & Optimization,21,advanced,numerical,2
+Calculus & Optimization,21,advanced,mcq,1
+CatBoost Classifier,21,basic,coding,3
+CatBoost Classifier,21,basic,theory,1
+CatBoost Classifier,21,basic,numerical,2
+CatBoost Classifier,21,basic,mcq,1
+CatBoost Classifier,21,medium,coding,3
+CatBoost Classifier,21,medium,theory,1
+CatBoost Classifier,21,medium,numerical,2
+CatBoost Classifier,21,medium,mcq,1
+CatBoost Classifier,21,advanced,coding,2
+CatBoost Classifier,21,advanced,theory,2
+CatBoost Classifier,21,advanced,numerical,2
+CatBoost Classifier,21,advanced,mcq,1
+Classification Metrics,21,basic,coding,3
+Classification Metrics,21,basic,theory,1
+Classification Metrics,21,basic,numerical,2
+Classification Metrics,21,basic,mcq,1
+Classification Metrics,21,medium,coding,3
+Classification Metrics,21,medium,theory,1
+Classification Metrics,21,medium,numerical,2
+Classification Metrics,21,medium,mcq,1
+Classification Metrics,21,advanced,coding,2
+Classification Metrics,21,advanced,theory,2
+Classification Metrics,21,advanced,numerical,2
+Classification Metrics,21,advanced,mcq,1
+Clustering Beyond K-Means,22,basic,coding,2
+Clustering Beyond K-Means,22,basic,theory,3
+Clustering Beyond K-Means,22,basic,numerical,1
+Clustering Beyond K-Means,22,basic,mcq,1
+Clustering Beyond K-Means,22,medium,coding,2
+Clustering Beyond K-Means,22,medium,theory,3
+Clustering Beyond K-Means,22,medium,numerical,1
+Clustering Beyond K-Means,22,medium,mcq,1
+Clustering Beyond K-Means,22,advanced,coding,1
+Clustering Beyond K-Means,22,advanced,theory,5
+Clustering Beyond K-Means,22,advanced,numerical,1
+Clustering Beyond K-Means,22,advanced,mcq,1
+Cross Validation,28,basic,coding,4
+Cross Validation,28,basic,theory,3
+Cross Validation,28,basic,numerical,2
+Cross Validation,28,basic,mcq,1
+Cross Validation,28,medium,coding,5
+Cross Validation,28,medium,theory,1
+Cross Validation,28,medium,numerical,2
+Cross Validation,28,medium,mcq,1
+Cross Validation,28,advanced,coding,3
+Cross Validation,28,advanced,theory,3
+Cross Validation,28,advanced,numerical,2
+Cross Validation,28,advanced,mcq,1
+DBSCAN,21,basic,coding,3
+DBSCAN,21,basic,theory,1
+DBSCAN,21,basic,numerical,2
+DBSCAN,21,basic,mcq,1
+DBSCAN,21,medium,coding,3
+DBSCAN,21,medium,theory,1
+DBSCAN,21,medium,numerical,2
+DBSCAN,21,medium,mcq,1
+DBSCAN,21,advanced,coding,2
+DBSCAN,21,advanced,theory,2
+DBSCAN,21,advanced,numerical,2
+DBSCAN,21,advanced,mcq,1
+Data Cleaning,21,basic,coding,3
+Data Cleaning,21,basic,theory,1
+Data Cleaning,21,basic,numerical,2
+Data Cleaning,21,basic,mcq,1
+Data Cleaning,21,medium,coding,3
+Data Cleaning,21,medium,theory,1
+Data Cleaning,21,medium,numerical,2
+Data Cleaning,21,medium,mcq,1
+Data Cleaning,21,advanced,coding,2
+Data Cleaning,21,advanced,theory,2
+Data Cleaning,21,advanced,numerical,2
+Data Cleaning,21,advanced,mcq,1
+Data Splitting / Leakage,22,basic,coding,3
+Data Splitting / Leakage,22,basic,theory,2
+Data Splitting / Leakage,22,basic,numerical,1
+Data Splitting / Leakage,22,basic,mcq,1
+Data Splitting / Leakage,22,medium,coding,1
+Data Splitting / Leakage,22,medium,theory,4
+Data Splitting / Leakage,22,medium,numerical,1
+Data Splitting / Leakage,22,medium,mcq,1
+Data Splitting / Leakage,22,advanced,coding,2
+Data Splitting / Leakage,22,advanced,theory,4
+Data Splitting / Leakage,22,advanced,numerical,1
+Data Splitting / Leakage,22,advanced,mcq,1
+Decision Tree,18,basic,coding,3
+Decision Tree,18,basic,theory,2
+Decision Tree,18,basic,numerical,1
+Decision Tree,18,basic,mcq,1
+Decision Tree,18,medium,coding,3
+Decision Tree,18,medium,theory,1
+Decision Tree,18,medium,numerical,1
+Decision Tree,18,medium,mcq,1
+Decision Tree,18,advanced,coding,1
+Decision Tree,18,advanced,theory,2
+Decision Tree,18,advanced,numerical,1
+Decision Tree,18,advanced,mcq,1
+Decision Tree Classifier,21,basic,coding,3
+Decision Tree Classifier,21,basic,theory,1
+Decision Tree Classifier,21,basic,numerical,2
+Decision Tree Classifier,21,basic,mcq,1
+Decision Tree Classifier,21,medium,coding,3
+Decision Tree Classifier,21,medium,theory,1
+Decision Tree Classifier,21,medium,numerical,2
+Decision Tree Classifier,21,medium,mcq,1
+Decision Tree Classifier,21,advanced,coding,2
+Decision Tree Classifier,21,advanced,theory,2
+Decision Tree Classifier,21,advanced,numerical,2
+Decision Tree Classifier,21,advanced,mcq,1
+Decision Tree Regressor,21,basic,coding,3
+Decision Tree Regressor,21,basic,theory,1
+Decision Tree Regressor,21,basic,numerical,2
+Decision Tree Regressor,21,basic,mcq,1
+Decision Tree Regressor,21,medium,coding,3
+Decision Tree Regressor,21,medium,theory,1
+Decision Tree Regressor,21,medium,numerical,2
+Decision Tree Regressor,21,medium,mcq,1
+Decision Tree Regressor,21,advanced,coding,2
+Decision Tree Regressor,21,advanced,theory,2
+Decision Tree Regressor,21,advanced,numerical,2
+Decision Tree Regressor,21,advanced,mcq,1
+Deep Learning,22,basic,coding,2
+Deep Learning,22,basic,theory,3
+Deep Learning,22,basic,numerical,1
+Deep Learning,22,basic,mcq,1
+Deep Learning,22,medium,coding,2
+Deep Learning,22,medium,theory,3
+Deep Learning,22,medium,numerical,1
+Deep Learning,22,medium,mcq,1
+Deep Learning,22,advanced,coding,1
+Deep Learning,22,advanced,theory,5
+Deep Learning,22,advanced,numerical,1
+Deep Learning,22,advanced,mcq,1
+Dimensionality Reduction,22,basic,coding,2
+Dimensionality Reduction,22,basic,theory,3
+Dimensionality Reduction,22,basic,numerical,1
+Dimensionality Reduction,22,basic,mcq,1
+Dimensionality Reduction,22,medium,coding,1
+Dimensionality Reduction,22,medium,theory,4
+Dimensionality Reduction,22,medium,numerical,1
+Dimensionality Reduction,22,medium,mcq,1
+Dimensionality Reduction,22,advanced,coding,1
+Dimensionality Reduction,22,advanced,theory,5
+Dimensionality Reduction,22,advanced,numerical,1
+Dimensionality Reduction,22,advanced,mcq,1
+EDA,22,basic,coding,3
+EDA,22,basic,theory,2
+EDA,22,basic,numerical,1
+EDA,22,basic,mcq,1
+EDA,22,medium,coding,4
+EDA,22,medium,theory,1
+EDA,22,medium,numerical,1
+EDA,22,medium,mcq,1
+EDA,22,advanced,coding,2
+EDA,22,advanced,theory,4
+EDA,22,advanced,numerical,1
+EDA,22,advanced,mcq,1
+Elastic Net,21,basic,coding,3
+Elastic Net,21,basic,theory,1
+Elastic Net,21,basic,numerical,2
+Elastic Net,21,basic,mcq,1
+Elastic Net,21,medium,coding,3
+Elastic Net,21,medium,theory,1
+Elastic Net,21,medium,numerical,2
+Elastic Net,21,medium,mcq,1
+Elastic Net,21,advanced,coding,2
+Elastic Net,21,advanced,theory,2
+Elastic Net,21,advanced,numerical,2
+Elastic Net,21,advanced,mcq,1
+Ensemble Learning,22,basic,coding,1
+Ensemble Learning,22,basic,theory,4
+Ensemble Learning,22,basic,numerical,1
+Ensemble Learning,22,basic,mcq,1
+Ensemble Learning,22,medium,coding,2
+Ensemble Learning,22,medium,theory,3
+Ensemble Learning,22,medium,numerical,1
+Ensemble Learning,22,medium,mcq,1
+Ensemble Learning,22,advanced,coding,1
+Ensemble Learning,22,advanced,theory,5
+Ensemble Learning,22,advanced,numerical,1
+Ensemble Learning,22,advanced,mcq,1
+Extra Trees Classifier,21,basic,coding,3
+Extra Trees Classifier,21,basic,theory,1
+Extra Trees Classifier,21,basic,numerical,2
+Extra Trees Classifier,21,basic,mcq,1
+Extra Trees Classifier,21,medium,coding,3
+Extra Trees Classifier,21,medium,theory,1
+Extra Trees Classifier,21,medium,numerical,2
+Extra Trees Classifier,21,medium,mcq,1
+Extra Trees Classifier,21,advanced,coding,2
+Extra Trees Classifier,21,advanced,theory,2
+Extra Trees Classifier,21,advanced,numerical,2
+Extra Trees Classifier,21,advanced,mcq,1
+Extra Trees Regressor,21,basic,coding,3
+Extra Trees Regressor,21,basic,theory,1
+Extra Trees Regressor,21,basic,numerical,2
+Extra Trees Regressor,21,basic,mcq,1
+Extra Trees Regressor,21,medium,coding,3
+Extra Trees Regressor,21,medium,theory,1
+Extra Trees Regressor,21,medium,numerical,2
+Extra Trees Regressor,21,medium,mcq,1
+Extra Trees Regressor,21,advanced,coding,2
+Extra Trees Regressor,21,advanced,theory,2
+Extra Trees Regressor,21,advanced,numerical,2
+Extra Trees Regressor,21,advanced,mcq,1
+Feature Engineering,29,basic,coding,5
+Feature Engineering,29,basic,theory,2
+Feature Engineering,29,basic,numerical,2
+Feature Engineering,29,basic,mcq,1
+Feature Engineering,29,medium,coding,5
+Feature Engineering,29,medium,theory,1
+Feature Engineering,29,medium,numerical,2
+Feature Engineering,29,medium,mcq,1
+Feature Engineering,29,advanced,coding,3
+Feature Engineering,29,advanced,theory,4
+Feature Engineering,29,advanced,numerical,2
+Feature Engineering,29,advanced,mcq,1
+Feature Selection,31,basic,coding,4
+Feature Selection,31,basic,theory,3
+Feature Selection,31,basic,numerical,2
+Feature Selection,31,basic,mcq,1
+Feature Selection,31,medium,coding,4
+Feature Selection,31,medium,theory,3
+Feature Selection,31,medium,numerical,2
+Feature Selection,31,medium,mcq,1
+Feature Selection,31,advanced,coding,2
+Feature Selection,31,advanced,theory,6
+Feature Selection,31,advanced,numerical,2
+Feature Selection,31,advanced,mcq,1
+Gaussian Mixture Models,21,basic,coding,3
+Gaussian Mixture Models,21,basic,theory,1
+Gaussian Mixture Models,21,basic,numerical,2
+Gaussian Mixture Models,21,basic,mcq,1
+Gaussian Mixture Models,21,medium,coding,3
+Gaussian Mixture Models,21,medium,theory,1
+Gaussian Mixture Models,21,medium,numerical,2
+Gaussian Mixture Models,21,medium,mcq,1
+Gaussian Mixture Models,21,advanced,coding,2
+Gaussian Mixture Models,21,advanced,theory,2
+Gaussian Mixture Models,21,advanced,numerical,2
+Gaussian Mixture Models,21,advanced,mcq,1
+Gaussian Naive Bayes,21,basic,coding,3
+Gaussian Naive Bayes,21,basic,theory,1
+Gaussian Naive Bayes,21,basic,numerical,2
+Gaussian Naive Bayes,21,basic,mcq,1
+Gaussian Naive Bayes,21,medium,coding,3
+Gaussian Naive Bayes,21,medium,theory,1
+Gaussian Naive Bayes,21,medium,numerical,2
+Gaussian Naive Bayes,21,medium,mcq,1
+Gaussian Naive Bayes,21,advanced,coding,2
+Gaussian Naive Bayes,21,advanced,theory,2
+Gaussian Naive Bayes,21,advanced,numerical,2
+Gaussian Naive Bayes,21,advanced,mcq,1
+Gradient Boosting Classifier,21,basic,coding,3
+Gradient Boosting Classifier,21,basic,theory,1
+Gradient Boosting Classifier,21,basic,numerical,2
+Gradient Boosting Classifier,21,basic,mcq,1
+Gradient Boosting Classifier,21,medium,coding,3
+Gradient Boosting Classifier,21,medium,theory,1
+Gradient Boosting Classifier,21,medium,numerical,2
+Gradient Boosting Classifier,21,medium,mcq,1
+Gradient Boosting Classifier,21,advanced,coding,2
+Gradient Boosting Classifier,21,advanced,theory,2
+Gradient Boosting Classifier,21,advanced,numerical,2
+Gradient Boosting Classifier,21,advanced,mcq,1
+Gradient Boosting Regressor,21,basic,coding,3
+Gradient Boosting Regressor,21,basic,theory,1
+Gradient Boosting Regressor,21,basic,numerical,2
+Gradient Boosting Regressor,21,basic,mcq,1
+Gradient Boosting Regressor,21,medium,coding,3
+Gradient Boosting Regressor,21,medium,theory,1
+Gradient Boosting Regressor,21,medium,numerical,2
+Gradient Boosting Regressor,21,medium,mcq,1
+Gradient Boosting Regressor,21,advanced,coding,2
+Gradient Boosting Regressor,21,advanced,theory,2
+Gradient Boosting Regressor,21,advanced,numerical,2
+Gradient Boosting Regressor,21,advanced,mcq,1
+Gradient Descent,18,basic,coding,1
+Gradient Descent,18,basic,theory,3
+Gradient Descent,18,basic,numerical,2
+Gradient Descent,18,basic,mcq,1
+Gradient Descent,18,medium,coding,3
+Gradient Descent,18,medium,theory,1
+Gradient Descent,18,medium,numerical,1
+Gradient Descent,18,medium,mcq,1
+Gradient Descent,18,advanced,coding,1
+Gradient Descent,18,advanced,theory,2
+Gradient Descent,18,advanced,numerical,1
+Gradient Descent,18,advanced,mcq,1
+Hyperparameter Search,21,basic,coding,3
+Hyperparameter Search,21,basic,theory,1
+Hyperparameter Search,21,basic,numerical,2
+Hyperparameter Search,21,basic,mcq,1
+Hyperparameter Search,21,medium,coding,3
+Hyperparameter Search,21,medium,theory,1
+Hyperparameter Search,21,medium,numerical,2
+Hyperparameter Search,21,medium,mcq,1
+Hyperparameter Search,21,advanced,coding,2
+Hyperparameter Search,21,advanced,theory,2
+Hyperparameter Search,21,advanced,numerical,2
+Hyperparameter Search,21,advanced,mcq,1
+Hyperparameter Tuning,18,basic,coding,2
+Hyperparameter Tuning,18,basic,theory,2
+Hyperparameter Tuning,18,basic,numerical,1
+Hyperparameter Tuning,18,basic,mcq,1
+Hyperparameter Tuning,18,medium,coding,3
+Hyperparameter Tuning,18,medium,theory,1
+Hyperparameter Tuning,18,medium,numerical,1
+Hyperparameter Tuning,18,medium,mcq,1
+Hyperparameter Tuning,18,advanced,coding,1
+Hyperparameter Tuning,18,advanced,theory,3
+Hyperparameter Tuning,18,advanced,numerical,1
+Hyperparameter Tuning,18,advanced,mcq,1
+Imbalanced Learning,31,basic,coding,4
+Imbalanced Learning,31,basic,theory,3
+Imbalanced Learning,31,basic,numerical,2
+Imbalanced Learning,31,basic,mcq,1
+Imbalanced Learning,31,medium,coding,4
+Imbalanced Learning,31,medium,theory,3
+Imbalanced Learning,31,medium,numerical,2
+Imbalanced Learning,31,medium,mcq,1
+Imbalanced Learning,31,advanced,coding,2
+Imbalanced Learning,31,advanced,theory,6
+Imbalanced Learning,31,advanced,numerical,2
+Imbalanced Learning,31,advanced,mcq,1
+Isolation Forest,21,basic,coding,3
+Isolation Forest,21,basic,theory,1
+Isolation Forest,21,basic,numerical,2
+Isolation Forest,21,basic,mcq,1
+Isolation Forest,21,medium,coding,3
+Isolation Forest,21,medium,theory,1
+Isolation Forest,21,medium,numerical,2
+Isolation Forest,21,medium,mcq,1
+Isolation Forest,21,advanced,coding,2
+Isolation Forest,21,advanced,theory,2
+Isolation Forest,21,advanced,numerical,2
+Isolation Forest,21,advanced,mcq,1
+K-Means,28,basic,coding,5
+K-Means,28,basic,theory,2
+K-Means,28,basic,numerical,2
+K-Means,28,basic,mcq,1
+K-Means,28,medium,coding,5
+K-Means,28,medium,theory,1
+K-Means,28,medium,numerical,2
+K-Means,28,medium,mcq,1
+K-Means,28,advanced,coding,2
+K-Means,28,advanced,theory,4
+K-Means,28,advanced,numerical,2
+K-Means,28,advanced,mcq,1
+KNN,19,basic,coding,3
+KNN,19,basic,theory,2
+KNN,19,basic,numerical,1
+KNN,19,basic,mcq,1
+KNN,19,medium,coding,3
+KNN,19,medium,theory,1
+KNN,19,medium,numerical,1
+KNN,19,medium,mcq,1
+KNN,19,advanced,coding,1
+KNN,19,advanced,theory,3
+KNN,19,advanced,numerical,1
+KNN,19,advanced,mcq,1
+KNN Classifier,21,basic,coding,3
+KNN Classifier,21,basic,theory,1
+KNN Classifier,21,basic,numerical,2
+KNN Classifier,21,basic,mcq,1
+KNN Classifier,21,medium,coding,3
+KNN Classifier,21,medium,theory,1
+KNN Classifier,21,medium,numerical,2
+KNN Classifier,21,medium,mcq,1
+KNN Classifier,21,advanced,coding,2
+KNN Classifier,21,advanced,theory,2
+KNN Classifier,21,advanced,numerical,2
+KNN Classifier,21,advanced,mcq,1
+KNN Regressor,21,basic,coding,3
+KNN Regressor,21,basic,theory,1
+KNN Regressor,21,basic,numerical,2
+KNN Regressor,21,basic,mcq,1
+KNN Regressor,21,medium,coding,3
+KNN Regressor,21,medium,theory,1
+KNN Regressor,21,medium,numerical,2
+KNN Regressor,21,medium,mcq,1
+KNN Regressor,21,advanced,coding,2
+KNN Regressor,21,advanced,theory,2
+KNN Regressor,21,advanced,numerical,2
+KNN Regressor,21,advanced,mcq,1
+Lasso Regression,21,basic,coding,3
+Lasso Regression,21,basic,theory,1
+Lasso Regression,21,basic,numerical,2
+Lasso Regression,21,basic,mcq,1
+Lasso Regression,21,medium,coding,3
+Lasso Regression,21,medium,theory,1
+Lasso Regression,21,medium,numerical,2
+Lasso Regression,21,medium,mcq,1
+Lasso Regression,21,advanced,coding,2
+Lasso Regression,21,advanced,theory,2
+Lasso Regression,21,advanced,numerical,2
+Lasso Regression,21,advanced,mcq,1
+LightGBM Classifier,21,basic,coding,3
+LightGBM Classifier,21,basic,theory,1
+LightGBM Classifier,21,basic,numerical,2
+LightGBM Classifier,21,basic,mcq,1
+LightGBM Classifier,21,medium,coding,3
+LightGBM Classifier,21,medium,theory,1
+LightGBM Classifier,21,medium,numerical,2
+LightGBM Classifier,21,medium,mcq,1
+LightGBM Classifier,21,advanced,coding,2
+LightGBM Classifier,21,advanced,theory,2
+LightGBM Classifier,21,advanced,numerical,2
+LightGBM Classifier,21,advanced,mcq,1
+Linear Algebra for ML,21,basic,coding,3
+Linear Algebra for ML,21,basic,theory,1
+Linear Algebra for ML,21,basic,numerical,2
+Linear Algebra for ML,21,basic,mcq,1
+Linear Algebra for ML,21,medium,coding,3
+Linear Algebra for ML,21,medium,theory,1
+Linear Algebra for ML,21,medium,numerical,2
+Linear Algebra for ML,21,medium,mcq,1
+Linear Algebra for ML,21,advanced,coding,2
+Linear Algebra for ML,21,advanced,theory,2
+Linear Algebra for ML,21,advanced,numerical,2
+Linear Algebra for ML,21,advanced,mcq,1
+Linear Regression,28,basic,coding,5
+Linear Regression,28,basic,theory,1
+Linear Regression,28,basic,numerical,2
+Linear Regression,28,basic,mcq,1
+Linear Regression,28,medium,coding,5
+Linear Regression,28,medium,theory,1
+Linear Regression,28,medium,numerical,2
+Linear Regression,28,medium,mcq,1
+Linear Regression,28,advanced,coding,2
+Linear Regression,28,advanced,theory,5
+Linear Regression,28,advanced,numerical,2
+Linear Regression,28,advanced,mcq,1
+Local Outlier Factor,21,basic,coding,3
+Local Outlier Factor,21,basic,theory,1
+Local Outlier Factor,21,basic,numerical,2
+Local Outlier Factor,21,basic,mcq,1
+Local Outlier Factor,21,medium,coding,3
+Local Outlier Factor,21,medium,theory,1
+Local Outlier Factor,21,medium,numerical,2
+Local Outlier Factor,21,medium,mcq,1
+Local Outlier Factor,21,advanced,coding,2
+Local Outlier Factor,21,advanced,theory,2
+Local Outlier Factor,21,advanced,numerical,2
+Local Outlier Factor,21,advanced,mcq,1
+Logistic Regression,28,basic,coding,5
+Logistic Regression,28,basic,theory,2
+Logistic Regression,28,basic,numerical,2
+Logistic Regression,28,basic,mcq,1
+Logistic Regression,28,medium,coding,5
+Logistic Regression,28,medium,theory,1
+Logistic Regression,28,medium,numerical,2
+Logistic Regression,28,medium,mcq,1
+Logistic Regression,28,advanced,coding,2
+Logistic Regression,28,advanced,theory,4
+Logistic Regression,28,advanced,numerical,2
+Logistic Regression,28,advanced,mcq,1
+ML Deployment,21,basic,coding,3
+ML Deployment,21,basic,theory,1
+ML Deployment,21,basic,numerical,2
+ML Deployment,21,basic,mcq,1
+ML Deployment,21,medium,coding,3
+ML Deployment,21,medium,theory,1
+ML Deployment,21,medium,numerical,2
+ML Deployment,21,medium,mcq,1
+ML Deployment,21,advanced,coding,2
+ML Deployment,21,advanced,theory,2
+ML Deployment,21,advanced,numerical,2
+ML Deployment,21,advanced,mcq,1
+ML Engineering / Deployment,22,basic,coding,2
+ML Engineering / Deployment,22,basic,theory,3
+ML Engineering / Deployment,22,basic,numerical,1
+ML Engineering / Deployment,22,basic,mcq,1
+ML Engineering / Deployment,22,medium,coding,2
+ML Engineering / Deployment,22,medium,theory,3
+ML Engineering / Deployment,22,medium,numerical,1
+ML Engineering / Deployment,22,medium,mcq,1
+ML Engineering / Deployment,22,advanced,coding,1
+ML Engineering / Deployment,22,advanced,theory,5
+ML Engineering / Deployment,22,advanced,numerical,1
+ML Engineering / Deployment,22,advanced,mcq,1
+ML Experimentation,22,basic,coding,2
+ML Experimentation,22,basic,theory,3
+ML Experimentation,22,basic,numerical,1
+ML Experimentation,22,basic,mcq,1
+ML Experimentation,22,medium,coding,1
+ML Experimentation,22,medium,theory,4
+ML Experimentation,22,medium,numerical,1
+ML Experimentation,22,medium,mcq,1
+ML Experimentation,22,advanced,coding,1
+ML Experimentation,22,advanced,theory,5
+ML Experimentation,22,advanced,numerical,1
+ML Experimentation,22,advanced,mcq,1
+Matplotlib,22,basic,coding,3
+Matplotlib,22,basic,theory,1
+Matplotlib,22,basic,numerical,2
+Matplotlib,22,basic,mcq,1
+Matplotlib,22,medium,coding,4
+Matplotlib,22,medium,theory,1
+Matplotlib,22,medium,numerical,2
+Matplotlib,22,medium,mcq,1
+Matplotlib,22,advanced,coding,2
+Matplotlib,22,advanced,theory,2
+Matplotlib,22,advanced,numerical,2
+Matplotlib,22,advanced,mcq,1
+Matplotlib / Seaborn,17,basic,coding,3
+Matplotlib / Seaborn,17,basic,theory,1
+Matplotlib / Seaborn,17,basic,numerical,1
+Matplotlib / Seaborn,17,basic,mcq,1
+Matplotlib / Seaborn,17,medium,coding,2
+Matplotlib / Seaborn,17,medium,theory,2
+Matplotlib / Seaborn,17,medium,numerical,1
+Matplotlib / Seaborn,17,medium,mcq,1
+Matplotlib / Seaborn,17,advanced,coding,1
+Matplotlib / Seaborn,17,advanced,theory,2
+Matplotlib / Seaborn,17,advanced,numerical,1
+Matplotlib / Seaborn,17,advanced,mcq,1
+Metrics,20,basic,coding,4
+Metrics,20,basic,theory,1
+Metrics,20,basic,numerical,1
+Metrics,20,basic,mcq,1
+Metrics,20,medium,coding,3
+Metrics,20,medium,theory,2
+Metrics,20,medium,numerical,1
+Metrics,20,medium,mcq,1
+Metrics,20,advanced,coding,1
+Metrics,20,advanced,theory,3
+Metrics,20,advanced,numerical,1
+Metrics,20,advanced,mcq,1
+Model Calibration,21,basic,coding,3
+Model Calibration,21,basic,theory,1
+Model Calibration,21,basic,numerical,2
+Model Calibration,21,basic,mcq,1
+Model Calibration,21,medium,coding,3
+Model Calibration,21,medium,theory,1
+Model Calibration,21,medium,numerical,2
+Model Calibration,21,medium,mcq,1
+Model Calibration,21,advanced,coding,2
+Model Calibration,21,advanced,theory,2
+Model Calibration,21,advanced,numerical,2
+Model Calibration,21,advanced,mcq,1
+Model Calibration / Error Analysis,22,basic,coding,2
+Model Calibration / Error Analysis,22,basic,theory,3
+Model Calibration / Error Analysis,22,basic,numerical,1
+Model Calibration / Error Analysis,22,basic,mcq,1
+Model Calibration / Error Analysis,22,medium,coding,2
+Model Calibration / Error Analysis,22,medium,theory,3
+Model Calibration / Error Analysis,22,medium,numerical,1
+Model Calibration / Error Analysis,22,medium,mcq,1
+Model Calibration / Error Analysis,22,advanced,coding,1
+Model Calibration / Error Analysis,22,advanced,theory,5
+Model Calibration / Error Analysis,22,advanced,numerical,1
+Model Calibration / Error Analysis,22,advanced,mcq,1
+Model Interpretability,21,basic,coding,3
+Model Interpretability,21,basic,theory,1
+Model Interpretability,21,basic,numerical,2
+Model Interpretability,21,basic,mcq,1
+Model Interpretability,21,medium,coding,3
+Model Interpretability,21,medium,theory,1
+Model Interpretability,21,medium,numerical,2
+Model Interpretability,21,medium,mcq,1
+Model Interpretability,21,advanced,coding,2
+Model Interpretability,21,advanced,theory,2
+Model Interpretability,21,advanced,numerical,2
+Model Interpretability,21,advanced,mcq,1
+Model Interpretation,22,basic,coding,2
+Model Interpretation,22,basic,theory,3
+Model Interpretation,22,basic,numerical,1
+Model Interpretation,22,basic,mcq,1
+Model Interpretation,22,medium,coding,1
+Model Interpretation,22,medium,theory,4
+Model Interpretation,22,medium,numerical,1
+Model Interpretation,22,medium,mcq,1
+Model Interpretation,22,advanced,coding,1
+Model Interpretation,22,advanced,theory,5
+Model Interpretation,22,advanced,numerical,1
+Model Interpretation,22,advanced,mcq,1
+Model Monitoring & Drift,21,basic,coding,3
+Model Monitoring & Drift,21,basic,theory,1
+Model Monitoring & Drift,21,basic,numerical,2
+Model Monitoring & Drift,21,basic,mcq,1
+Model Monitoring & Drift,21,medium,coding,3
+Model Monitoring & Drift,21,medium,theory,1
+Model Monitoring & Drift,21,medium,numerical,2
+Model Monitoring & Drift,21,medium,mcq,1
+Model Monitoring & Drift,21,advanced,coding,2
+Model Monitoring & Drift,21,advanced,theory,2
+Model Monitoring & Drift,21,advanced,numerical,2
+Model Monitoring & Drift,21,advanced,mcq,1
+Model Monitoring / Drift,22,basic,coding,1
+Model Monitoring / Drift,22,basic,theory,4
+Model Monitoring / Drift,22,basic,numerical,1
+Model Monitoring / Drift,22,basic,mcq,1
+Model Monitoring / Drift,22,medium,coding,1
+Model Monitoring / Drift,22,medium,theory,4
+Model Monitoring / Drift,22,medium,numerical,1
+Model Monitoring / Drift,22,medium,mcq,1
+Model Monitoring / Drift,22,advanced,coding,1
+Model Monitoring / Drift,22,advanced,theory,5
+Model Monitoring / Drift,22,advanced,numerical,1
+Model Monitoring / Drift,22,advanced,mcq,1
+Model Selection,22,basic,coding,2
+Model Selection,22,basic,theory,3
+Model Selection,22,basic,numerical,1
+Model Selection,22,basic,mcq,1
+Model Selection,22,medium,coding,2
+Model Selection,22,medium,theory,3
+Model Selection,22,medium,numerical,1
+Model Selection,22,medium,mcq,1
+Model Selection,22,advanced,coding,1
+Model Selection,22,advanced,theory,5
+Model Selection,22,advanced,numerical,1
+Model Selection,22,advanced,mcq,1
+Multinomial Naive Bayes,21,basic,coding,3
+Multinomial Naive Bayes,21,basic,theory,1
+Multinomial Naive Bayes,21,basic,numerical,2
+Multinomial Naive Bayes,21,basic,mcq,1
+Multinomial Naive Bayes,21,medium,coding,3
+Multinomial Naive Bayes,21,medium,theory,1
+Multinomial Naive Bayes,21,medium,numerical,2
+Multinomial Naive Bayes,21,medium,mcq,1
+Multinomial Naive Bayes,21,advanced,coding,2
+Multinomial Naive Bayes,21,advanced,theory,2
+Multinomial Naive Bayes,21,advanced,numerical,2
+Multinomial Naive Bayes,21,advanced,mcq,1
+NLP,22,basic,coding,2
+NLP,22,basic,theory,3
+NLP,22,basic,numerical,1
+NLP,22,basic,mcq,1
+NLP,22,medium,coding,2
+NLP,22,medium,theory,3
+NLP,22,medium,numerical,1
+NLP,22,medium,mcq,1
+NLP,22,advanced,coding,1
+NLP,22,advanced,theory,5
+NLP,22,advanced,numerical,1
+NLP,22,advanced,mcq,1
+NLP & Text Features,21,basic,coding,3
+NLP & Text Features,21,basic,theory,1
+NLP & Text Features,21,basic,numerical,2
+NLP & Text Features,21,basic,mcq,1
+NLP & Text Features,21,medium,coding,3
+NLP & Text Features,21,medium,theory,1
+NLP & Text Features,21,medium,numerical,2
+NLP & Text Features,21,medium,mcq,1
+NLP & Text Features,21,advanced,coding,2
+NLP & Text Features,21,advanced,theory,2
+NLP & Text Features,21,advanced,numerical,2
+NLP & Text Features,21,advanced,mcq,1
+Naive Bayes,18,basic,coding,2
+Naive Bayes,18,basic,theory,2
+Naive Bayes,18,basic,numerical,1
+Naive Bayes,18,basic,mcq,1
+Naive Bayes,18,medium,coding,2
+Naive Bayes,18,medium,theory,2
+Naive Bayes,18,medium,numerical,1
+Naive Bayes,18,medium,mcq,1
+Naive Bayes,18,advanced,coding,1
+Naive Bayes,18,advanced,theory,3
+Naive Bayes,18,advanced,numerical,1
+Naive Bayes,18,advanced,mcq,1
+Neural Networks,21,basic,coding,3
+Neural Networks,21,basic,theory,1
+Neural Networks,21,basic,numerical,2
+Neural Networks,21,basic,mcq,1
+Neural Networks,21,medium,coding,3
+Neural Networks,21,medium,theory,1
+Neural Networks,21,medium,numerical,2
+Neural Networks,21,medium,mcq,1
+Neural Networks,21,advanced,coding,2
+Neural Networks,21,advanced,theory,2
+Neural Networks,21,advanced,numerical,2
+Neural Networks,21,advanced,mcq,1
+NumPy,32,basic,coding,8
+NumPy,32,basic,theory,1
+NumPy,32,basic,numerical,2
+NumPy,32,basic,mcq,1
+NumPy,32,medium,coding,6
+NumPy,32,medium,theory,1
+NumPy,32,medium,numerical,2
+NumPy,32,medium,mcq,1
+NumPy,32,advanced,coding,4
+NumPy,32,advanced,theory,3
+NumPy,32,advanced,numerical,2
+NumPy,32,advanced,mcq,1
+PCA,28,basic,coding,4
+PCA,28,basic,theory,3
+PCA,28,basic,numerical,2
+PCA,28,basic,mcq,1
+PCA,28,medium,coding,5
+PCA,28,medium,theory,1
+PCA,28,medium,numerical,2
+PCA,28,medium,mcq,1
+PCA,28,advanced,coding,2
+PCA,28,advanced,theory,4
+PCA,28,advanced,numerical,2
+PCA,28,advanced,mcq,1
+Pandas,32,basic,coding,7
+Pandas,32,basic,theory,1
+Pandas,32,basic,numerical,2
+Pandas,32,basic,mcq,1
+Pandas,32,medium,coding,7
+Pandas,32,medium,theory,1
+Pandas,32,medium,numerical,2
+Pandas,32,medium,mcq,1
+Pandas,32,advanced,coding,5
+Pandas,32,advanced,theory,2
+Pandas,32,advanced,numerical,2
+Pandas,32,advanced,mcq,1
+Pipelines & ColumnTransformer,21,basic,coding,3
+Pipelines & ColumnTransformer,21,basic,theory,1
+Pipelines & ColumnTransformer,21,basic,numerical,2
+Pipelines & ColumnTransformer,21,basic,mcq,1
+Pipelines & ColumnTransformer,21,medium,coding,3
+Pipelines & ColumnTransformer,21,medium,theory,1
+Pipelines & ColumnTransformer,21,medium,numerical,2
+Pipelines & ColumnTransformer,21,medium,mcq,1
+Pipelines & ColumnTransformer,21,advanced,coding,2
+Pipelines & ColumnTransformer,21,advanced,theory,2
+Pipelines & ColumnTransformer,21,advanced,numerical,2
+Pipelines & ColumnTransformer,21,advanced,mcq,1
+Polynomial Regression,28,basic,coding,4
+Polynomial Regression,28,basic,theory,2
+Polynomial Regression,28,basic,numerical,2
+Polynomial Regression,28,basic,mcq,1
+Polynomial Regression,28,medium,coding,5
+Polynomial Regression,28,medium,theory,1
+Polynomial Regression,28,medium,numerical,2
+Polynomial Regression,28,medium,mcq,1
+Polynomial Regression,28,advanced,coding,3
+Polynomial Regression,28,advanced,theory,4
+Polynomial Regression,28,advanced,numerical,2
+Polynomial Regression,28,advanced,mcq,1
+Preprocessing,21,basic,coding,5
+Preprocessing,21,basic,theory,1
+Preprocessing,21,basic,numerical,1
+Preprocessing,21,basic,mcq,1
+Preprocessing,21,medium,coding,3
+Preprocessing,21,medium,theory,2
+Preprocessing,21,medium,numerical,1
+Preprocessing,21,medium,mcq,1
+Preprocessing,21,advanced,coding,2
+Preprocessing,21,advanced,theory,2
+Preprocessing,21,advanced,numerical,1
+Preprocessing,21,advanced,mcq,1
+Preprocessing & Encoding,21,basic,coding,3
+Preprocessing & Encoding,21,basic,theory,1
+Preprocessing & Encoding,21,basic,numerical,2
+Preprocessing & Encoding,21,basic,mcq,1
+Preprocessing & Encoding,21,medium,coding,3
+Preprocessing & Encoding,21,medium,theory,1
+Preprocessing & Encoding,21,medium,numerical,2
+Preprocessing & Encoding,21,medium,mcq,1
+Preprocessing & Encoding,21,advanced,coding,2
+Preprocessing & Encoding,21,advanced,theory,2
+Preprocessing & Encoding,21,advanced,numerical,2
+Preprocessing & Encoding,21,advanced,mcq,1
+Python,24,basic,coding,5
+Python,24,basic,theory,1
+Python,24,basic,numerical,1
+Python,24,basic,mcq,1
+Python,24,medium,coding,5
+Python,24,medium,theory,1
+Python,24,medium,numerical,1
+Python,24,medium,mcq,1
+Python,24,advanced,coding,4
+Python,24,advanced,theory,2
+Python,24,advanced,numerical,1
+Python,24,advanced,mcq,1
+Python Algorithms,21,basic,coding,3
+Python Algorithms,21,basic,theory,1
+Python Algorithms,21,basic,numerical,2
+Python Algorithms,21,basic,mcq,1
+Python Algorithms,21,medium,coding,3
+Python Algorithms,21,medium,theory,1
+Python Algorithms,21,medium,numerical,2
+Python Algorithms,21,medium,mcq,1
+Python Algorithms,21,advanced,coding,2
+Python Algorithms,21,advanced,theory,2
+Python Algorithms,21,advanced,numerical,2
+Python Algorithms,21,advanced,mcq,1
+Python Functions & OOP,21,basic,coding,3
+Python Functions & OOP,21,basic,theory,1
+Python Functions & OOP,21,basic,numerical,2
+Python Functions & OOP,21,basic,mcq,1
+Python Functions & OOP,21,medium,coding,3
+Python Functions & OOP,21,medium,theory,1
+Python Functions & OOP,21,medium,numerical,2
+Python Functions & OOP,21,medium,mcq,1
+Python Functions & OOP,21,advanced,coding,2
+Python Functions & OOP,21,advanced,theory,2
+Python Functions & OOP,21,advanced,numerical,2
+Python Functions & OOP,21,advanced,mcq,1
+Python Fundamentals,21,basic,coding,3
+Python Fundamentals,21,basic,theory,1
+Python Fundamentals,21,basic,numerical,2
+Python Fundamentals,21,basic,mcq,1
+Python Fundamentals,21,medium,coding,3
+Python Fundamentals,21,medium,theory,1
+Python Fundamentals,21,medium,numerical,2
+Python Fundamentals,21,medium,mcq,1
+Python Fundamentals,21,advanced,coding,2
+Python Fundamentals,21,advanced,theory,2
+Python Fundamentals,21,advanced,numerical,2
+Python Fundamentals,21,advanced,mcq,1
+Random Forest,19,basic,coding,3
+Random Forest,19,basic,theory,2
+Random Forest,19,basic,numerical,1
+Random Forest,19,basic,mcq,1
+Random Forest,19,medium,coding,3
+Random Forest,19,medium,theory,1
+Random Forest,19,medium,numerical,1
+Random Forest,19,medium,mcq,1
+Random Forest,19,advanced,coding,1
+Random Forest,19,advanced,theory,3
+Random Forest,19,advanced,numerical,1
+Random Forest,19,advanced,mcq,1
+Random Forest Classifier,21,basic,coding,3
+Random Forest Classifier,21,basic,theory,1
+Random Forest Classifier,21,basic,numerical,2
+Random Forest Classifier,21,basic,mcq,1
+Random Forest Classifier,21,medium,coding,3
+Random Forest Classifier,21,medium,theory,1
+Random Forest Classifier,21,medium,numerical,2
+Random Forest Classifier,21,medium,mcq,1
+Random Forest Classifier,21,advanced,coding,2
+Random Forest Classifier,21,advanced,theory,2
+Random Forest Classifier,21,advanced,numerical,2
+Random Forest Classifier,21,advanced,mcq,1
+Random Forest Regressor,21,basic,coding,3
+Random Forest Regressor,21,basic,theory,1
+Random Forest Regressor,21,basic,numerical,2
+Random Forest Regressor,21,basic,mcq,1
+Random Forest Regressor,21,medium,coding,3
+Random Forest Regressor,21,medium,theory,1
+Random Forest Regressor,21,medium,numerical,2
+Random Forest Regressor,21,medium,mcq,1
+Random Forest Regressor,21,advanced,coding,2
+Random Forest Regressor,21,advanced,theory,2
+Random Forest Regressor,21,advanced,numerical,2
+Random Forest Regressor,21,advanced,mcq,1
+Recommender Systems,31,basic,coding,3
+Recommender Systems,31,basic,theory,4
+Recommender Systems,31,basic,numerical,2
+Recommender Systems,31,basic,mcq,1
+Recommender Systems,31,medium,coding,4
+Recommender Systems,31,medium,theory,3
+Recommender Systems,31,medium,numerical,2
+Recommender Systems,31,medium,mcq,1
+Recommender Systems,31,advanced,coding,2
+Recommender Systems,31,advanced,theory,6
+Recommender Systems,31,advanced,numerical,2
+Recommender Systems,31,advanced,mcq,1
+Regression Metrics,21,basic,coding,3
+Regression Metrics,21,basic,theory,1
+Regression Metrics,21,basic,numerical,2
+Regression Metrics,21,basic,mcq,1
+Regression Metrics,21,medium,coding,3
+Regression Metrics,21,medium,theory,1
+Regression Metrics,21,medium,numerical,2
+Regression Metrics,21,medium,mcq,1
+Regression Metrics,21,advanced,coding,2
+Regression Metrics,21,advanced,theory,2
+Regression Metrics,21,advanced,numerical,2
+Regression Metrics,21,advanced,mcq,1
+Ridge Regression,21,basic,coding,3
+Ridge Regression,21,basic,theory,1
+Ridge Regression,21,basic,numerical,2
+Ridge Regression,21,basic,mcq,1
+Ridge Regression,21,medium,coding,3
+Ridge Regression,21,medium,theory,1
+Ridge Regression,21,medium,numerical,2
+Ridge Regression,21,medium,mcq,1
+Ridge Regression,21,advanced,coding,2
+Ridge Regression,21,advanced,theory,2
+Ridge Regression,21,advanced,numerical,2
+Ridge Regression,21,advanced,mcq,1
+SVM,18,basic,coding,3
+SVM,18,basic,theory,2
+SVM,18,basic,numerical,1
+SVM,18,basic,mcq,1
+SVM,18,medium,coding,3
+SVM,18,medium,theory,1
+SVM,18,medium,numerical,1
+SVM,18,medium,mcq,1
+SVM,18,advanced,coding,1
+SVM,18,advanced,theory,2
+SVM,18,advanced,numerical,1
+SVM,18,advanced,mcq,1
+SVM Classifier,21,basic,coding,3
+SVM Classifier,21,basic,theory,1
+SVM Classifier,21,basic,numerical,2
+SVM Classifier,21,basic,mcq,1
+SVM Classifier,21,medium,coding,3
+SVM Classifier,21,medium,theory,1
+SVM Classifier,21,medium,numerical,2
+SVM Classifier,21,medium,mcq,1
+SVM Classifier,21,advanced,coding,2
+SVM Classifier,21,advanced,theory,2
+SVM Classifier,21,advanced,numerical,2
+SVM Classifier,21,advanced,mcq,1
+SVR,21,basic,coding,3
+SVR,21,basic,theory,1
+SVR,21,basic,numerical,2
+SVR,21,basic,mcq,1
+SVR,21,medium,coding,3
+SVR,21,medium,theory,1
+SVR,21,medium,numerical,2
+SVR,21,medium,mcq,1
+SVR,21,advanced,coding,2
+SVR,21,advanced,theory,2
+SVR,21,advanced,numerical,2
+SVR,21,advanced,mcq,1
+SciPy,21,basic,coding,3
+SciPy,21,basic,theory,1
+SciPy,21,basic,numerical,2
+SciPy,21,basic,mcq,1
+SciPy,21,medium,coding,3
+SciPy,21,medium,theory,1
+SciPy,21,medium,numerical,2
+SciPy,21,medium,mcq,1
+SciPy,21,advanced,coding,2
+SciPy,21,advanced,theory,2
+SciPy,21,advanced,numerical,2
+SciPy,21,advanced,mcq,1
+Scikit-learn,13,basic,coding,1
+Scikit-learn,13,basic,theory,1
+Scikit-learn,13,basic,numerical,1
+Scikit-learn,13,basic,mcq,1
+Scikit-learn,13,medium,coding,1
+Scikit-learn,13,medium,theory,1
+Scikit-learn,13,medium,numerical,1
+Scikit-learn,13,medium,mcq,1
+Scikit-learn,13,advanced,coding,2
+Scikit-learn,13,advanced,theory,1
+Scikit-learn,13,advanced,numerical,1
+Scikit-learn,13,advanced,mcq,1
+Seaborn,22,basic,coding,3
+Seaborn,22,basic,theory,1
+Seaborn,22,basic,numerical,2
+Seaborn,22,basic,mcq,1
+Seaborn,22,medium,coding,4
+Seaborn,22,medium,theory,1
+Seaborn,22,medium,numerical,2
+Seaborn,22,medium,mcq,1
+Seaborn,22,advanced,coding,2
+Seaborn,22,advanced,theory,2
+Seaborn,22,advanced,numerical,2
+Seaborn,22,advanced,mcq,1
+Semi-Supervised Learning,22,basic,coding,1
+Semi-Supervised Learning,22,basic,theory,4
+Semi-Supervised Learning,22,basic,numerical,1
+Semi-Supervised Learning,22,basic,mcq,1
+Semi-Supervised Learning,22,medium,coding,1
+Semi-Supervised Learning,22,medium,theory,4
+Semi-Supervised Learning,22,medium,numerical,1
+Semi-Supervised Learning,22,medium,mcq,1
+Semi-Supervised Learning,22,advanced,coding,1
+Semi-Supervised Learning,22,advanced,theory,5
+Semi-Supervised Learning,22,advanced,numerical,1
+Semi-Supervised Learning,22,advanced,mcq,1
+Spectral Clustering,21,basic,coding,3
+Spectral Clustering,21,basic,theory,1
+Spectral Clustering,21,basic,numerical,2
+Spectral Clustering,21,basic,mcq,1
+Spectral Clustering,21,medium,coding,3
+Spectral Clustering,21,medium,theory,1
+Spectral Clustering,21,medium,numerical,2
+Spectral Clustering,21,medium,mcq,1
+Spectral Clustering,21,advanced,coding,2
+Spectral Clustering,21,advanced,theory,2
+Spectral Clustering,21,advanced,numerical,2
+Spectral Clustering,21,advanced,mcq,1
+Statistics,22,basic,coding,1
+Statistics,22,basic,theory,3
+Statistics,22,basic,numerical,3
+Statistics,22,basic,mcq,1
+Statistics,22,medium,coding,2
+Statistics,22,medium,theory,2
+Statistics,22,medium,numerical,2
+Statistics,22,medium,mcq,1
+Statistics,22,advanced,coding,1
+Statistics,22,advanced,theory,3
+Statistics,22,advanced,numerical,2
+Statistics,22,advanced,mcq,1
+Statistics & Probability,21,basic,coding,3
+Statistics & Probability,21,basic,theory,1
+Statistics & Probability,21,basic,numerical,2
+Statistics & Probability,21,basic,mcq,1
+Statistics & Probability,21,medium,coding,3
+Statistics & Probability,21,medium,theory,1
+Statistics & Probability,21,medium,numerical,2
+Statistics & Probability,21,medium,mcq,1
+Statistics & Probability,21,advanced,coding,2
+Statistics & Probability,21,advanced,theory,2
+Statistics & Probability,21,advanced,numerical,2
+Statistics & Probability,21,advanced,mcq,1
+Time Series,22,basic,coding,2
+Time Series,22,basic,theory,3
+Time Series,22,basic,numerical,1
+Time Series,22,basic,mcq,1
+Time Series,22,medium,coding,2
+Time Series,22,medium,theory,3
+Time Series,22,medium,numerical,1
+Time Series,22,medium,mcq,1
+Time Series,22,advanced,coding,2
+Time Series,22,advanced,theory,4
+Time Series,22,advanced,numerical,1
+Time Series,22,advanced,mcq,1
+Time Series Forecasting,21,basic,coding,3
+Time Series Forecasting,21,basic,theory,1
+Time Series Forecasting,21,basic,numerical,2
+Time Series Forecasting,21,basic,mcq,1
+Time Series Forecasting,21,medium,coding,3
+Time Series Forecasting,21,medium,theory,1
+Time Series Forecasting,21,medium,numerical,2
+Time Series Forecasting,21,medium,mcq,1
+Time Series Forecasting,21,advanced,coding,2
+Time Series Forecasting,21,advanced,theory,2
+Time Series Forecasting,21,advanced,numerical,2
+Time Series Forecasting,21,advanced,mcq,1
+Train Test Splitting,21,basic,coding,3
+Train Test Splitting,21,basic,theory,1
+Train Test Splitting,21,basic,numerical,2
+Train Test Splitting,21,basic,mcq,1
+Train Test Splitting,21,medium,coding,3
+Train Test Splitting,21,medium,theory,1
+Train Test Splitting,21,medium,numerical,2
+Train Test Splitting,21,medium,mcq,1
+Train Test Splitting,21,advanced,coding,2
+Train Test Splitting,21,advanced,theory,2
+Train Test Splitting,21,advanced,numerical,2
+Train Test Splitting,21,advanced,mcq,1
+Transfer Learning,22,basic,coding,2
+Transfer Learning,22,basic,theory,3
+Transfer Learning,22,basic,numerical,1
+Transfer Learning,22,basic,mcq,1
+Transfer Learning,22,medium,coding,1
+Transfer Learning,22,medium,theory,4
+Transfer Learning,22,medium,numerical,1
+Transfer Learning,22,medium,mcq,1
+Transfer Learning,22,advanced,coding,1
+Transfer Learning,22,advanced,theory,5
+Transfer Learning,22,advanced,numerical,1
+Transfer Learning,22,advanced,mcq,1
+UMAP,21,basic,coding,3
+UMAP,21,basic,theory,1
+UMAP,21,basic,numerical,2
+UMAP,21,basic,mcq,1
+UMAP,21,medium,coding,3
+UMAP,21,medium,theory,1
+UMAP,21,medium,numerical,2
+UMAP,21,medium,mcq,1
+UMAP,21,advanced,coding,2
+UMAP,21,advanced,theory,2
+UMAP,21,advanced,numerical,2
+UMAP,21,advanced,mcq,1
+XGBoost,17,basic,coding,1
+XGBoost,17,basic,theory,3
+XGBoost,17,basic,numerical,1
+XGBoost,17,basic,mcq,1
+XGBoost,17,medium,coding,1
+XGBoost,17,medium,theory,2
+XGBoost,17,medium,numerical,1
+XGBoost,17,medium,mcq,1
+XGBoost,17,advanced,coding,1
+XGBoost,17,advanced,theory,3
+XGBoost,17,advanced,numerical,1
+XGBoost,17,advanced,mcq,1
+XGBoost Classifier,21,basic,coding,3
+XGBoost Classifier,21,basic,theory,1
+XGBoost Classifier,21,basic,numerical,2
+XGBoost Classifier,21,basic,mcq,1
+XGBoost Classifier,21,medium,coding,3
+XGBoost Classifier,21,medium,theory,1
+XGBoost Classifier,21,medium,numerical,2
+XGBoost Classifier,21,medium,mcq,1
+XGBoost Classifier,21,advanced,coding,2
+XGBoost Classifier,21,advanced,theory,2
+XGBoost Classifier,21,advanced,numerical,2
+XGBoost Classifier,21,advanced,mcq,1
+XGBoost Regressor,21,basic,coding,3
+XGBoost Regressor,21,basic,theory,1
+XGBoost Regressor,21,basic,numerical,2
+XGBoost Regressor,21,basic,mcq,1
+XGBoost Regressor,21,medium,coding,3
+XGBoost Regressor,21,medium,theory,1
+XGBoost Regressor,21,medium,numerical,2
+XGBoost Regressor,21,medium,mcq,1
+XGBoost Regressor,21,advanced,coding,2
+XGBoost Regressor,21,advanced,theory,2
+XGBoost Regressor,21,advanced,numerical,2
+XGBoost Regressor,21,advanced,mcq,1
+t-SNE,21,basic,coding,3
+t-SNE,21,basic,theory,1
+t-SNE,21,basic,numerical,2
+t-SNE,21,basic,mcq,1
+t-SNE,21,medium,coding,3
+t-SNE,21,medium,theory,1
+t-SNE,21,medium,numerical,2
+t-SNE,21,medium,mcq,1
+t-SNE,21,advanced,coding,2
+t-SNE,21,advanced,theory,2
+t-SNE,21,advanced,numerical,2
+t-SNE,21,advanced,mcq,1

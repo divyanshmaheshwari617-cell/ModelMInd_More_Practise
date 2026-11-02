@@ -1,0 +1,7 @@
+﻿gate,result,detail
+all_topic_level_type_populated,PASS,0 empty combinations
+no_structural_blockers,PASS,0 blockers
+no_heuristic_review_flags,REVIEW,57 questions require review
+manual_math_and_answer_review,NOT_VERIFIED,Cannot establish mathematical correctness from schema alone
+production_build_and_browser_checks,NOT_VERIFIED,Run npm build and browser tests in real environment
+persisted_done_after_refresh,NOT_VERIFIED,Test in browser including a newly checked question

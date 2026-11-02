@@ -1,0 +1,35 @@
+{
+  "total_unique_ids": 2251,
+  "topics": 103,
+  "source_breakdown": {
+    "backend": 423,
+    "modelmind-expanded-curriculum.json": 804,
+    "modelmind-practice-additions-v3.json": 927,
+    "modelmind-practice-additions-v5.json": 97
+  },
+  "level_type_combinations": 1236,
+  "empty_level_type": 0,
+  "populated_level_type": 1236,
+  "duplicate_ids": 0,
+  "status_counts": {
+    "REVIEW": 946,
+    "STRUCTURALLY_OK": 1097,
+    "BLOCKER": 208
+  },
+  "flags": {
+    "CODING_UNCLEAR_OUTPUT": 654,
+    "SHORT_PROMPT": 256,
+    "CODING_UNCLEAR_INPUT": 270,
+    "WEAK_TITLE": 26,
+    "SAME_TOPIC_TITLE_DUPLICATE": 14,
+    "NUMERICAL_NO_MACHINE_KEY": 208,
+    "NUMERICAL_NO_FIXED_NUMBERS": 107,
+    "EXACT_PROMPT_DUPLICATE": 14,
+    "STUDENT_INVENTS_NUMERICAL_DATA": 67,
+    "GENERIC_METRIC_MCQS": 24,
+    "GENERIC_CASE_STUDY_TEMPLATE": 67
+  },
+  "structurally_ok_percent": 48.73,
+  "quality_score_disclaimer": "This percentage measures narrow automated structural checks ONLY. It is NOT educational quality, difficulty correctness, question uniqueness or answer accuracy. Flags require human review.",
+  "v5_detected": true
+}

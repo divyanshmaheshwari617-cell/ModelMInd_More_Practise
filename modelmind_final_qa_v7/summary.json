@@ -1,0 +1,31 @@
+{
+  "total_unique_ids": 2251,
+  "topics": 103,
+  "source_breakdown": {
+    "backend": 423,
+    "modelmind-expanded-curriculum.json": 804,
+    "modelmind-practice-additions-v3.json": 927,
+    "modelmind-practice-additions-v5.json": 97
+  },
+  "level_type_combinations": 1236,
+  "empty_level_type": 0,
+  "populated_level_type": 1236,
+  "duplicate_ids": 0,
+  "status_counts": {
+    "STRUCTURALLY_OK": 2194,
+    "REVIEW": 57
+  },
+  "flags": {
+    "SHORT_PROMPT": 45,
+    "EXACT_PROMPT_DUPLICATE": 12
+  },
+  "structurally_ok_percent": 97.47,
+  "quality_score_disclaimer": "This percentage measures narrow automated structural checks ONLY. It is NOT educational quality, difficulty correctness, question uniqueness or answer accuracy. Flags require human review.",
+  "v5_detected": true,
+  "baseline_question_count": 2251,
+  "baseline_matched_ids": 2251,
+  "resolved_flags_compared_to_baseline": 1665,
+  "new_flags_compared_to_baseline": 15,
+  "supplementary_review_count": 0,
+  "readiness": "REVIEW_CONTENT_AND_TECHNICAL_TESTS"
+}

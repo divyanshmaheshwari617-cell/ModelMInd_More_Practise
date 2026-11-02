@@ -105,3 +105,21 @@ modelmind_test_audit.csv
 # System files
 .DS_Store
 Thumbs.db
+
+node_modules/
+.next/
+out/
+.venv/
+venv/
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+*.ipynb
+.ipynb_checkpoints/
+backup_*/
+*.log
+*.zip
+modelmind_*_audit*/
+modelmind_*_report*/

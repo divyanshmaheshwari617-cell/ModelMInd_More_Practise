@@ -1,0 +1,288 @@
+﻿id,source,topic,level,type,title,status,flags,question,review_answer_correct,review_difficulty_correct,review_specific_and_clear,review_notes
+curriculum-foundation-python-algorithms-07,modelmind-expanded-curriculum.json,Python Algorithms,Medium,numerical,Python Algorithms: Median calculation,REVIEW,SHORT_PROMPT,"Python Algorithms: A column has values [4, 6, 8]. Compute its median.",,,,
+curriculum-foundation-numpy-11,modelmind-expanded-curriculum.json,NumPy,Advanced,numerical,NumPy: Dot calculation,REVIEW,SHORT_PROMPT,"NumPy: Compute the dot product of vectors [5, 2, 3] and [2, 3, 4].",,,,
+curriculum-foundation-pandas-07,modelmind-expanded-curriculum.json,Pandas,Medium,numerical,Pandas: Median calculation,REVIEW,SHORT_PROMPT,"Pandas: A column has values [2, 4, 6]. Compute its median.",,,,
+curriculum-foundation-matplotlib-07,modelmind-expanded-curriculum.json,Matplotlib,Medium,numerical,Matplotlib: Median calculation,REVIEW,SHORT_PROMPT,"Matplotlib: A column has values [5, 7, 9]. Compute its median.",,,,
+curriculum-foundation-seaborn-07,modelmind-expanded-curriculum.json,Seaborn,Medium,numerical,Seaborn: Median calculation,REVIEW,SHORT_PROMPT,"Seaborn: A column has values [2, 4, 6]. Compute its median.",,,,
+curriculum-foundation-scipy-11,modelmind-expanded-curriculum.json,SciPy,Advanced,numerical,SciPy: Dot calculation,REVIEW,SHORT_PROMPT,"SciPy: Compute the dot product of vectors [3, 2, 3] and [2, 3, 4].",,,,
+curriculum-foundation-data-cleaning-07,modelmind-expanded-curriculum.json,Data Cleaning,Medium,numerical,Data Cleaning: Median calculation,REVIEW,SHORT_PROMPT,"Data Cleaning: A column has values [4, 6, 8]. Compute its median.",,,,
+curriculum-foundation-feature-selection-07,modelmind-expanded-curriculum.json,Feature Selection,Medium,numerical,Feature Selection: Median calculation,REVIEW,SHORT_PROMPT,"Feature Selection: A column has values [5, 7, 9]. Compute its median.",,,,
+curriculum-foundation-cross-validation-07,modelmind-expanded-curriculum.json,Cross Validation,Medium,numerical,Cross Validation: Median calculation,REVIEW,SHORT_PROMPT,"Cross Validation: A column has values [2, 4, 6]. Compute its median.",,,,
+curriculum-foundation-ml-deployment-11,modelmind-expanded-curriculum.json,ML Deployment,Advanced,numerical,ML Deployment: Mean calculation,REVIEW,SHORT_PROMPT,"ML Deployment: A feature is measured as [5, 7, 9]. Compute its mean.",,,,
+mm-v3-mcq-009-1,modelmind-practice-additions-v3.json,CNN,Medium,mcq,CNN · Medium knowledge check,REVIEW,SHORT_PROMPT,"For a CNN workflow, which choice helps prevent data leakage?",,,,
+mm-v3-mcq-015-2,modelmind-practice-additions-v3.json,DBSCAN,Advanced,mcq,DBSCAN · Advanced knowledge check,REVIEW,SHORT_PROMPT,What is a sound way to evaluate stability of DBSCAN?,,,,
+mm-v3-mcq-018-2,modelmind-practice-additions-v3.json,Decision Tree,Advanced,mcq,Decision Tree · Advanced knowledge check,REVIEW,SHORT_PROMPT,Which experiment avoids test-label leakage when tuning Decision Tree?,,,,
+mm-v3-mcq-019-0,modelmind-practice-additions-v3.json,Decision Tree Classifier,Basic,mcq,Decision Tree Classifier — model reasoning,REVIEW,SHORT_PROMPT,"In a classification decision tree, what is the purpose of max_depth?",,,,
+mm-v3-mcq-023-1,modelmind-practice-additions-v3.json,EDA,Medium,mcq,EDA · Medium knowledge check,REVIEW,SHORT_PROMPT,"For a EDA workflow, which choice helps prevent data leakage?",,,,
+mm-v3-mcq-024-1,modelmind-practice-additions-v3.json,Elastic Net,Medium,mcq,Elastic Net · Medium knowledge check,REVIEW,SHORT_PROMPT,"When assessing Elastic Net, which change prevents evaluation leakage?",,,,
+mm-v3-mcq-030-2,modelmind-practice-additions-v3.json,Gaussian Mixture Models,Advanced,mcq,Gaussian Mixture Models · Advanced knowledge check,REVIEW,SHORT_PROMPT,What is a sound way to evaluate stability of Gaussian Mixture Models?,,,,
+mm-v3-mcq-039-2,modelmind-practice-additions-v3.json,K-Means,Advanced,mcq,K-Means · Advanced knowledge check,REVIEW,SHORT_PROMPT,What is a sound way to evaluate stability of K-Means?,,,,
+mm-v3-mcq-040-2,modelmind-practice-additions-v3.json,KNN,Advanced,mcq,KNN · Advanced knowledge check,REVIEW,SHORT_PROMPT,Which experiment avoids test-label leakage when tuning KNN?,,,,
+mm-v3-mcq-044-0,modelmind-practice-additions-v3.json,LightGBM Classifier,Basic,mcq,LightGBM Classifier — model reasoning,REVIEW,SHORT_PROMPT,What is a common LightGBM tree growth strategy?,,,,
+mm-v3-mcq-052-1,modelmind-practice-additions-v3.json,Matplotlib,Medium,mcq,Matplotlib · Medium knowledge check,REVIEW,SHORT_PROMPT,"For a Matplotlib workflow, which choice helps prevent data leakage?",,,,
+mm-v3-mcq-054-1,modelmind-practice-additions-v3.json,Metrics,Medium,mcq,Metrics · Medium knowledge check,REVIEW,SHORT_PROMPT,"For a Metrics workflow, which choice helps prevent data leakage?",,,,
+mm-v3-mcq-059-0,modelmind-practice-additions-v3.json,Model Monitoring & Drift,Basic,mcq,Model Monitoring & Drift · Basic knowledge check,REVIEW,EXACT_PROMPT_DUPLICATE,"In a Model Monitoring & Drift practice task, which approach best makes an experiment reproducible?",,,,
+mm-v3-open-059-0,modelmind-practice-additions-v3.json,Model Monitoring & Drift,Basic,coding,Model Monitoring & Drift · Implementation practice,REVIEW,EXACT_PROMPT_DUPLICATE,"Topic: Model Monitoring & Drift. Difficulty: Basic.
+
+Write `run_workflow(X_train, y_train, X_test)` demonstrating a meaningful Model Monitoring & Drift operation. Inputs: X_train and X_test are 2D tables/arrays with matching columns and rows n_train and n_test, while y_train is a 1D optional target where relevant. State the exact operation you implement (for example a transformation, diagnostic, or model); do not claim a classification model is mandatory for a visualization/statistics topic. Return a documented dict with `result` (array/table/diagnostic) and `description` (string). When returning row-level output it must preserve test-row order. Use a small in-code example, print the returned shape or keys, and assert the contract. Never fit learned transforms on held-out test data.
+
+Implementation contract:
+Input: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Implement or repair `run_workflow(X_train, y_train, X_test)` as specified. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type.",,,,
+mm-v3-open-059-1,modelmind-practice-additions-v3.json,Model Monitoring & Drift,Medium,coding,Model Monitoring & Drift · Verification practice,REVIEW,EXACT_PROMPT_DUPLICATE,"Topic: Model Monitoring & Drift. Difficulty: Medium.
+
+Write `compare_workflows(X_train, y_train, X_valid, y_valid)` for Model Monitoring & Drift. Inputs: training and validation feature tables with identical columns and optional 1D targets (supply targets only when the chosen workflow requires them). Demonstrate two distinct configurations of a topic-relevant operation, explain the comparison criterion, and return a list of two dicts with keys `configuration`, `result`, `interpretation`. Do not use classification accuracy unless the task is truly classification. Provide a reproducible small input example and assert exactly two result records. Fit all learned preprocessing on training only.
+
+Implementation contract:
+Input: a DataFrame or feature matrix with explicitly named columns. Output: return the requested transformed DataFrame or array; preserve the documented row order and define how missing values are handled. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type.",,,,
+mm-v3-open-059-2,modelmind-practice-additions-v3.json,Model Monitoring & Drift,Advanced,theory,Model Monitoring & Drift · Troubleshooting practice,REVIEW,EXACT_PROMPT_DUPLICATE,"Describe a realistic failure mode of Model Monitoring & Drift, the evidence that would reveal it, and a concrete correction. Distinguish correctness from merely obtaining a nonempty output.
+
+In your answer, use a concrete Model Monitoring & Drift example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline.",,,,
+mm-v3-mcq-059-1,modelmind-practice-additions-v3.json,Model Monitoring & Drift,Medium,mcq,Model Monitoring & Drift · Medium knowledge check,REVIEW,EXACT_PROMPT_DUPLICATE,"For a Model Monitoring & Drift workflow, which choice helps prevent data leakage?",,,,
+mm-v3-mcq-059-2,modelmind-practice-additions-v3.json,Model Monitoring & Drift,Advanced,mcq,Model Monitoring & Drift · Advanced knowledge check,REVIEW,EXACT_PROMPT_DUPLICATE,Which is the most trustworthy way to assess the correctness of code in Model Monitoring & Drift?,,,,
+mm-v3-mcq-060-0,modelmind-practice-additions-v3.json,Model Monitoring / Drift,Basic,mcq,Model Monitoring / Drift · Basic knowledge check,REVIEW,EXACT_PROMPT_DUPLICATE,"In a Model Monitoring / Drift practice task, which approach best makes an experiment reproducible?",,,,
+mm-v3-open-060-0,modelmind-practice-additions-v3.json,Model Monitoring / Drift,Basic,coding,Model Monitoring / Drift · Implementation practice,REVIEW,EXACT_PROMPT_DUPLICATE,"Topic: Model Monitoring / Drift. Difficulty: Basic.
+
+Write `run_workflow(X_train, y_train, X_test)` demonstrating a meaningful Model Monitoring / Drift operation. Inputs: X_train and X_test are 2D tables/arrays with matching columns and rows n_train and n_test, while y_train is a 1D optional target where relevant. State the exact operation you implement (for example a transformation, diagnostic, or model); do not claim a classification model is mandatory for a visualization/statistics topic. Return a documented dict with `result` (array/table/diagnostic) and `description` (string). When returning row-level output it must preserve test-row order. Use a small in-code example, print the returned shape or keys, and assert the contract. Never fit learned transforms on held-out test data.
+
+Implementation contract:
+Input: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Implement or repair `run_workflow(X_train, y_train, X_test)` as specified. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type.",,,,
+mm-v3-open-060-1,modelmind-practice-additions-v3.json,Model Monitoring / Drift,Medium,coding,Model Monitoring / Drift · Verification practice,REVIEW,EXACT_PROMPT_DUPLICATE,"Topic: Model Monitoring / Drift. Difficulty: Medium.
+
+Write `compare_workflows(X_train, y_train, X_valid, y_valid)` for Model Monitoring / Drift. Inputs: training and validation feature tables with identical columns and optional 1D targets (supply targets only when the chosen workflow requires them). Demonstrate two distinct configurations of a topic-relevant operation, explain the comparison criterion, and return a list of two dicts with keys `configuration`, `result`, `interpretation`. Do not use classification accuracy unless the task is truly classification. Provide a reproducible small input example and assert exactly two result records. Fit all learned preprocessing on training only.
+
+Implementation contract:
+Input: a DataFrame or feature matrix with explicitly named columns. Output: return the requested transformed DataFrame or array; preserve the documented row order and define how missing values are handled. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type.",,,,
+mm-v3-open-060-2,modelmind-practice-additions-v3.json,Model Monitoring / Drift,Advanced,theory,Model Monitoring / Drift · Troubleshooting practice,REVIEW,EXACT_PROMPT_DUPLICATE,"Describe a realistic failure mode of Model Monitoring / Drift, the evidence that would reveal it, and a concrete correction. Distinguish correctness from merely obtaining a nonempty output.
+
+In your answer, use a concrete Model Monitoring / Drift example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline.",,,,
+mm-v3-mcq-060-1,modelmind-practice-additions-v3.json,Model Monitoring / Drift,Medium,mcq,Model Monitoring / Drift · Medium knowledge check,REVIEW,EXACT_PROMPT_DUPLICATE,"For a Model Monitoring / Drift workflow, which choice helps prevent data leakage?",,,,
+mm-v3-mcq-060-2,modelmind-practice-additions-v3.json,Model Monitoring / Drift,Advanced,mcq,Model Monitoring / Drift · Advanced knowledge check,REVIEW,EXACT_PROMPT_DUPLICATE,Which is the most trustworthy way to assess the correctness of code in Model Monitoring / Drift?,,,,
+mm-v3-mcq-063-1,modelmind-practice-additions-v3.json,NLP,Medium,mcq,NLP · Medium knowledge check,REVIEW,SHORT_PROMPT,"For a NLP workflow, which choice helps prevent data leakage?",,,,
+mm-v3-mcq-065-0,modelmind-practice-additions-v3.json,Naive Bayes,Basic,mcq,Naive Bayes — model reasoning,REVIEW,SHORT_PROMPT,What is the naive conditional-independence assumption?,,,,
+mm-v3-mcq-065-2,modelmind-practice-additions-v3.json,Naive Bayes,Advanced,mcq,Naive Bayes · Advanced knowledge check,REVIEW,SHORT_PROMPT,Which experiment avoids test-label leakage when tuning Naive Bayes?,,,,
+mm-v3-mcq-067-1,modelmind-practice-additions-v3.json,NumPy,Medium,mcq,NumPy · Medium knowledge check,REVIEW,SHORT_PROMPT,"For a NumPy workflow, which choice helps prevent data leakage?",,,,
+mm-v3-mcq-068-0,modelmind-practice-additions-v3.json,PCA,Basic,mcq,PCA · Basic knowledge check,REVIEW,SHORT_PROMPT,"In PCA, what is a principal objective of dimensionality reduction?",,,,
+mm-v3-mcq-068-2,modelmind-practice-additions-v3.json,PCA,Advanced,mcq,PCA · Advanced knowledge check,REVIEW,SHORT_PROMPT,Which claim about a low-dimensional visualization from PCA is safest?,,,,
+mm-v3-mcq-069-1,modelmind-practice-additions-v3.json,Pandas,Medium,mcq,Pandas · Medium knowledge check,REVIEW,SHORT_PROMPT,"For a Pandas workflow, which choice helps prevent data leakage?",,,,
+mm-v3-mcq-074-1,modelmind-practice-additions-v3.json,Python,Medium,mcq,Python · Medium knowledge check,REVIEW,SHORT_PROMPT,"For a Python workflow, which choice helps prevent data leakage?",,,,
+mm-v3-mcq-078-2,modelmind-practice-additions-v3.json,Random Forest,Advanced,mcq,Random Forest · Advanced knowledge check,REVIEW,SHORT_PROMPT,Which experiment avoids test-label leakage when tuning Random Forest?,,,,
+mm-v3-mcq-079-0,modelmind-practice-additions-v3.json,Random Forest Classifier,Basic,mcq,Random Forest Classifier — model reasoning,REVIEW,SHORT_PROMPT,What aggregation is standard for RandomForestClassifier.predict?,,,,
+mm-v3-mcq-084-2,modelmind-practice-additions-v3.json,SVM,Advanced,mcq,SVM · Advanced knowledge check,REVIEW,SHORT_PROMPT,Which experiment avoids test-label leakage when tuning SVM?,,,,
+mm-v3-mcq-085-0,modelmind-practice-additions-v3.json,SVM Classifier,Basic,mcq,SVM Classifier — model reasoning,REVIEW,SHORT_PROMPT,Why can an RBF kernel SVM classify nonlinearly separable data?,,,,
+mm-v3-mcq-086-1,modelmind-practice-additions-v3.json,SVR,Medium,mcq,SVR · Medium knowledge check,REVIEW,SHORT_PROMPT,"When assessing SVR, which change prevents evaluation leakage?",,,,
+mm-v3-mcq-086-2,modelmind-practice-additions-v3.json,SVR,Advanced,mcq,SVR · Advanced knowledge check,REVIEW,SHORT_PROMPT,Which validation practice gives a more reliable estimate for SVR?,,,,
+mm-v3-mcq-087-1,modelmind-practice-additions-v3.json,SciPy,Medium,mcq,SciPy · Medium knowledge check,REVIEW,SHORT_PROMPT,"For a SciPy workflow, which choice helps prevent data leakage?",,,,
+mm-v3-mcq-088-1,modelmind-practice-additions-v3.json,Scikit-learn,Medium,mcq,Scikit-learn · Medium knowledge check,REVIEW,SHORT_PROMPT,"For a Scikit-learn workflow, which choice helps prevent data leakage?",,,,
+mm-v3-mcq-089-1,modelmind-practice-additions-v3.json,Seaborn,Medium,mcq,Seaborn · Medium knowledge check,REVIEW,SHORT_PROMPT,"For a Seaborn workflow, which choice helps prevent data leakage?",,,,
+mm-v3-mcq-091-2,modelmind-practice-additions-v3.json,Spectral Clustering,Advanced,mcq,Spectral Clustering · Advanced knowledge check,REVIEW,SHORT_PROMPT,What is a sound way to evaluate stability of Spectral Clustering?,,,,
+mm-v3-mcq-092-1,modelmind-practice-additions-v3.json,Statistics,Medium,mcq,Statistics · Medium knowledge check,REVIEW,SHORT_PROMPT,"For a Statistics workflow, which choice helps prevent data leakage?",,,,
+mm-v3-mcq-094-1,modelmind-practice-additions-v3.json,Time Series,Medium,mcq,Time Series · Medium knowledge check,REVIEW,SHORT_PROMPT,"For a Time Series workflow, which choice helps prevent data leakage?",,,,
+mm-v3-mcq-098-0,modelmind-practice-additions-v3.json,UMAP,Basic,mcq,UMAP · Basic knowledge check,REVIEW,SHORT_PROMPT,"In UMAP, what is a principal objective of dimensionality reduction?",,,,
+mm-v3-mcq-099-2,modelmind-practice-additions-v3.json,XGBoost,Advanced,mcq,XGBoost · Advanced knowledge check,REVIEW,SHORT_PROMPT,Which experiment avoids test-label leakage when tuning XGBoost?,,,,
+mm-v3-mcq-102-0,modelmind-practice-additions-v3.json,t-SNE,Basic,mcq,t-SNE · Basic knowledge check,REVIEW,SHORT_PROMPT,"In t-SNE, what is a principal objective of dimensionality reduction?",,,,
+boost-advanced-001,backend,AdaBoost / Gradient Boosting,Advanced,coding,Gradient boosting classifier,STRUCTURALLY_OK,,"Create GradientBoostingClassifier with n_estimators=100 and fit it.
+
+Implementation contract:
+Input: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include tests for malformed inputs and a failure mode relevant to the algorithm; explain computational or leakage risks.",,,,
+curated-sklearn-001,backend,Scikit-learn,Advanced,coding,Leakage-safe mixed feature preprocessor,STRUCTURALLY_OK,,"Implement build_preprocessor(numeric_cols, categorical_cols). Return an unfitted sklearn ColumnTransformer with numeric Pipeline(SimpleImputer(strategy='median'), StandardScaler()) and categorical Pipeline(SimpleImputer(strategy='most_frequent'), OneHotEncoder(handle_unknown='ignore')). Ignore unspecified columns. Support unseen categories after fitting.
+
+Implementation contract:
+Input: a DataFrame or feature matrix with explicitly named columns. Output: return the requested transformed DataFrame or array; preserve the documented row order and define how missing values are handled. Include tests for malformed inputs and a failure mode relevant to the algorithm; explain computational or leakage risks.",,,,
+curriculum-foundation-calculus-optimization-10,modelmind-expanded-curriculum.json,Calculus & Optimization,Advanced,coding,Calculus & Optimization: Robustness evaluation,STRUCTURALLY_OK,,"Implement repeated evaluation of Calculus & Optimization under changes in noise, missingness or sample size for loss surfaces. Report mean and variability of the selected score.
+
+Focus specifically on gradients and numerical stability. Show your reasoning, give meaningful edge cases, and use the loss surfaces context; avoid unrelated algorithms. Include a clear function contract, one worked example and at least two edge-case checks.
+
+Implementation contract:
+Input: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include tests for malformed inputs and a failure mode relevant to the algorithm; explain computational or leakage risks.",,,,
+curriculum-foundation-calculus-optimization-12,modelmind-expanded-curriculum.json,Calculus & Optimization,Advanced,coding,Calculus & Optimization: Production-ready challenge,STRUCTURALLY_OK,,"Build a reusable training-and-evaluation function for Calculus & Optimization on loss surfaces, with deterministic seeds, input validation, suitable metrics, saved experiment metadata, and a concise error analysis. Explain two deployment risks.
+
+Focus specifically on gradients and numerical stability. Show your reasoning, give meaningful edge cases, and use the loss surfaces context; avoid unrelated algorithms. Include a clear function contract, one worked example and at least two edge-case checks.
+
+Implementation contract:
+Input: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include tests for malformed inputs and a failure mode relevant to the algorithm; explain computational or leakage risks.",,,,
+curriculum-foundation-classification-metrics-10,modelmind-expanded-curriculum.json,Classification Metrics,Advanced,coding,Classification Metrics: Robustness evaluation,STRUCTURALLY_OK,,"Implement repeated evaluation of Classification Metrics under changes in noise, missingness or sample size for medical triage. Report mean and variability of the selected score.
+
+Focus specifically on confusion matrix and thresholds. Show your reasoning, give meaningful edge cases, and use the medical triage context; avoid unrelated algorithms. Include a clear function contract, one worked example and at least two edge-case checks.
+
+Implementation contract:
+Input: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include tests for malformed inputs and a failure mode relevant to the algorithm; explain computational or leakage risks.",,,,
+curriculum-foundation-classification-metrics-12,modelmind-expanded-curriculum.json,Classification Metrics,Advanced,coding,Classification Metrics: Production-ready challenge,STRUCTURALLY_OK,,"Build a reusable training-and-evaluation function for Classification Metrics on medical triage, with deterministic seeds, input validation, suitable metrics, saved experiment metadata, and a concise error analysis. Explain two deployment risks.
+
+Focus specifically on confusion matrix and thresholds. Show your reasoning, give meaningful edge cases, and use the medical triage context; avoid unrelated algorithms. Include a clear function contract, one worked example and at least two edge-case checks.
+
+Implementation contract:
+Input: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include tests for malformed inputs and a failure mode relevant to the algorithm; explain computational or leakage risks.",,,,
+curriculum-foundation-cross-validation-10,modelmind-expanded-curriculum.json,Cross Validation,Advanced,coding,Cross Validation: Robustness evaluation,STRUCTURALLY_OK,,"Implement repeated evaluation of Cross Validation under changes in noise, missingness or sample size for repeat customers. Report mean and variability of the selected score.
+
+Focus specifically on k-fold, group and time-series validation. Show your reasoning, give meaningful edge cases, and use the repeat customers context; avoid unrelated algorithms. Include a clear function contract, one worked example and at least two edge-case checks.
+
+Implementation contract:
+Input: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include tests for malformed inputs and a failure mode relevant to the algorithm; explain computational or leakage risks.",,,,
+curriculum-foundation-cross-validation-12,modelmind-expanded-curriculum.json,Cross Validation,Advanced,coding,Cross Validation: Production-ready challenge,STRUCTURALLY_OK,,"Build a reusable training-and-evaluation function for Cross Validation on repeat customers, with deterministic seeds, input validation, suitable metrics, saved experiment metadata, and a concise error analysis. Explain two deployment risks.
+
+Focus specifically on k-fold, group and time-series validation. Show your reasoning, give meaningful edge cases, and use the repeat customers context; avoid unrelated algorithms. Include a clear function contract, one worked example and at least two edge-case checks.
+
+Implementation contract:
+Input: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include tests for malformed inputs and a failure mode relevant to the algorithm; explain computational or leakage risks.",,,,
+anomaly-basic-003,backend,Anomaly Detection,Basic,coding,Fit Isolation Forest,STRUCTURALLY_OK,,"Create and fit an IsolationForest with contamination=0.05 and random_state=42.
+
+Implementation contract:
+Input: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type.",,,,
+boost-basic-003,backend,AdaBoost / Gradient Boosting,Basic,coding,AdaBoost classifier,STRUCTURALLY_OK,,"Create an AdaBoostClassifier with 50 estimators.
+
+Implementation contract:
+Input: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type.",,,,
+calibration-basic-003,backend,Model Calibration / Error Analysis,Basic,coding,Confusion matrix,STRUCTURALLY_OK,,"Write code to calculate a confusion matrix for true labels y_true and predictions y_pred.
+
+Implementation contract:
+Input: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type.",,,,
+cluster-advanced-002,backend,Clustering Beyond K-Means,Basic,coding,Agglomerative clustering,STRUCTURALLY_OK,,"Create an AgglomerativeClustering model with n_clusters=3.
+
+Implementation contract:
+Input: X is a 2-D array of numeric samples with rows representing observations. Output: return a 1-D cluster or anomaly label array aligned to the original X row order; document the convention for noise or outliers. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type.",,,,
+cnn-basic-003,backend,CNN,Basic,coding,Create a Conv2D layer,STRUCTURALLY_OK,,"Create a Keras Conv2D layer with 32 filters, a 3x3 kernel, ReLU activation, and same padding.
+
+Implementation contract:
+Input: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type.",,,,
+curated-numpy-001,backend,NumPy,Basic,coding,Normalize a vector safely,STRUCTURALLY_OK,,"Implement normalize_vector(values). Given a 1-D numeric array/list, return a NumPy array scaled to [0,1] using (x-min)/(max-min). For constant arrays, return zeros. Do not modify the input.",,,,
+curriculum-foundation-calculus-optimization-02,modelmind-expanded-curriculum.json,Calculus & Optimization,Basic,coding,Calculus & Optimization: First working implementation,STRUCTURALLY_OK,,"Using a reproducible synthetic dataset resembling loss surfaces, write a small Python function that fits Calculus & Optimization on training data and returns test predictions. Specify shapes, random seed and a basic sanity assertion.
+
+Focus specifically on gradients and numerical stability. Show your reasoning, give meaningful edge cases, and use the loss surfaces context; avoid unrelated algorithms. Include a clear function contract, one worked example and at least two edge-case checks.
+
+Implementation contract:
+Input: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type.",,,,
+curriculum-foundation-calculus-optimization-04,modelmind-expanded-curriculum.json,Calculus & Optimization,Basic,coding,Calculus & Optimization: Input validation,STRUCTURALLY_OK,,"Write a reusable preprocessing and fitting function for Calculus & Optimization on loss surfaces. Reject nonfinite inputs, check target/feature shapes when applicable, and handle a deliberately malformed example.
+
+Focus specifically on gradients and numerical stability. Show your reasoning, give meaningful edge cases, and use the loss surfaces context; avoid unrelated algorithms. Include a clear function contract, one worked example and at least two edge-case checks.
+
+Implementation contract:
+Input: a DataFrame or feature matrix with explicitly named columns. Output: return the requested transformed DataFrame or array; preserve the documented row order and define how missing values are handled. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type.",,,,
+anomaly-medium-001,backend,Anomaly Detection,Medium,coding,Anomaly labels,STRUCTURALLY_OK,,"After fitting an IsolationForest named model, write code to generate predictions for X.
+
+Implementation contract:
+Input: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type.",,,,
+boost-medium-001,backend,AdaBoost / Gradient Boosting,Medium,coding,Train AdaBoost,STRUCTURALLY_OK,,"Create AdaBoostClassifier with 50 estimators and fit it.
+
+Implementation contract:
+Input: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type.",,,,
+boost-medium-002,backend,AdaBoost / Gradient Boosting,Medium,coding,GradientBoostingClassifier,STRUCTURALLY_OK,,"Create and fit a GradientBoostingClassifier.
+
+Implementation contract:
+Input: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type.",,,,
+calibration-medium-001,backend,Model Calibration / Error Analysis,Medium,coding,Classification report,STRUCTURALLY_OK,,"Write code to generate a classification_report from sklearn.metrics.
+
+Implementation contract:
+Input: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type.",,,,
+cluster-advanced-004,backend,Clustering Beyond K-Means,Medium,coding,Fit DBSCAN,STRUCTURALLY_OK,,"Fit DBSCAN with eps=0.5 and min_samples=5 on X.
+
+Implementation contract:
+Input: X is a 2-D array of numeric samples with rows representing observations. Output: return a 1-D cluster or anomaly label array aligned to the original X row order; document the convention for noise or outliers. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type.",,,,
+cnn-medium-001,backend,CNN,Medium,coding,Max pooling,STRUCTURALLY_OK,,"Create a MaxPooling2D layer with a 2x2 pool size.
+
+Implementation contract:
+Input: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type.",,,,
+curated-matplotlib-001,backend,Matplotlib,Medium,coding,Create an appropriately labeled histogram,STRUCTURALLY_OK,,"Implement make_histogram(values, bins=10). Return a Matplotlib Figure containing exactly one Axes, a histogram with the requested bins, x-label 'Value', y-label 'Frequency', and title 'Value Distribution'. Do not call plt.show().
+
+Implementation contract:
+Input: X_train and X_test are 2-D feature arrays; y_train is a 1-D array of class labels. Output: return a 1-D prediction array with exactly one label per X_test row; preserve class-label type and row order. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type.",,,,
+curated-pandas-001,backend,Pandas,Medium,coding,Group-aware missing value imputation,STRUCTURALLY_OK,,"Implement fill_group_median(df). Return a new DataFrame with missing Salary values filled with the median Salary within each Department. If an entire department lacks known salaries, use the overall observed Salary median. Do not mutate the input. Assume at least one Salary is observed.",,,,
+mm-v3-mcq-000-2,modelmind-practice-additions-v3.json,AdaBoost / Gradient Boosting,Advanced,mcq,AdaBoost / Gradient Boosting · Advanced knowledge check,STRUCTURALLY_OK,,Which experiment avoids test-label leakage when tuning AdaBoost / Gradient Boosting?,,,,
+mm-v3-mcq-001-2,modelmind-practice-additions-v3.json,AdaBoost Classifier,Advanced,mcq,AdaBoost Classifier · Advanced knowledge check,STRUCTURALLY_OK,,Which experiment avoids test-label leakage when tuning AdaBoost Classifier?,,,,
+mm-v3-mcq-002-2,modelmind-practice-additions-v3.json,AdaBoost Regressor,Advanced,mcq,AdaBoost Regressor · Advanced knowledge check,STRUCTURALLY_OK,,Which validation practice gives a more reliable estimate for AdaBoost Regressor?,,,,
+mm-v3-mcq-003-2,modelmind-practice-additions-v3.json,Advanced Feature Engineering,Advanced,mcq,Advanced Feature Engineering · Advanced knowledge check,STRUCTURALLY_OK,,Which is the most trustworthy way to assess the correctness of code in Advanced Feature Engineering?,,,,
+mm-v3-mcq-004-2,modelmind-practice-additions-v3.json,Advanced Statistics / Probability,Advanced,mcq,Advanced Statistics / Probability · Advanced knowledge check,STRUCTURALLY_OK,,Which is the most trustworthy way to assess the correctness of code in Advanced Statistics / Probability?,,,,
+mm-v3-mcq-005-2,modelmind-practice-additions-v3.json,Advanced XGBoost,Advanced,mcq,Advanced XGBoost · Advanced knowledge check,STRUCTURALLY_OK,,Which experiment avoids test-label leakage when tuning Advanced XGBoost?,,,,
+mm-v3-mcq-006-2,modelmind-practice-additions-v3.json,Agglomerative Clustering,Advanced,mcq,Agglomerative Clustering · Advanced knowledge check,STRUCTURALLY_OK,,What is a sound way to evaluate stability of Agglomerative Clustering?,,,,
+mm-v3-mcq-007-2,modelmind-practice-additions-v3.json,Anomaly Detection,Advanced,mcq,Anomaly Detection · Advanced knowledge check,STRUCTURALLY_OK,,Which is the most trustworthy way to assess the correctness of code in Anomaly Detection?,,,,
+mm-v3-mcq-000-0,modelmind-practice-additions-v3.json,AdaBoost / Gradient Boosting,Basic,mcq,AdaBoost / Gradient Boosting — model reasoning,STRUCTURALLY_OK,,Which statement correctly distinguishes AdaBoost from gradient boosting?,,,,
+mm-v3-mcq-001-0,modelmind-practice-additions-v3.json,AdaBoost Classifier,Basic,mcq,AdaBoost Classifier — model reasoning,STRUCTURALLY_OK,,"In discrete AdaBoost classification, what happens to the weights of misclassified training examples after a weak learner has positive weight?",,,,
+mm-v3-mcq-002-0,modelmind-practice-additions-v3.json,AdaBoost Regressor,Basic,mcq,AdaBoost Regressor · Basic knowledge check,STRUCTURALLY_OK,,"For a continuous-target AdaBoost Regressor experiment, which metric measures mean absolute prediction error?",,,,
+mm-v3-mcq-003-0,modelmind-practice-additions-v3.json,Advanced Feature Engineering,Basic,mcq,Advanced Feature Engineering · Basic knowledge check,STRUCTURALLY_OK,,"In a Advanced Feature Engineering practice task, which approach best makes an experiment reproducible?",,,,
+mm-v3-mcq-004-0,modelmind-practice-additions-v3.json,Advanced Statistics / Probability,Basic,mcq,Advanced Statistics / Probability · Basic knowledge check,STRUCTURALLY_OK,,"In a Advanced Statistics / Probability practice task, which approach best makes an experiment reproducible?",,,,
+mm-v3-mcq-005-0,modelmind-practice-additions-v3.json,Advanced XGBoost,Basic,mcq,Advanced XGBoost — model reasoning,STRUCTURALLY_OK,,Why does the XGBoost tree objective include a complexity penalty on leaves and their scores?,,,,
+mm-v3-mcq-006-0,modelmind-practice-additions-v3.json,Agglomerative Clustering,Basic,mcq,Agglomerative Clustering · Basic knowledge check,STRUCTURALLY_OK,,"When exploring Agglomerative Clustering without ground-truth labels, which assessment can use distances and cluster labels?",,,,
+mm-v3-mcq-007-0,modelmind-practice-additions-v3.json,Anomaly Detection,Basic,mcq,Anomaly Detection · Basic knowledge check,STRUCTURALLY_OK,,"In a Anomaly Detection practice task, which approach best makes an experiment reproducible?",,,,
+mm-v3-mcq-000-1,modelmind-practice-additions-v3.json,AdaBoost / Gradient Boosting,Medium,mcq,AdaBoost / Gradient Boosting · Medium knowledge check,STRUCTURALLY_OK,,"For imbalanced classes in a AdaBoost / Gradient Boosting experiment, which evaluation should be considered beyond accuracy?",,,,
+mm-v3-mcq-001-1,modelmind-practice-additions-v3.json,AdaBoost Classifier,Medium,mcq,AdaBoost Classifier · Medium knowledge check,STRUCTURALLY_OK,,"For imbalanced classes in a AdaBoost Classifier experiment, which evaluation should be considered beyond accuracy?",,,,
+mm-v3-mcq-002-1,modelmind-practice-additions-v3.json,AdaBoost Regressor,Medium,mcq,AdaBoost Regressor · Medium knowledge check,STRUCTURALLY_OK,,"When assessing AdaBoost Regressor, which change prevents evaluation leakage?",,,,
+mm-v3-mcq-003-1,modelmind-practice-additions-v3.json,Advanced Feature Engineering,Medium,mcq,Advanced Feature Engineering · Medium knowledge check,STRUCTURALLY_OK,,"For a Advanced Feature Engineering workflow, which choice helps prevent data leakage?",,,,
+mm-v3-mcq-004-1,modelmind-practice-additions-v3.json,Advanced Statistics / Probability,Medium,mcq,Advanced Statistics / Probability · Medium knowledge check,STRUCTURALLY_OK,,"For a Advanced Statistics / Probability workflow, which choice helps prevent data leakage?",,,,
+mm-v3-mcq-005-1,modelmind-practice-additions-v3.json,Advanced XGBoost,Medium,mcq,Advanced XGBoost · Medium knowledge check,STRUCTURALLY_OK,,"For imbalanced classes in a Advanced XGBoost experiment, which evaluation should be considered beyond accuracy?",,,,
+mm-v3-mcq-006-1,modelmind-practice-additions-v3.json,Agglomerative Clustering,Medium,mcq,Agglomerative Clustering · Medium knowledge check,STRUCTURALLY_OK,,Which preprocessing step can especially affect distance-based clustering with Agglomerative Clustering?,,,,
+mm-v3-mcq-007-1,modelmind-practice-additions-v3.json,Anomaly Detection,Medium,mcq,Anomaly Detection · Medium knowledge check,STRUCTURALLY_OK,,"For a Anomaly Detection workflow, which choice helps prevent data leakage?",,,,
+curriculum-foundation-calculus-optimization-11,modelmind-expanded-curriculum.json,Calculus & Optimization,Advanced,numerical,Calculus & Optimization: Dot calculation,STRUCTURALLY_OK,,"Calculus & Optimization: Compute the dot product of vectors [2, 2, 3] and [2, 3, 4].",,,,
+curriculum-foundation-classification-metrics-11,modelmind-expanded-curriculum.json,Classification Metrics,Advanced,numerical,Classification Metrics: F1 calculation,STRUCTURALLY_OK,,"Classification Metrics: In binary classification, TP=8, FP=2, FN=3, TN=10. Calculate F1 = 2*TP/(2*TP+FP+FN), rounded to six decimals.",,,,
+curriculum-foundation-cross-validation-11,modelmind-expanded-curriculum.json,Cross Validation,Advanced,numerical,Cross Validation: Shape calculation,STRUCTURALLY_OK,,"Cross Validation: A table has 5 rows and 4 numeric columns. After adding two new engineered columns, how many cells are in the resulting table?",,,,
+curriculum-foundation-data-cleaning-11,modelmind-expanded-curriculum.json,Data Cleaning,Advanced,numerical,Data Cleaning: Shape calculation,STRUCTURALLY_OK,,"Data Cleaning: A table has 7 rows and 4 numeric columns. After adding two new engineered columns, how many cells are in the resulting table?",,,,
+curriculum-foundation-feature-engineering-11,modelmind-expanded-curriculum.json,Feature Engineering,Advanced,numerical,Feature Engineering: Shape calculation,STRUCTURALLY_OK,,"Feature Engineering: A table has 8 rows and 4 numeric columns. After adding two new engineered columns, how many cells are in the resulting table?",,,,
+curriculum-foundation-feature-selection-11,modelmind-expanded-curriculum.json,Feature Selection,Advanced,numerical,Feature Selection: Shape calculation,STRUCTURALLY_OK,,"Feature Selection: A table has 8 rows and 4 numeric columns. After adding two new engineered columns, how many cells are in the resulting table?",,,,
+curriculum-foundation-hyperparameter-search-11,modelmind-expanded-curriculum.json,Hyperparameter Search,Advanced,numerical,Hyperparameter Search: Shape calculation,STRUCTURALLY_OK,,"Hyperparameter Search: A table has 6 rows and 4 numeric columns. After adding two new engineered columns, how many cells are in the resulting table?",,,,
+curriculum-foundation-imbalanced-learning-11,modelmind-expanded-curriculum.json,Imbalanced Learning,Advanced,numerical,Imbalanced Learning: F1 calculation,STRUCTURALLY_OK,,"Imbalanced Learning: In binary classification, TP=7, FP=2, FN=3, TN=9. Calculate F1 = 2*TP/(2*TP+FP+FN), rounded to six decimals.",,,,
+curated-statistics-001,backend,Statistics,Basic,numerical,Population variance — Basic numerical 1,STRUCTURALLY_OK,,"Compute the population variance of [2, 4, 6, 8] (divide by N=4). Enter one number.",,,,
+curriculum-foundation-calculus-optimization-03,modelmind-expanded-curriculum.json,Calculus & Optimization,Basic,numerical,Calculus & Optimization: Mean calculation,STRUCTURALLY_OK,,"Calculus & Optimization: Given numeric values [2, 4, 6, 8], calculate their arithmetic mean.",,,,
+curriculum-foundation-classification-metrics-03,modelmind-expanded-curriculum.json,Classification Metrics,Basic,numerical,Classification Metrics: Precision calculation,STRUCTURALLY_OK,,"Classification Metrics: In binary classification, TP=8, FP=2, FN=3, TN=10. Calculate precision = TP/(TP+FP), rounded to six decimals.",,,,
+curriculum-foundation-cross-validation-03,modelmind-expanded-curriculum.json,Cross Validation,Basic,numerical,Cross Validation: Split calculation,STRUCTURALLY_OK,,Cross Validation: A dataset has 40 rows. Exactly 25% are reserved for testing. How many rows are in the test set?,,,,
+curriculum-foundation-data-cleaning-03,modelmind-expanded-curriculum.json,Data Cleaning,Basic,numerical,Data Cleaning: Split calculation,STRUCTURALLY_OK,,Data Cleaning: A dataset has 80 rows. Exactly 25% are reserved for testing. How many rows are in the test set?,,,,
+curriculum-foundation-feature-engineering-03,modelmind-expanded-curriculum.json,Feature Engineering,Basic,numerical,Feature Engineering: Split calculation,STRUCTURALLY_OK,,Feature Engineering: A dataset has 100 rows. Exactly 25% are reserved for testing. How many rows are in the test set?,,,,
+curriculum-foundation-feature-selection-03,modelmind-expanded-curriculum.json,Feature Selection,Basic,numerical,Feature Selection: Split calculation,STRUCTURALLY_OK,,Feature Selection: A dataset has 100 rows. Exactly 25% are reserved for testing. How many rows are in the test set?,,,,
+curriculum-foundation-hyperparameter-search-03,modelmind-expanded-curriculum.json,Hyperparameter Search,Basic,numerical,Hyperparameter Search: Split calculation,STRUCTURALLY_OK,,Hyperparameter Search: A dataset has 60 rows. Exactly 25% are reserved for testing. How many rows are in the test set?,,,,
+curriculum-foundation-calculus-optimization-07,modelmind-expanded-curriculum.json,Calculus & Optimization,Medium,numerical,Calculus & Optimization: Variance calculation,STRUCTURALLY_OK,,"Calculus & Optimization: Compute the population variance of [0, 2, 4] by dividing squared deviations by N=3. Round to six decimals.",,,,
+curriculum-foundation-classification-metrics-07,modelmind-expanded-curriculum.json,Classification Metrics,Medium,numerical,Classification Metrics: Recall calculation,STRUCTURALLY_OK,,"Classification Metrics: In binary classification, TP=8, FP=2, FN=3, TN=10. Calculate recall = TP/(TP+FN), rounded to six decimals.",,,,
+curriculum-foundation-feature-engineering-07,modelmind-expanded-curriculum.json,Feature Engineering,Medium,numerical,Feature Engineering: Median calculation,STRUCTURALLY_OK,,"Feature Engineering: A column has values [5, 7, 9]. Compute its median.",,,,
+curriculum-foundation-hyperparameter-search-07,modelmind-expanded-curriculum.json,Hyperparameter Search,Medium,numerical,Hyperparameter Search: Median calculation,STRUCTURALLY_OK,,"Hyperparameter Search: A column has values [3, 5, 7]. Compute its median.",,,,
+curriculum-foundation-imbalanced-learning-07,modelmind-expanded-curriculum.json,Imbalanced Learning,Medium,numerical,Imbalanced Learning: Recall calculation,STRUCTURALLY_OK,,"Imbalanced Learning: In binary classification, TP=7, FP=2, FN=3, TN=9. Calculate recall = TP/(TP+FN), rounded to six decimals.",,,,
+curriculum-foundation-linear-algebra-for-ml-07,modelmind-expanded-curriculum.json,Linear Algebra for ML,Medium,numerical,Linear Algebra for ML: Variance calculation,STRUCTURALLY_OK,,"Linear Algebra for ML: Compute the population variance of [2, 4, 6] by dividing squared deviations by N=3. Round to six decimals.",,,,
+curriculum-foundation-ml-deployment-07,modelmind-expanded-curriculum.json,ML Deployment,Medium,numerical,ML Deployment: Split calculation,STRUCTURALLY_OK,,ML Deployment: A dataset of 100 rows is split 80% training / 20% testing. How many test rows are there?,,,,
+curriculum-foundation-model-calibration-07,modelmind-expanded-curriculum.json,Model Calibration,Medium,numerical,Model Calibration: Recall calculation,STRUCTURALLY_OK,,"Model Calibration: In binary classification, TP=10, FP=2, FN=3, TN=12. Calculate recall = TP/(TP+FN), rounded to six decimals.",,,,
+anomaly-advanced-001,backend,Anomaly Detection,Advanced,theory,Fraud as anomaly detection,STRUCTURALLY_OK,,"Why might fraud detection be harder than ordinary anomaly detection?
+
+In your answer, use a concrete Anomaly Detection example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline.",,,,
+anomaly-advanced-002,backend,Anomaly Detection,Advanced,theory,Threshold selection,STRUCTURALLY_OK,,Why should an anomaly score threshold be selected using validation data and business costs rather than arbitrarily?,,,,
+anomaly-advanced-003,backend,Anomaly Detection,Advanced,theory,Scaling before distance-based detection,STRUCTURALLY_OK,,Why can unscaled features hurt distance-based anomaly detection methods?,,,,
+anomaly-advanced-004,backend,Anomaly Detection,Advanced,theory,Novelty detection,STRUCTURALLY_OK,,A model is trained only on clean machine-operation data and then receives future observations. What is this setting commonly called?,,,,
+boost-advanced-002,backend,AdaBoost / Gradient Boosting,Advanced,theory,Learning rate,STRUCTURALLY_OK,,Explain the tradeoff between learning_rate and n_estimators in boosting.,,,,
+calibration-advanced-001,backend,Model Calibration / Error Analysis,Advanced,theory,Platt scaling,STRUCTURALLY_OK,,What is the purpose of probability calibration methods such as Platt scaling?,,,,
+calibration-advanced-002,backend,Model Calibration / Error Analysis,Advanced,theory,High AUC but poor probabilities,STRUCTURALLY_OK,,"Can a model have high ROC-AUC but poor probability calibration?
+
+In your answer, use a concrete Model Calibration / Error Analysis example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline.",,,,
+calibration-advanced-003,backend,Model Calibration / Error Analysis,Advanced,theory,False-positive investigation,STRUCTURALLY_OK,,A classifier has many false positives. Name three useful things to inspect before changing the model.,,,,
+anomaly-basic-001,backend,Anomaly Detection,Basic,theory,What is an anomaly?,STRUCTURALLY_OK,,"What is an anomaly in machine learning?
+
+In your answer, use a concrete Anomaly Detection example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline.",,,,
+anomaly-basic-002,backend,Anomaly Detection,Basic,theory,Isolation Forest idea,STRUCTURALLY_OK,,"What is the main intuition behind Isolation Forest?
+
+In your answer, use a concrete Anomaly Detection example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline.",,,,
+boost-basic-001,backend,AdaBoost / Gradient Boosting,Basic,theory,Boosting idea,STRUCTURALLY_OK,,"What is the main idea behind boosting?
+
+In your answer, use a concrete AdaBoost / Gradient Boosting example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline.",,,,
+boost-basic-002,backend,AdaBoost / Gradient Boosting,Basic,theory,Boosting idea — Basic theory 1,STRUCTURALLY_OK,,Explain the core idea of boosting and how later learners focus on previous errors.,,,,
+calibration-basic-001,backend,Model Calibration / Error Analysis,Basic,theory,Calibration,STRUCTURALLY_OK,,"What does it mean for a binary classifier to be well calibrated?
+
+In your answer, use a concrete Model Calibration / Error Analysis example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline.",,,,
+calibration-basic-002,backend,Model Calibration / Error Analysis,Basic,theory,Confidence versus correctness,STRUCTURALLY_OK,,"Can a classifier be highly confident and still be poorly calibrated?
+
+In your answer, use a concrete Model Calibration / Error Analysis example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline.",,,,
+cluster-advanced-001,backend,Clustering Beyond K-Means,Basic,theory,Hierarchical clustering,STRUCTURALLY_OK,,"What does hierarchical clustering produce?
+
+In your answer, use a concrete Clustering Beyond K-Means example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline.",,,,
+cluster-advanced-003,backend,Clustering Beyond K-Means,Basic,theory,Clustering Beyond K-Means: Concept analysis (Basic),STRUCTURALLY_OK,,"What is a major advantage of DBSCAN over K-Means?
+
+In your answer, use a concrete Clustering Beyond K-Means example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline.",,,,
+anomaly-medium-002,backend,Anomaly Detection,Medium,theory,One-class classification,STRUCTURALLY_OK,,What is the difference between ordinary supervised classification and one-class anomaly detection?,,,,
+anomaly-medium-003,backend,Anomaly Detection,Medium,theory,Local Outlier Factor,STRUCTURALLY_OK,,"What does Local Outlier Factor compare when identifying anomalies?
+
+In your answer, use a concrete Anomaly Detection example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline.",,,,
+calibration-medium-002,backend,Model Calibration / Error Analysis,Medium,theory,Calibration curve,STRUCTURALLY_OK,,"What does a reliability or calibration curve compare?
+
+In your answer, use a concrete Model Calibration / Error Analysis example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline.",,,,
+calibration-medium-003,backend,Model Calibration / Error Analysis,Medium,theory,Error slicing,STRUCTURALLY_OK,,Why should ML error analysis sometimes be performed separately for different subgroups?,,,,
+cluster-advanced-005,backend,Clustering Beyond K-Means,Medium,theory,Silhouette score,STRUCTURALLY_OK,,"What does a higher silhouette score generally indicate?
+
+In your answer, use a concrete Clustering Beyond K-Means example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline.",,,,
+cluster-advanced-006,backend,Clustering Beyond K-Means,Medium,theory,Noise label in DBSCAN,STRUCTURALLY_OK,,"What label does scikit-learn DBSCAN commonly use for noise points?
+
+In your answer, use a concrete Clustering Beyond K-Means example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline.",,,,
+cnn-medium-002,backend,CNN,Medium,theory,Receptive field,STRUCTURALLY_OK,,"What is the receptive field of a CNN neuron?
+
+In your answer, use a concrete CNN example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline.",,,,
+cnn-medium-003,backend,CNN,Medium,theory,Why flatten before Dense?,STRUCTURALLY_OK,,Why is Flatten often used before a fully connected classification head?,,,,

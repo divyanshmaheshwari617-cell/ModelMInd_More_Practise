@@ -32,11 +32,14 @@ from question_bank import (
 )
 
 
+from ml_benchmark import router as ml_benchmark_router
+
 app = FastAPI(
     title="ModelMind More Practice Evaluator",
     version="1.0.0"
 )
 app.include_router(jupyter_router)
+app.include_router(ml_benchmark_router)
 
 # ---------------------------------------------------------
 # Question Bank API
@@ -115,6 +118,7 @@ def get_questions():
             **enrich_question(
                 public_question(question)
             ),
+            "answer": float(question["expectedAnswer"]) if mode == "numerical" and question.get("expectedAnswer") is not None else None,
             "practiceMode": mode,
             "testsAvailable": bool(case),
             "visibleTests": visible_tests,
@@ -125,6 +129,15 @@ def get_questions():
             ),
         })
 
+    # MODELMIND_QA_ONEBATCH_OVERRIDES_V1: display-only question clarity overlays.
+    import json as _mm_json
+    from pathlib import Path as _mm_Path
+    _mm_overrides_path = _mm_Path(__file__).resolve().parent.parent / "public" / "modelmind-qa-onebatch-overrides.json"
+    if _mm_overrides_path.is_file():
+        _mm_overrides = _mm_json.loads(_mm_overrides_path.read_text(encoding="utf-8"))
+        for _mm_q in result:
+            if _mm_q.get("id") in _mm_overrides:
+                _mm_q.update(_mm_overrides[_mm_q["id"]])
     return result
 
 

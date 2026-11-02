@@ -1,0 +1,1151 @@
+{
+  "python-basic-001": {
+    "title": "Calculate the mean",
+    "question": "Write a function calculate_mean(numbers) that returns the arithmetic mean of a list.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "python-medium-001": {
+    "title": "Sum even numbers",
+    "question": "Write sum_even(numbers) that returns the sum of all even numbers.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "python-advanced-001": {
+    "title": "Fix list mutation",
+    "question": "The function below is intended to remove all negative values. Fix the implementation.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include tests for malformed inputs and a failure mode relevant to the algorithm; explain computational or leakage risks."
+  },
+  "numpy-basic-001": {
+    "title": "Create an array and calculate its mean",
+    "question": "Create a NumPy array containing 10, 20, 30, 40 and calculate its mean.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "numpy-medium-001": {
+    "title": "Normalize an array",
+    "question": "Normalize the array using min-max normalization:\n(x - min) / (max - min)\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "numpy-advanced-001": {
+    "title": "Standardize columns",
+    "question": "Standardize each column of X so that each column has mean approximately 0 and standard deviation 1.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include tests for malformed inputs and a failure mode relevant to the algorithm; explain computational or leakage risks."
+  },
+  "pandas-basic-001": {
+    "title": "Create a DataFrame",
+    "question": "Create a DataFrame containing names A, B, C and ages 18, 20, 22.\n\nImplementation contract:\nInput: a DataFrame or feature matrix with explicitly named columns. Output: return the requested transformed DataFrame or array; preserve the documented row order and define how missing values are handled. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "pandas-medium-001": {
+    "title": "Median imputation",
+    "question": "Fill the missing Age value using the median of the Age column.\n\nImplementation contract:\nInput: a DataFrame or feature matrix with explicitly named columns. Output: return the requested transformed DataFrame or array; preserve the documented row order and define how missing values are handled. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "pandas-advanced-001": {
+    "title": "Group and aggregate",
+    "question": "Given a DataFrame containing department and salary, calculate the average salary for every department.\n\nImplementation contract:\nInput: a DataFrame or feature matrix with explicitly named columns. Output: return the requested transformed DataFrame or array; preserve the documented row order and define how missing values are handled. Include tests for malformed inputs and a failure mode relevant to the algorithm; explain computational or leakage risks."
+  },
+  "statistics-basic-001": {
+    "title": "Statistics: Concept analysis (Basic)",
+    "question": "Calculate the mean of 4, 6, 8, 10.\n\nIn your answer, use a concrete Statistics example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "statistics-medium-001": {
+    "title": "Calculate variance",
+    "question": "Write a function variance(values) that calculates population variance.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "preprocess-basic-001": {
+    "title": "StandardScaler",
+    "question": "Use StandardScaler to standardize X_train.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "preprocess-medium-001": {
+    "title": "Prevent data leakage",
+    "question": "Fix the preprocessing pipeline so that the scaler is fitted only on training data.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "preprocess-advanced-001": {
+    "title": "Build a preprocessing pipeline",
+    "question": "Build a Pipeline containing StandardScaler followed by LogisticRegression.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include tests for malformed inputs and a failure mode relevant to the algorithm; explain computational or leakage risks."
+  },
+  "feature-basic-001": {
+    "title": "Why create features?",
+    "question": "What is the main purpose of feature engineering?\n\nIn your answer, use a concrete Feature Engineering example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "feature-medium-001": {
+    "title": "Create BMI",
+    "question": "Create a BMI column using weight_kg / height_m^2.\n\nImplementation contract:\nInput: a DataFrame or feature matrix with explicitly named columns. Output: return the requested transformed DataFrame or array; preserve the documented row order and define how missing values are handled. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "feature-advanced-001": {
+    "title": "One-hot encode a categorical feature",
+    "question": "Convert the categorical City column into one-hot encoded features.\n\nImplementation contract:\nInput: a DataFrame or feature matrix with explicitly named columns. Output: return the requested transformed DataFrame or array; preserve the documented row order and define how missing values are handled. Include tests for malformed inputs and a failure mode relevant to the algorithm; explain computational or leakage risks."
+  },
+  "metrics-basic-001": {
+    "title": "Calculate accuracy",
+    "question": "Calculate classification accuracy from y_test and y_pred.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "metrics-medium-001": {
+    "title": "Calculate F1 score",
+    "question": "Calculate the F1 score for the supplied predictions.\n\nImplementation contract:\nInput: X_train and X_test are 2-D feature arrays; y_train is a 1-D array of class labels. Output: return a 1-D prediction array with exactly one label per X_test row; preserve class-label type and row order. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "linear-basic-001": {
+    "title": "Fit Linear Regression",
+    "question": "Fit LinearRegression on X_train and y_train.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "linear-medium-001": {
+    "title": "Predict with regression",
+    "question": "Train the model and predict the target for x = 4.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "poly-basic-001": {
+    "title": "Polynomial features",
+    "question": "What does PolynomialFeatures allow a linear model to do?\n\nIn your answer, use a concrete Polynomial Regression example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "poly-medium-001": {
+    "title": "Build degree-2 regression",
+    "question": "Use PolynomialFeatures with degree 2 and fit LinearRegression.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "poly-advanced-001": {
+    "title": "Control overfitting",
+    "question": "Build a degree-5 polynomial model with Ridge regularization.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include tests for malformed inputs and a failure mode relevant to the algorithm; explain computational or leakage risks."
+  },
+  "logistic-basic-001": {
+    "title": "Fit Logistic Regression",
+    "question": "Fit LogisticRegression on the provided training data.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "logistic-medium-001": {
+    "title": "Predict probabilities",
+    "question": "Train LogisticRegression and generate class probabilities.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "gradient-medium-001": {
+    "title": "Perform one gradient step",
+    "question": "Implement one gradient descent update for w.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "gradient-advanced-001": {
+    "title": "Implement iterative updates",
+    "question": "Implement gradient descent for a simple quadratic function until the parameter approaches the minimum.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include tests for malformed inputs and a failure mode relevant to the algorithm; explain computational or leakage risks."
+  },
+  "cv-basic-001": {
+    "title": "Purpose of cross validation",
+    "question": "Why is cross-validation used?\n\nIn your answer, use a concrete Cross Validation example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "cv-medium-001": {
+    "title": "Run cross validation",
+    "question": "Use cross_val_score with 5 folds.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "cv-advanced-001": {
+    "title": "Prevent preprocessing leakage",
+    "question": "Combine preprocessing and a model in a Pipeline before cross-validation.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include tests for malformed inputs and a failure mode relevant to the algorithm; explain computational or leakage risks."
+  },
+  "tuning-basic-001": {
+    "title": "Hyperparameter",
+    "question": "Which of the following is a hyperparameter?\n\nIn your answer, use a concrete Hyperparameter Tuning example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "tuning-medium-001": {
+    "title": "GridSearchCV",
+    "question": "Use GridSearchCV to search over n_neighbors.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "knn-basic-001": {
+    "title": "KNN: Coding exercise (Basic)",
+    "question": "Create KNeighborsClassifier with n_neighbors=5 and fit it.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "knn-medium-001": {
+    "title": "Predict with KNN",
+    "question": "Train KNN and generate predictions for X_test.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "knn-advanced-001": {
+    "title": "Why scaling matters",
+    "question": "Why is feature scaling especially important for KNN?\n\nIn your answer, use a concrete KNN example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "nb-basic-001": {
+    "title": "Naive assumption",
+    "question": "What simplifying assumption does Naive Bayes make?\n\nIn your answer, use a concrete Naive Bayes example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "nb-medium-001": {
+    "title": "Train Gaussian Naive Bayes",
+    "question": "Create GaussianNB and fit it on the supplied data.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "nb-advanced-001": {
+    "title": "Text classification choice",
+    "question": "Why can Naive Bayes be a strong baseline for text classification?\n\nIn your answer, use a concrete Naive Bayes example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "tree-basic-001": {
+    "title": "Train a decision tree",
+    "question": "Create DecisionTreeClassifier and fit it.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "tree-medium-001": {
+    "title": "Control tree depth",
+    "question": "A decision tree is heavily overfitting. Modify the model so its maximum depth is 3.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "tree-advanced-001": {
+    "title": "Tune a decision tree",
+    "question": "Create a DecisionTreeClassifier using min_samples_leaf=5 and max_depth=4.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include tests for malformed inputs and a failure mode relevant to the algorithm; explain computational or leakage risks."
+  },
+  "rf-basic-001": {
+    "title": "Train Random Forest",
+    "question": "Create RandomForestClassifier with 100 estimators.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "rf-medium-001": {
+    "title": "Random Forest prediction",
+    "question": "Fit RandomForestClassifier and generate predictions.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "svm-basic-001": {
+    "title": "Linear SVM",
+    "question": "Create SVC with a linear kernel and fit it.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "svm-medium-001": {
+    "title": "Choose a kernel",
+    "question": "Modify the model to use an RBF kernel.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "svm-advanced-001": {
+    "title": "Train an RBF SVM",
+    "question": "Create an SVC using kernel='rbf' and C=2.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include tests for malformed inputs and a failure mode relevant to the algorithm; explain computational or leakage risks."
+  },
+  "kmeans-basic-001": {
+    "title": "Create K-Means",
+    "question": "Create KMeans with 3 clusters and fit it.\n\nImplementation contract:\nInput: X is a 2-D array of numeric samples with rows representing observations. Output: return a 1-D cluster or anomaly label array aligned to the original X row order; document the convention for noise or outliers. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "kmeans-medium-001": {
+    "title": "Generate cluster labels",
+    "question": "Fit KMeans with 3 clusters and generate labels.\n\nImplementation contract:\nInput: X is a 2-D array of numeric samples with rows representing observations. Output: return a 1-D cluster or anomaly label array aligned to the original X row order; document the convention for noise or outliers. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "pca-basic-001": {
+    "title": "Purpose of PCA",
+    "question": "What is a common use of PCA?\n\nIn your answer, use a concrete PCA example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "pca-medium-001": {
+    "title": "Reduce to two components",
+    "question": "Apply PCA with n_components=2.\n\nImplementation contract:\nInput: X is a 2-D numeric feature array. Output: return a 2-D transformed array containing one row per input sample; state the chosen output dimensionality and random seed where applicable. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "boost-basic-001": {
+    "title": "Boosting idea",
+    "question": "What is the main idea behind boosting?\n\nIn your answer, use a concrete AdaBoost / Gradient Boosting example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "boost-medium-001": {
+    "title": "Train AdaBoost",
+    "question": "Create AdaBoostClassifier with 50 estimators and fit it.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "boost-advanced-001": {
+    "title": "Gradient boosting classifier",
+    "question": "Create GradientBoostingClassifier with n_estimators=100 and fit it.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include tests for malformed inputs and a failure mode relevant to the algorithm; explain computational or leakage risks."
+  },
+  "xgb-basic-001": {
+    "title": "Why XGBoost is popular",
+    "question": "Which description best matches XGBoost?\n\nIn your answer, use a concrete XGBoost example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "xgb-medium-001": {
+    "title": "Boosting versus bagging",
+    "question": "Which statement best describes a key difference?\n\nIn your answer, use a concrete XGBoost example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "python-basic-004": {
+    "title": "Count vowels",
+    "question": "Write count_vowels(text) that returns the number of vowels in a string.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "python-basic-005": {
+    "title": "Reverse list",
+    "question": "Write reverse_list(values) without using list.reverse().\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "python-basic-006": {
+    "title": "Fix positive filter",
+    "question": "Fix the function so it returns a new list containing only positive values and does not mutate the input.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "python-medium-004": {
+    "title": "Frequency dictionary",
+    "question": "Write word_frequency(words) that returns a dictionary mapping each word to its count.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "python-medium-005": {
+    "title": "Flatten nested list",
+    "question": "Write flatten(values) for a list of lists.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "python-medium-006": {
+    "title": "Sort records",
+    "question": "Sort a list of dictionaries by the score key in descending order.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "python-advanced-002": {
+    "title": "Generator chunks",
+    "question": "Write a generator chunks(values, size) that yields successive lists of at most size elements.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include tests for malformed inputs and a failure mode relevant to the algorithm; explain computational or leakage risks."
+  },
+  "python-advanced-003": {
+    "title": "Decorator wrapper",
+    "question": "Write an announce decorator that prints START before calling a function and END after it returns.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include tests for malformed inputs and a failure mode relevant to the algorithm; explain computational or leakage risks."
+  },
+  "python-advanced-005": {
+    "title": "Mutable default argument",
+    "question": "Fix the function so every call gets an independent list.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include tests for malformed inputs and a failure mode relevant to the algorithm; explain computational or leakage risks."
+  },
+  "numpy-basic-004": {
+    "title": "Reshape array",
+    "question": "Create a 2x3 NumPy array from [1,2,3,4,5,6].\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "numpy-basic-005": {
+    "title": "Boolean mask",
+    "question": "Select values greater than 10 using a NumPy boolean mask.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "numpy-basic-006": {
+    "title": "Column mean",
+    "question": "Calculate the mean of each column of a 2D array.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "numpy-medium-004": {
+    "title": "Broadcasting",
+    "question": "Add [10,20,30] to every row of a 3x3 array using broadcasting.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "numpy-medium-005": {
+    "title": "Standardize vector",
+    "question": "Standardize a vector using its mean and standard deviation.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "numpy-advanced-002": {
+    "title": "Matrix multiplication",
+    "question": "Compute the matrix product of A and B using NumPy.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include tests for malformed inputs and a failure mode relevant to the algorithm; explain computational or leakage risks."
+  },
+  "pandas-basic-004": {
+    "title": "Filter rows",
+    "question": "Filter rows where age is at least 18.\n\nImplementation contract:\nInput: a DataFrame or feature matrix with explicitly named columns. Output: return the requested transformed DataFrame or array; preserve the documented row order and define how missing values are handled. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "pandas-basic-005": {
+    "title": "Sort DataFrame",
+    "question": "Sort a DataFrame by score from highest to lowest.\n\nImplementation contract:\nInput: a DataFrame or feature matrix with explicitly named columns. Output: return the requested transformed DataFrame or array; preserve the documented row order and define how missing values are handled. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "pandas-basic-006": {
+    "title": "Drop duplicates",
+    "question": "Remove duplicate rows from a DataFrame.\n\nImplementation contract:\nInput: a DataFrame or feature matrix with explicitly named columns. Output: return the requested transformed DataFrame or array; preserve the documented row order and define how missing values are handled. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "pandas-medium-004": {
+    "title": "Group aggregation",
+    "question": "Group sales by product and calculate total revenue.\n\nImplementation contract:\nInput: a DataFrame or feature matrix with explicitly named columns. Output: return the requested transformed DataFrame or array; preserve the documented row order and define how missing values are handled. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "pandas-medium-005": {
+    "title": "Merge datasets",
+    "question": "Merge customers and orders using customer_id.\n\nImplementation contract:\nInput: a DataFrame or feature matrix with explicitly named columns. Output: return the requested transformed DataFrame or array; preserve the documented row order and define how missing values are handled. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "pandas-advanced-002": {
+    "title": "Pivot table",
+    "question": "Create a pivot table showing total sales by region and product.\n\nImplementation contract:\nInput: a DataFrame or feature matrix with explicitly named columns. Output: return the requested transformed DataFrame or array; preserve the documented row order and define how missing values are handled. Include tests for malformed inputs and a failure mode relevant to the algorithm; explain computational or leakage risks."
+  },
+  "pandas-advanced-003": {
+    "title": "Date features",
+    "question": "Convert a date column to datetime and create a month feature.\n\nImplementation contract:\nInput: a DataFrame or feature matrix with explicitly named columns. Output: return the requested transformed DataFrame or array; preserve the documented row order and define how missing values are handled. Include tests for malformed inputs and a failure mode relevant to the algorithm; explain computational or leakage risks."
+  },
+  "statistics-medium-003": {
+    "title": "Correlation and causation",
+    "question": "Explain why correlation does not by itself establish causation.\n\nIn your answer, use a concrete Statistics example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "preprocess-basic-004": {
+    "title": "Mean imputation",
+    "question": "Use SimpleImputer to fill missing numeric values with the mean.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "preprocess-basic-005": {
+    "title": "One hot encoding",
+    "question": "Encode a color column using OneHotEncoder.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "preprocess-basic-006": {
+    "title": "Min-max scaling",
+    "question": "Scale a numeric array to the [0,1] range using MinMaxScaler.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "preprocess-medium-002": {
+    "title": "ColumnTransformer",
+    "question": "Build a ColumnTransformer that scales numeric columns and one-hot encodes a categorical column.\n\nImplementation contract:\nInput: a DataFrame or feature matrix with explicitly named columns. Output: return the requested transformed DataFrame or array; preserve the documented row order and define how missing values are handled. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "preprocess-advanced-002": {
+    "title": "Classification pipeline",
+    "question": "Create a pipeline containing StandardScaler followed by LogisticRegression.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include tests for malformed inputs and a failure mode relevant to the algorithm; explain computational or leakage risks."
+  },
+  "feature-basic-004": {
+    "title": "Ratio feature",
+    "question": "Create a BMI-like ratio feature weight / height**2.\n\nImplementation contract:\nInput: a DataFrame or feature matrix with explicitly named columns. Output: return the requested transformed DataFrame or array; preserve the documented row order and define how missing values are handled. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "feature-basic-005": {
+    "title": "Log transform",
+    "question": "Apply np.log1p to a positive skewed feature.\n\nImplementation contract:\nInput: a DataFrame or feature matrix with explicitly named columns. Output: return the requested transformed DataFrame or array; preserve the documented row order and define how missing values are handled. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "feature-medium-002": {
+    "title": "Polynomial features",
+    "question": "Generate degree-2 polynomial features for two input features.\n\nImplementation contract:\nInput: a DataFrame or feature matrix with explicitly named columns. Output: return the requested transformed DataFrame or array; preserve the documented row order and define how missing values are handled. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "metrics-basic-004": {
+    "title": "Confusion matrix",
+    "question": "Calculate a confusion matrix from binary true and predicted labels.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "metrics-basic-005": {
+    "title": "Metrics: Coding exercise (Basic)",
+    "question": "Calculate MAE for predictions [2,4,6] and targets [1,5,7].\n\nImplementation contract:\nInput: X_train and X_test are 2-D numeric feature arrays and y_train is a 1-D numeric target array. Output: return a 1-D numeric prediction array of length len(X_test) in original row order. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "metrics-medium-003": {
+    "title": "Metrics: Coding exercise (Medium)",
+    "question": "Calculate ROC-AUC from binary labels and predicted probabilities.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "linear-basic-004": {
+    "title": "Fit regression",
+    "question": "Fit LinearRegression on X=[[1],[2],[3]] and y=[2,4,6].\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "linear-medium-002": {
+    "title": "Linear Regression: Coding exercise (Medium)",
+    "question": "Calculate residuals as y_true - y_pred.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "poly-basic-004": {
+    "title": "Degree two features",
+    "question": "Transform one feature into degree-2 polynomial features.\n\nImplementation contract:\nInput: a DataFrame or feature matrix with explicitly named columns. Output: return the requested transformed DataFrame or array; preserve the documented row order and define how missing values are handled. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "poly-medium-002": {
+    "title": "Polynomial pipeline",
+    "question": "Create a pipeline with PolynomialFeatures(degree=2) and LinearRegression.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "logistic-basic-004": {
+    "title": "Predict probabilities — Basic coding 1",
+    "question": "Use predict_proba to obtain positive-class probabilities from a fitted logistic model.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "logistic-basic-005": {
+    "title": "Logistic Regression: Concept analysis (Basic)",
+    "question": "Explain what the sigmoid function does in logistic regression.\n\nIn your answer, use a concrete Logistic Regression example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "logistic-medium-002": {
+    "title": "Threshold predictions",
+    "question": "Convert predicted probabilities into binary predictions using a threshold of 0.7.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "gradient-basic-005": {
+    "title": "Learning rate",
+    "question": "Explain what can happen if the learning rate is extremely large.\n\nIn your answer, use a concrete Gradient Descent example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "gradient-medium-002": {
+    "title": "Gradient update — Medium coding 1",
+    "question": "Implement one gradient descent update w = w - lr * grad.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "gradient-advanced-002": {
+    "title": "Feature scaling",
+    "question": "Explain why feature scaling can improve gradient-descent convergence.\n\nIn your answer, use a concrete Gradient Descent example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "cv-basic-004": {
+    "title": "KFold split",
+    "question": "Create a 5-fold KFold splitter with shuffling and random_state=42.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "cv-medium-002": {
+    "title": "Stratified KFold",
+    "question": "Create a StratifiedKFold splitter for a classification problem.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "tuning-basic-004": {
+    "title": "Parameter grid",
+    "question": "Create a parameter grid for max_depth=[2,4,6] and min_samples_split=[2,5].\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "tuning-medium-002": {
+    "title": "GridSearchCV — Medium coding 1",
+    "question": "Set up GridSearchCV for a DecisionTreeClassifier.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "knn-basic-004": {
+    "title": "KNN classifier",
+    "question": "Create a KNeighborsClassifier with n_neighbors=3 and fit it on X_train,y_train.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "knn-basic-005": {
+    "title": "Distance matters",
+    "question": "Explain why feature scaling is important for KNN.\n\nIn your answer, use a concrete KNN example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "knn-medium-002": {
+    "title": "KNN: Coding exercise (Medium)",
+    "question": "Train KNN models with k=1,3,5 and compare validation accuracy.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "nb-basic-002": {
+    "title": "GaussianNB",
+    "question": "Create and fit a GaussianNB classifier.\n\nImplementation contract:\nInput: X_train and X_test are 2-D feature arrays; y_train is a 1-D array of class labels. Output: return a 1-D prediction array with exactly one label per X_test row; preserve class-label type and row order. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "nb-basic-003": {
+    "title": "Naive assumption — Basic theory 1",
+    "question": "Explain the conditional-independence assumption made by Naive Bayes.\n\nIn your answer, use a concrete Naive Bayes example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "nb-advanced-002": {
+    "title": "Laplace smoothing",
+    "question": "Explain why Laplace smoothing is useful in multinomial Naive Bayes.\n\nIn your answer, use a concrete Naive Bayes example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "tree-basic-004": {
+    "title": "Tree depth",
+    "question": "Create a DecisionTreeClassifier with max_depth=3.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "tree-basic-005": {
+    "title": "Gini impurity",
+    "question": "Explain what Gini impurity measures at a decision-tree node.\n\nIn your answer, use a concrete Decision Tree example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "tree-medium-002": {
+    "title": "Decision Tree: Coding exercise (Medium)",
+    "question": "Train trees with max_depth values 2,4,6 and select the best validation score.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "tree-advanced-002": {
+    "title": "Decision Tree: Concept analysis (Advanced)",
+    "question": "Explain how limiting tree complexity can reduce overfitting.\n\nIn your answer, use a concrete Decision Tree example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "rf-basic-002": {
+    "title": "Random forest model",
+    "question": "Create a RandomForestClassifier with 100 estimators and random_state=42.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "rf-basic-003": {
+    "title": "Random Forest: Concept analysis (Basic)",
+    "question": "Explain how bagging differs from boosting.\n\nIn your answer, use a concrete Random Forest example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "rf-medium-002": {
+    "title": "Feature importance",
+    "question": "Extract feature_importances_ from a fitted random forest.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "rf-advanced-002": {
+    "title": "Random Forest: Concept analysis (Advanced)",
+    "question": "Explain the idea of an out-of-bag score in a random forest.\n\nIn your answer, use a concrete Random Forest example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "svm-basic-002": {
+    "title": "Linear SVM — Basic coding 1",
+    "question": "Create an SVC using a linear kernel.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "svm-basic-003": {
+    "title": "SVM: Concept analysis (Basic)",
+    "question": "Explain what the margin represents in a support vector machine.\n\nIn your answer, use a concrete SVM example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "svm-medium-002": {
+    "title": "SVM: Coding exercise (Medium)",
+    "question": "Create an SVC with RBF kernel, C=10, gamma='scale'.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "svm-advanced-002": {
+    "title": "C and gamma",
+    "question": "Explain how C and gamma affect an RBF-kernel SVM.\n\nIn your answer, use a concrete SVM example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "kmeans-basic-002": {
+    "title": "Create KMeans",
+    "question": "Create KMeans with n_clusters=3 and random_state=42.\n\nImplementation contract:\nInput: X is a 2-D array of numeric samples with rows representing observations. Output: return a 1-D cluster or anomaly label array aligned to the original X row order; document the convention for noise or outliers. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "kmeans-basic-003": {
+    "title": "K-Means: Concept analysis (Basic)",
+    "question": "Explain what a centroid represents in K-Means.\n\nIn your answer, use a concrete K-Means example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "kmeans-medium-002": {
+    "title": "Elbow method",
+    "question": "Fit K-Means for k=2 through 6 and collect inertia values.\n\nImplementation contract:\nInput: X is a 2-D array of numeric samples with rows representing observations. Output: return a 1-D cluster or anomaly label array aligned to the original X row order; document the convention for noise or outliers. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "kmeans-advanced-002": {
+    "title": "Scaling before KMeans",
+    "question": "Explain why scaling can matter before K-Means clustering.\n\nIn your answer, use a concrete K-Means example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "pca-basic-002": {
+    "title": "PCA two components",
+    "question": "Create PCA with n_components=2 and fit_transform X.\n\nImplementation contract:\nInput: X is a 2-D numeric feature array. Output: return a 2-D transformed array containing one row per input sample; state the chosen output dimensionality and random seed where applicable. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "pca-basic-003": {
+    "title": "Principal component",
+    "question": "Explain what a principal component represents.\n\nIn your answer, use a concrete PCA example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "pca-medium-002": {
+    "title": "Explained variance",
+    "question": "Extract explained_variance_ratio_ from a fitted PCA object.\n\nImplementation contract:\nInput: X is a 2-D numeric feature array. Output: return a 2-D transformed array containing one row per input sample; state the chosen output dimensionality and random seed where applicable. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "boost-basic-003": {
+    "title": "AdaBoost classifier",
+    "question": "Create an AdaBoostClassifier with 50 estimators.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "boost-medium-002": {
+    "title": "GradientBoostingClassifier",
+    "question": "Create and fit a GradientBoostingClassifier.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "xgboost-medium-002": {
+    "title": "Subsampling",
+    "question": "Explain how subsample and colsample_bytree can affect overfitting.\n\nIn your answer, use a concrete XGBoost example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "matplotlib-basic-001": {
+    "title": "Scatter plot",
+    "question": "Create a scatter plot of x and y using Matplotlib.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "matplotlib-basic-002": {
+    "title": "Matplotlib / Seaborn: Coding exercise (Basic)",
+    "question": "Create a histogram for a numeric list.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "matplotlib-medium-001": {
+    "title": "Correlation heatmap",
+    "question": "Create a Seaborn heatmap of a DataFrame correlation matrix.\n\nImplementation contract:\nInput: a DataFrame or feature matrix with explicitly named columns. Output: return the requested transformed DataFrame or array; preserve the documented row order and define how missing values are handled. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "eda-basic-001": {
+    "title": "Inspect a DataFrame",
+    "question": "Write code that prints the shape, column names, dtypes, and first five rows of a pandas DataFrame named df.\n\nImplementation contract:\nInput: a DataFrame or feature matrix with explicitly named columns. Output: return the requested transformed DataFrame or array; preserve the documented row order and define how missing values are handled. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "eda-basic-002": {
+    "title": "Missing-value summary",
+    "question": "Write code to calculate the number of missing values in every column of df.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "eda-medium-001": {
+    "title": "Numeric summary",
+    "question": "Write code that selects numeric columns from df and produces descriptive statistics for them.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "eda-medium-002": {
+    "title": "Unique-value analysis",
+    "question": "Write code that returns the number of unique values for every column in df, sorted from smallest to largest.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "eda-medium-003": {
+    "title": "Correlation matrix",
+    "question": "Create a correlation matrix for numeric columns in df and identify pairs with absolute correlation greater than 0.8.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "eda-advanced-001": {
+    "title": "Outlier detection with IQR",
+    "question": "Write a function find_iqr_outliers(series) that returns the values outside Q1 - 1.5*IQR and Q3 + 1.5*IQR.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include tests for malformed inputs and a failure mode relevant to the algorithm; explain computational or leakage risks."
+  },
+  "stats-advanced-004": {
+    "title": "Bayes calculation",
+    "question": "Suppose P(A)=0.2, P(B|A)=0.8, and P(B|not A)=0.1. Calculate P(A|B).\n\nIn your answer, use a concrete Advanced Statistics / Probability example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "stats-advanced-005": {
+    "title": "Bootstrap mean",
+    "question": "Write a function bootstrap_mean(data, n_bootstrap=1000) that returns an array of bootstrap sample means.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "stats-advanced-007": {
+    "title": "p-value interpretation",
+    "question": "What does a small p-value mean in a hypothesis test?\n\nIn your answer, use a concrete Advanced Statistics / Probability example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "split-basic-001": {
+    "title": "Train-test split",
+    "question": "Write code to split X and y into 80% training and 20% testing data with random_state=42.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "split-basic-002": {
+    "title": "Purpose of a test set",
+    "question": "Why should a final test set not be repeatedly used to tune the model?\n\nIn your answer, use a concrete Data Splitting / Leakage example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "split-basic-003": {
+    "title": "Stratified split",
+    "question": "Write a train_test_split call that preserves class proportions using stratify=y.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "split-advanced-002": {
+    "title": "Nested cross-validation",
+    "question": "When is nested cross-validation useful?\n\nIn your answer, use a concrete Data Splitting / Leakage example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "split-advanced-004": {
+    "title": "Leakage-safe pipeline",
+    "question": "Build a scikit-learn Pipeline that standardizes numeric features and trains LogisticRegression without fitting preprocessing on the test set.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include tests for malformed inputs and a failure mode relevant to the algorithm; explain computational or leakage risks."
+  },
+  "feature-selection-basic-001": {
+    "title": "Why select features?",
+    "question": "Give two reasons feature selection can help a machine learning model.\n\nIn your answer, use a concrete Feature Selection example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "feature-selection-basic-002": {
+    "title": "Variance threshold",
+    "question": "Use VarianceThreshold to remove features whose variance is below 0.01.\n\nImplementation contract:\nInput: a DataFrame or feature matrix with explicitly named columns. Output: return the requested transformed DataFrame or array; preserve the documented row order and define how missing values are handled. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "feature-selection-medium-001": {
+    "title": "SelectKBest",
+    "question": "Use SelectKBest with f_classif to select the top 5 features for a classification problem.\n\nImplementation contract:\nInput: a DataFrame or feature matrix with explicitly named columns. Output: return the requested transformed DataFrame or array; preserve the documented row order and define how missing values are handled. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "feature-selection-medium-002": {
+    "title": "Recursive feature elimination",
+    "question": "What does Recursive Feature Elimination do?\n\nIn your answer, use a concrete Feature Selection example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "feature-selection-advanced-002": {
+    "title": "L1 feature selection",
+    "question": "Why can L1-regularized linear models be used for feature selection?\n\nIn your answer, use a concrete Feature Selection example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "feature-selection-advanced-004": {
+    "title": "Predictive versus causal feature",
+    "question": "Why is a highly predictive feature not necessarily a causal feature?\n\nIn your answer, use a concrete Feature Selection example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "imbalance-basic-002": {
+    "title": "Class distribution",
+    "question": "Write code to show the count of each class in a target Series y.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "imbalance-medium-001": {
+    "title": "Class weights",
+    "question": "Create a LogisticRegression model that uses class_weight='balanced'.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "imbalance-medium-002": {
+    "title": "Random oversampling",
+    "question": "What does random oversampling do to an imbalanced training set?\n\nIn your answer, use a concrete Imbalanced Learning example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "imbalance-medium-003": {
+    "title": "Imbalanced Learning: Concept analysis (Medium)",
+    "question": "How does SMOTE differ from simply duplicating minority examples?\n\nIn your answer, use a concrete Imbalanced Learning example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "imbalance-advanced-004": {
+    "title": "Imbalanced Learning: Concept analysis (Advanced)",
+    "question": "If precision is 0.8 and recall is 0.5, calculate the F1 score.\n\nIn your answer, use a concrete Imbalanced Learning example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "ensemble-basic-001": {
+    "title": "Why ensembles work",
+    "question": "Why can combining several models improve predictive performance?\n\nIn your answer, use a concrete Ensemble Learning example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "ensemble-basic-002": {
+    "title": "Ensemble Learning: Concept analysis (Basic)",
+    "question": "What is the central idea behind bagging?\n\nIn your answer, use a concrete Ensemble Learning example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "ensemble-basic-003": {
+    "title": "Ensemble Learning: Concept analysis (Basic) — Basic theory 1",
+    "question": "How is boosting conceptually different from bagging?\n\nIn your answer, use a concrete Ensemble Learning example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "ensemble-medium-001": {
+    "title": "Voting classifier",
+    "question": "Create a VotingClassifier with two already-created classifiers clf1 and clf2 using soft voting.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "ensemble-medium-002": {
+    "title": "Hard versus soft voting",
+    "question": "What is the difference between hard voting and soft voting?\n\nIn your answer, use a concrete Ensemble Learning example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "ensemble-medium-003": {
+    "title": "Ensemble Learning: Concept analysis (Medium)",
+    "question": "What is the role of a meta-model in stacking?\n\nIn your answer, use a concrete Ensemble Learning example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "anomaly-basic-001": {
+    "title": "What is an anomaly?",
+    "question": "What is an anomaly in machine learning?\n\nIn your answer, use a concrete Anomaly Detection example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "anomaly-basic-002": {
+    "title": "Isolation Forest idea",
+    "question": "What is the main intuition behind Isolation Forest?\n\nIn your answer, use a concrete Anomaly Detection example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "anomaly-basic-003": {
+    "title": "Fit Isolation Forest",
+    "question": "Create and fit an IsolationForest with contamination=0.05 and random_state=42.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "anomaly-medium-001": {
+    "title": "Anomaly labels",
+    "question": "After fitting an IsolationForest named model, write code to generate predictions for X.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "anomaly-medium-003": {
+    "title": "Local Outlier Factor",
+    "question": "What does Local Outlier Factor compare when identifying anomalies?\n\nIn your answer, use a concrete Anomaly Detection example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "anomaly-advanced-001": {
+    "title": "Fraud as anomaly detection",
+    "question": "Why might fraud detection be harder than ordinary anomaly detection?\n\nIn your answer, use a concrete Anomaly Detection example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "timeseries-basic-002": {
+    "title": "Lag feature",
+    "question": "Write pandas code to create a one-step lag feature named sales_lag_1 from a sales column.\n\nImplementation contract:\nInput: a DataFrame or feature matrix with explicitly named columns. Output: return the requested transformed DataFrame or array; preserve the documented row order and define how missing values are handled. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "timeseries-medium-001": {
+    "title": "Rolling mean",
+    "question": "Write code to calculate a 7-period rolling mean of a pandas Series named sales.\n\nImplementation contract:\nInput: a DataFrame or feature matrix with explicitly named columns. Output: return the requested transformed DataFrame or array; preserve the documented row order and define how missing values are handled. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "timeseries-medium-002": {
+    "title": "Walk-forward validation",
+    "question": "What is walk-forward validation?\n\nIn your answer, use a concrete Time Series example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "timeseries-advanced-001": {
+    "title": "Stationarity",
+    "question": "Why can stationarity matter for some classical time-series models?\n\nIn your answer, use a concrete Time Series example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "timeseries-advanced-002": {
+    "title": "Date features",
+    "question": "Given a pandas datetime column timestamp, create year, month, day-of-week, and hour features.\n\nImplementation contract:\nInput: a DataFrame or feature matrix with explicitly named columns. Output: return the requested transformed DataFrame or array; preserve the documented row order and define how missing values are handled. Include tests for malformed inputs and a failure mode relevant to the algorithm; explain computational or leakage risks."
+  },
+  "timeseries-advanced-004": {
+    "title": "Forecast horizon",
+    "question": "Why can multi-step forecasting be harder than one-step forecasting?\n\nIn your answer, use a concrete Time Series example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "nlp-basic-001": {
+    "title": "Lowercase text",
+    "question": "Write a function normalize_text(text) that returns the text in lowercase with leading and trailing whitespace removed.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "nlp-basic-002": {
+    "title": "Tokenization",
+    "question": "What is tokenization in NLP?\n\nIn your answer, use a concrete NLP example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "nlp-medium-001": {
+    "title": "NLP: Coding exercise (Medium)",
+    "question": "Use TfidfVectorizer to transform a list of text documents into a TF-IDF matrix.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "nlp-medium-002": {
+    "title": "Why TF-IDF?",
+    "question": "Why can TF-IDF downweight common words compared with raw word counts?\n\nIn your answer, use a concrete NLP example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "nlp-medium-003": {
+    "title": "NLP: Concept analysis (Medium)",
+    "question": "What is a bigram?\n\nIn your answer, use a concrete NLP example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "nlp-advanced-002": {
+    "title": "Sparse text matrices",
+    "question": "Why are TF-IDF matrices often stored as sparse matrices?\n\nIn your answer, use a concrete NLP example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "interpret-basic-001": {
+    "title": "Interpretability",
+    "question": "Why is model interpretability valuable in machine learning?\n\nIn your answer, use a concrete Model Interpretation example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "interpret-basic-002": {
+    "title": "Global versus local",
+    "question": "What is the difference between global and local model explanations?\n\nIn your answer, use a concrete Model Interpretation example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "interpret-basic-003": {
+    "title": "Tree feature importance",
+    "question": "For a fitted RandomForestClassifier named model, write code to obtain its feature_importances_.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "interpret-medium-001": {
+    "title": "Permutation importance",
+    "question": "What does permutation importance measure?\n\nIn your answer, use a concrete Model Interpretation example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "interpret-medium-002": {
+    "title": "Partial dependence",
+    "question": "What does a partial dependence plot attempt to show?\n\nIn your answer, use a concrete Model Interpretation example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "interpret-medium-003": {
+    "title": "SHAP intuition",
+    "question": "What is the basic intuition behind SHAP feature contributions?\n\nIn your answer, use a concrete Model Interpretation example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "interpret-advanced-004": {
+    "title": "Counterfactual explanation",
+    "question": "What does a counterfactual explanation typically answer?\n\nIn your answer, use a concrete Model Interpretation example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "calibration-basic-001": {
+    "title": "Calibration",
+    "question": "What does it mean for a binary classifier to be well calibrated?\n\nIn your answer, use a concrete Model Calibration / Error Analysis example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "calibration-basic-002": {
+    "title": "Confidence versus correctness",
+    "question": "Can a classifier be highly confident and still be poorly calibrated?\n\nIn your answer, use a concrete Model Calibration / Error Analysis example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "calibration-basic-003": {
+    "title": "Confusion matrix",
+    "question": "Write code to calculate a confusion matrix for true labels y_true and predictions y_pred.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "calibration-medium-001": {
+    "title": "Classification report",
+    "question": "Write code to generate a classification_report from sklearn.metrics.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "calibration-medium-002": {
+    "title": "Calibration curve",
+    "question": "What does a reliability or calibration curve compare?\n\nIn your answer, use a concrete Model Calibration / Error Analysis example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "calibration-advanced-002": {
+    "title": "High AUC but poor probabilities",
+    "question": "Can a model have high ROC-AUC but poor probability calibration?\n\nIn your answer, use a concrete Model Calibration / Error Analysis example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "mle-basic-001": {
+    "title": "Training versus inference",
+    "question": "What is the difference between model training and inference?\n\nIn your answer, use a concrete ML Engineering / Deployment example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "mle-basic-002": {
+    "title": "Save a model",
+    "question": "Write code using joblib to save a fitted scikit-learn model named model to model.joblib.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "mle-basic-003": {
+    "title": "Reproducibility",
+    "question": "Why are random seeds useful in ML experiments?\n\nIn your answer, use a concrete ML Engineering / Deployment example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "mle-medium-001": {
+    "title": "Load a model",
+    "question": "Write code to load model.joblib using joblib.load.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "mle-medium-003": {
+    "title": "Batch versus online inference",
+    "question": "What is the difference between batch inference and online inference?\n\nIn your answer, use a concrete ML Engineering / Deployment example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "mle-advanced-002": {
+    "title": "Concept drift",
+    "question": "What is concept drift?\n\nIn your answer, use a concrete ML Engineering / Deployment example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "mle-advanced-003": {
+    "title": "Training-serving skew",
+    "question": "What is training-serving skew?\n\nIn your answer, use a concrete ML Engineering / Deployment example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "deep-learning-basic-001": {
+    "title": "What is a neuron?",
+    "question": "In a neural network, what does an artificial neuron compute?\n\nIn your answer, use a concrete Deep Learning example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "deep-learning-basic-003": {
+    "title": "Create a dense layer",
+    "question": "Using TensorFlow/Keras, create a Dense layer with 32 units and ReLU activation.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "deep-learning-medium-001": {
+    "title": "Forward propagation",
+    "question": "What happens during forward propagation?\n\nIn your answer, use a concrete Deep Learning example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "deep-learning-medium-002": {
+    "title": "Backpropagation",
+    "question": "What is the purpose of backpropagation?\n\nIn your answer, use a concrete Deep Learning example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "deep-learning-medium-003": {
+    "title": "Compile a classifier",
+    "question": "Compile a Keras classification model using Adam and sparse categorical cross-entropy.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "deep-learning-advanced-001": {
+    "title": "Vanishing gradients",
+    "question": "Why can vanishing gradients make deep networks difficult to train?\n\nIn your answer, use a concrete Deep Learning example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "cnn-basic-001": {
+    "title": "What does convolution do?",
+    "question": "What is the main purpose of a convolution layer in an image model?\n\nIn your answer, use a concrete CNN example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "cnn-basic-002": {
+    "title": "CNN: Concept analysis (Basic)",
+    "question": "Why is pooling commonly used in CNNs?\n\nIn your answer, use a concrete CNN example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "cnn-basic-003": {
+    "title": "Create a Conv2D layer",
+    "question": "Create a Keras Conv2D layer with 32 filters, a 3x3 kernel, ReLU activation, and same padding.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "cnn-medium-001": {
+    "title": "Max pooling",
+    "question": "Create a MaxPooling2D layer with a 2x2 pool size.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "cnn-medium-002": {
+    "title": "Receptive field",
+    "question": "What is the receptive field of a CNN neuron?\n\nIn your answer, use a concrete CNN example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "cnn-advanced-001": {
+    "title": "Stride versus padding",
+    "question": "How do stride and padding affect a convolution output?\n\nIn your answer, use a concrete CNN example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "cnn-advanced-002": {
+    "title": "Image augmentation",
+    "question": "Why can random image augmentation improve CNN generalization?\n\nIn your answer, use a concrete CNN example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "xgb-advanced-002": {
+    "title": "Create XGBClassifier",
+    "question": "Create an XGBClassifier with n_estimators=200, max_depth=4, and learning_rate=0.05.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "xgb-advanced-003": {
+    "title": "Why shallow trees?",
+    "question": "Why can shallow trees be preferred in boosting models?\n\nIn your answer, use a concrete Advanced XGBoost example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "xgb-advanced-006": {
+    "title": "Early stopping",
+    "question": "Why is early stopping useful in gradient boosting?\n\nIn your answer, use a concrete Advanced XGBoost example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "xgb-advanced-007": {
+    "title": "Regularization",
+    "question": "Why does XGBoost include regularization terms?\n\nIn your answer, use a concrete Advanced XGBoost example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "xgb-advanced-010": {
+    "title": "When XGBoost is not ideal",
+    "question": "Give one situation where XGBoost may not be the best first choice.\n\nIn your answer, use a concrete Advanced XGBoost example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "recommender-basic-001": {
+    "title": "What is recommendation?",
+    "question": "What is the goal of a recommender system?\n\nIn your answer, use a concrete Recommender Systems example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "recommender-basic-002": {
+    "title": "Collaborative filtering",
+    "question": "What information does collaborative filtering primarily use?\n\nIn your answer, use a concrete Recommender Systems example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "recommender-basic-003": {
+    "title": "Cold start",
+    "question": "What is the cold-start problem?\n\nIn your answer, use a concrete Recommender Systems example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "recommender-medium-001": {
+    "title": "Cosine similarity",
+    "question": "Write code to compute cosine similarity between two vectors a and b using scikit-learn.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "recommender-medium-002": {
+    "title": "Content-based recommendation",
+    "question": "How does a content-based recommender choose items?\n\nIn your answer, use a concrete Recommender Systems example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "recommender-medium-003": {
+    "title": "Precision at K",
+    "question": "What does Precision@K measure?\n\nIn your answer, use a concrete Recommender Systems example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "recommender-advanced-002": {
+    "title": "Popularity bias",
+    "question": "Why can recommending only popular items be problematic?\n\nIn your answer, use a concrete Recommender Systems example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "recommender-advanced-004": {
+    "title": "Exploration versus exploitation",
+    "question": "What is the exploration-exploitation trade-off in recommendation?\n\nIn your answer, use a concrete Recommender Systems example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "cluster-advanced-001": {
+    "title": "Hierarchical clustering",
+    "question": "What does hierarchical clustering produce?\n\nIn your answer, use a concrete Clustering Beyond K-Means example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "cluster-advanced-002": {
+    "title": "Agglomerative clustering",
+    "question": "Create an AgglomerativeClustering model with n_clusters=3.\n\nImplementation contract:\nInput: X is a 2-D array of numeric samples with rows representing observations. Output: return a 1-D cluster or anomaly label array aligned to the original X row order; document the convention for noise or outliers. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "cluster-advanced-003": {
+    "title": "Clustering Beyond K-Means: Concept analysis (Basic)",
+    "question": "What is a major advantage of DBSCAN over K-Means?\n\nIn your answer, use a concrete Clustering Beyond K-Means example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "cluster-advanced-004": {
+    "title": "Fit DBSCAN",
+    "question": "Fit DBSCAN with eps=0.5 and min_samples=5 on X.\n\nImplementation contract:\nInput: X is a 2-D array of numeric samples with rows representing observations. Output: return a 1-D cluster or anomaly label array aligned to the original X row order; document the convention for noise or outliers. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "cluster-advanced-005": {
+    "title": "Silhouette score",
+    "question": "What does a higher silhouette score generally indicate?\n\nIn your answer, use a concrete Clustering Beyond K-Means example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "cluster-advanced-006": {
+    "title": "Noise label in DBSCAN",
+    "question": "What label does scikit-learn DBSCAN commonly use for noise points?\n\nIn your answer, use a concrete Clustering Beyond K-Means example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "dimred-basic-001": {
+    "title": "Why reduce dimensions?",
+    "question": "Give two reasons dimensionality reduction can be useful.\n\nIn your answer, use a concrete Dimensionality Reduction example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "dimred-basic-002": {
+    "title": "PCA to two components",
+    "question": "Create a PCA model that keeps two components and fit_transform X.\n\nImplementation contract:\nInput: X is a 2-D numeric feature array. Output: return a 2-D transformed array containing one row per input sample; state the chosen output dimensionality and random seed where applicable. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "dimred-basic-003": {
+    "title": "PCA variance",
+    "question": "What does explained_variance_ratio_ represent in PCA?\n\nIn your answer, use a concrete Dimensionality Reduction example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "dimred-medium-001": {
+    "title": "PCA direction",
+    "question": "What does the first principal component represent?\n\nIn your answer, use a concrete Dimensionality Reduction example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "dimred-medium-003": {
+    "title": "PCA and interpretability",
+    "question": "Why can PCA reduce interpretability?\n\nIn your answer, use a concrete Dimensionality Reduction example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "dimred-advanced-001": {
+    "title": "Truncated SVD",
+    "question": "Why is TruncatedSVD useful for sparse text matrices?\n\nIn your answer, use a concrete Dimensionality Reduction example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "dimred-advanced-002": {
+    "title": "t-SNE purpose",
+    "question": "What is t-SNE primarily used for in ML workflows?\n\nIn your answer, use a concrete Dimensionality Reduction example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "dimred-advanced-004": {
+    "title": "UMAP intuition",
+    "question": "What is the general goal of UMAP?\n\nIn your answer, use a concrete Dimensionality Reduction example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "model-selection-basic-001": {
+    "title": "Model selection",
+    "question": "What is model selection?\n\nIn your answer, use a concrete Model Selection example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "model-selection-basic-002": {
+    "title": "Validation set",
+    "question": "Why is a validation set useful?\n\nIn your answer, use a concrete Model Selection example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "model-selection-basic-003": {
+    "title": "GridSearchCV",
+    "question": "Create a GridSearchCV object for a model with a small parameter grid.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "model-selection-medium-001": {
+    "title": "Randomized search",
+    "question": "When can RandomizedSearchCV be preferable to GridSearchCV?\n\nIn your answer, use a concrete Model Selection example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "model-selection-medium-002": {
+    "title": "Best parameters",
+    "question": "After fitting GridSearchCV named search, how do you obtain the best parameter combination?\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "fe-advanced-001": {
+    "title": "Log transform",
+    "question": "Write code using np.log1p to transform a nonnegative skewed feature income.\n\nImplementation contract:\nInput: a DataFrame or feature matrix with explicitly named columns. Output: return the requested transformed DataFrame or array; preserve the documented row order and define how missing values are handled. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "fe-advanced-002": {
+    "title": "Ratio feature",
+    "question": "Create a feature debt_to_income equal to debt divided by income, safely avoiding division by zero.\n\nImplementation contract:\nInput: a DataFrame or feature matrix with explicitly named columns. Output: return the requested transformed DataFrame or array; preserve the documented row order and define how missing values are handled. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "fe-advanced-003": {
+    "title": "Interaction feature",
+    "question": "What is an interaction feature?\n\nIn your answer, use a concrete Advanced Feature Engineering example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "fe-advanced-004": {
+    "title": "Polynomial features",
+    "question": "Create PolynomialFeatures with degree=2 and include_bias=False.\n\nImplementation contract:\nInput: a DataFrame or feature matrix with explicitly named columns. Output: return the requested transformed DataFrame or array; preserve the documented row order and define how missing values are handled. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "fe-advanced-005": {
+    "title": "Advanced Feature Engineering: Concept analysis (Medium)",
+    "question": "What is feature binning?\n\nIn your answer, use a concrete Advanced Feature Engineering example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "fe-advanced-007": {
+    "title": "Target encoding risk",
+    "question": "Why can target encoding of categories cause leakage?\n\nIn your answer, use a concrete Advanced Feature Engineering example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "fe-advanced-008": {
+    "title": "Date difference",
+    "question": "Given start_date and end_date datetime columns, create a duration_days feature.\n\nImplementation contract:\nInput: a DataFrame or feature matrix with explicitly named columns. Output: return the requested transformed DataFrame or array; preserve the documented row order and define how missing values are handled. Include tests for malformed inputs and a failure mode relevant to the algorithm; explain computational or leakage risks."
+  },
+  "fe-advanced-010": {
+    "title": "Monotonic relationship",
+    "question": "What is a monotonic constraint intended to enforce in a model?\n\nIn your answer, use a concrete Advanced Feature Engineering example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "semi-supervised-basic-001": {
+    "title": "What is semi-supervised learning?",
+    "question": "What type of data does semi-supervised learning use?\n\nIn your answer, use a concrete Semi-Supervised Learning example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "semi-supervised-basic-002": {
+    "title": "Why use unlabeled data?",
+    "question": "Why can unlabeled data be valuable?\n\nIn your answer, use a concrete Semi-Supervised Learning example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "semi-supervised-basic-003": {
+    "title": "Pseudo-labeling",
+    "question": "What is pseudo-labeling?\n\nIn your answer, use a concrete Semi-Supervised Learning example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "semi-supervised-medium-001": {
+    "title": "Pseudo-label risk",
+    "question": "What is a major risk of pseudo-labeling?\n\nIn your answer, use a concrete Semi-Supervised Learning example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "semi-supervised-medium-002": {
+    "title": "Confidence threshold",
+    "question": "Why might pseudo-labeling use a high confidence threshold?\n\nIn your answer, use a concrete Semi-Supervised Learning example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "semi-supervised-medium-003": {
+    "title": "Self-training",
+    "question": "What is the basic loop in self-training?\n\nIn your answer, use a concrete Semi-Supervised Learning example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "semi-supervised-advanced-002": {
+    "title": "Labeling strategy",
+    "question": "Why can active learning be useful when labels are expensive?\n\nIn your answer, use a concrete Semi-Supervised Learning example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "semi-supervised-advanced-003": {
+    "title": "Confirmation bias",
+    "question": "What is confirmation bias in iterative pseudo-labeling?\n\nIn your answer, use a concrete Semi-Supervised Learning example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "transfer-basic-001": {
+    "title": "What is transfer learning?",
+    "question": "What is transfer learning in machine learning?\n\nIn your answer, use a concrete Transfer Learning example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "transfer-basic-002": {
+    "title": "Why freeze layers?",
+    "question": "Why might you freeze pretrained layers initially?\n\nIn your answer, use a concrete Transfer Learning example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "transfer-basic-003": {
+    "title": "Freeze a Keras layer",
+    "question": "Write code to freeze a Keras model named base_model.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "transfer-medium-001": {
+    "title": "Fine-tuning",
+    "question": "What is fine-tuning?\n\nIn your answer, use a concrete Transfer Learning example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "transfer-medium-003": {
+    "title": "Feature extractor",
+    "question": "What is meant by using a pretrained network as a feature extractor?\n\nIn your answer, use a concrete Transfer Learning example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "transfer-advanced-002": {
+    "title": "Gradual unfreezing",
+    "question": "Why might layers be unfrozen gradually during fine-tuning?\n\nIn your answer, use a concrete Transfer Learning example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "monitoring-basic-001": {
+    "title": "What is data drift?",
+    "question": "What is data drift?\n\nIn your answer, use a concrete Model Monitoring / Drift example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "monitoring-basic-002": {
+    "title": "What is concept drift?",
+    "question": "What is concept drift?\n\nIn your answer, use a concrete Model Monitoring / Drift example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "monitoring-basic-003": {
+    "title": "Prediction logging",
+    "question": "What information should a production prediction log commonly include?\n\nIn your answer, use a concrete Model Monitoring / Drift example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "monitoring-medium-001": {
+    "title": "Why monitor latency?",
+    "question": "Why should model inference latency be monitored in production?\n\nIn your answer, use a concrete Model Monitoring / Drift example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "monitoring-medium-002": {
+    "title": "Delayed labels",
+    "question": "Why can production accuracy be difficult to monitor immediately?\n\nIn your answer, use a concrete Model Monitoring / Drift example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "monitoring-advanced-001": {
+    "title": "Drift versus degradation",
+    "question": "Does data drift always mean model accuracy has decreased?\n\nIn your answer, use a concrete Model Monitoring / Drift example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "monitoring-advanced-003": {
+    "title": "Alert fatigue",
+    "question": "Why can overly sensitive monitoring thresholds be harmful?\n\nIn your answer, use a concrete Model Monitoring / Drift example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "experiments-basic-001": {
+    "title": "Baseline model",
+    "question": "Why should an ML project usually start with a baseline model?\n\nIn your answer, use a concrete ML Experimentation example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "experiments-basic-003": {
+    "title": "Record a metric",
+    "question": "Write a simple Python dictionary that stores model_name, validation_score, and random_state.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "experiments-medium-002": {
+    "title": "A/B testing",
+    "question": "What is the basic purpose of an A/B test for a deployed ML system?\n\nIn your answer, use a concrete ML Experimentation example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "experiments-advanced-004": {
+    "title": "Ablation study",
+    "question": "What is an ablation study?\n\nIn your answer, use a concrete ML Experimentation example, identify a common failure mode, and explain how you would distinguish the proposed approach from a simple baseline."
+  },
+  "curated-sklearn-001": {
+    "title": "Leakage-safe mixed feature preprocessor",
+    "question": "Implement build_preprocessor(numeric_cols, categorical_cols). Return an unfitted sklearn ColumnTransformer with numeric Pipeline(SimpleImputer(strategy='median'), StandardScaler()) and categorical Pipeline(SimpleImputer(strategy='most_frequent'), OneHotEncoder(handle_unknown='ignore')). Ignore unspecified columns. Support unseen categories after fitting.\n\nImplementation contract:\nInput: a DataFrame or feature matrix with explicitly named columns. Output: return the requested transformed DataFrame or array; preserve the documented row order and define how missing values are handled. Include tests for malformed inputs and a failure mode relevant to the algorithm; explain computational or leakage risks."
+  },
+  "curated-matplotlib-001": {
+    "title": "Create an appropriately labeled histogram",
+    "question": "Implement make_histogram(values, bins=10). Return a Matplotlib Figure containing exactly one Axes, a histogram with the requested bins, x-label 'Value', y-label 'Frequency', and title 'Value Distribution'. Do not call plt.show().\n\nImplementation contract:\nInput: X_train and X_test are 2-D feature arrays; y_train is a 1-D array of class labels. Output: return a 1-D prediction array with exactly one label per X_test row; preserve class-label type and row order. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "curated-seaborn-001": {
+    "title": "Draw a correlation heatmap",
+    "question": "Implement draw_correlation(df). Select numeric columns, calculate Pearson correlation, draw a Seaborn heatmap and return the Matplotlib Figure. Use a new figure and do not call plt.show(). Assume at least two numeric columns.\n\nImplementation contract:\nInput: use the arguments and data structures explicitly named in the task. Output: return the computed value or data structure instead of only printing it; preserve the expected order and data type. Include one regular example, one empty-or-edge-case test, and an assertion on output shape/type."
+  },
+  "boost-basic-002": {
+    "title": "Boosting idea — Basic theory 1"
+  },
+  "curated-statistics-001": {
+    "title": "Population variance — Basic numerical 1"
+  },
+  "statistics-medium-002": {
+    "title": "Statistics — Medium Numerical — statistics-medium-002"
+  }
+}

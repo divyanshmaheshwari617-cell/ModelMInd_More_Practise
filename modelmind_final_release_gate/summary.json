@@ -1,0 +1,18 @@
+{
+  "mode": "APPLIED",
+  "unique_questions": 2251,
+  "topics": 103,
+  "empty_combinations": 0,
+  "metadata_title_edits": 1,
+  "structurally_ok": 2194,
+  "review": 57,
+  "blockers": 0,
+  "flags": {
+    "SHORT_PROMPT": 45,
+    "EXACT_PROMPT_DUPLICATE": 12
+  },
+  "human_review_rows": 153,
+  "backup": "D:\\modelmind_advance_practise_perfect\\modelmind_fixed\\backup_modelmind_release_gate_20261102_192203",
+  "deployment_recommendation": "HOLD: Expert checks and production tests are not complete; automated screening alone cannot certify question correctness.",
+  "note": "If title metadata changed for backend, restart API and rerun V7 to observe new titles."
+}
