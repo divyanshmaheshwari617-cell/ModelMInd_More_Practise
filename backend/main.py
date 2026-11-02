@@ -39,16 +39,17 @@ app = FastAPI(
     version="1.0.0"
 )
 
-from fastapi.middleware.cors import CORSMiddleware
-
+# Allow the deployed Question Bank and local development frontends.
+# Keep a single CORSMiddleware configuration.
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "https://modelmind-more-practise.onrender.com",
         "http://localhost:3000",
+        "http://127.0.0.1:3000",
     ],
     allow_credentials=False,
-    allow_methods=["GET", "OPTIONS"],
+    allow_methods=["GET", "POST", "OPTIONS"],
     allow_headers=["*"],
 )
 
@@ -58,22 +59,6 @@ app.include_router(ml_benchmark_router)
 # ---------------------------------------------------------
 # Question Bank API
 # ---------------------------------------------------------
-
-# ---------------------------------------------------------
-# CORS
-# ---------------------------------------------------------
-
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=[
-        "http://localhost:3000",
-        "http://127.0.0.1:3000",
-    ],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
-
 
 def practice_mode(question):
     if question.get("type") in ("Coding", "Debugging") and question.get("starterCode"):
