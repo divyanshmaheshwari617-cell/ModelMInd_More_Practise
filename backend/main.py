@@ -38,6 +38,20 @@ app = FastAPI(
     title="ModelMind More Practice Evaluator",
     version="1.0.0"
 )
+
+from fastapi.middleware.cors import CORSMiddleware
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "https://modelmind-more-practise.onrender.com",
+        "http://localhost:3000",
+    ],
+    allow_credentials=False,
+    allow_methods=["GET", "OPTIONS"],
+    allow_headers=["*"],
+)
+
 app.include_router(jupyter_router)
 app.include_router(ml_benchmark_router)
 
